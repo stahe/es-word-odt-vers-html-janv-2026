@@ -1,0 +1,1322 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Convertir un documento Word u ODT en una página web estática HTML compatible con MkDocs utilizando las IA Gemini 3 y ChatGPT 5.2">
+      
+      
+        <meta name="author" content="Serge Tahé">
+      
+      
+        <link rel="canonical" href="https://stahe.github.io/es-word-odt-vers-html-janv-2026/los-archivos-de-configuracion-de-los-convertidores.html">
+      
+      
+        <link rel="prev" href="la-carpeta-de-trabajo-del-conversor.html">
+      
+      
+        <link rel="next" href="uso-del-conversor-odt---html.html">
+      
+      
+        
+      
+      
+      <link rel="icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
+    
+    
+      
+        <title>7. Los archivos de configuración de los convertidores - Convertir un documento Word u ODT en una página web estática HTML compatible con MkDocs utilizando las IA Gemini 3 y ChatGPT 5.2</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.618322db.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="stylesheets/focus.css">
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EBZC3JVJNR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    var siteName = "Convertir un documento Word u ODT en una página web estática HTML compatible con MkDocs utilizando las IA Gemini 3 y ChatGPT 5.2";
+    gtag('config', 'G-EBZC3JVJNR', {
+        'page_title': siteName
+    });
+  </script>
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="purple">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#7-los-archivos-de-configuracion-de-los-convertidores" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="index.html" title="Convertir un documento Word u ODT en una página web estática HTML compatible con MkDocs utilizando las IA Gemini 3 y ChatGPT 5.2" class="md-header__button md-logo" aria-label="Convertir un documento Word u ODT en una página web estática HTML compatible con MkDocs utilizando las IA Gemini 3 y ChatGPT 5.2" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Convertir un documento Word u ODT en una página web estática HTML compatible con MkDocs utilizando las IA Gemini 3 y ChatGPT 5.2
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              7. Los archivos de configuración de los convertidores
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="purple"  aria-label="Cambiar a modo oscuro"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Cambiar a modo oscuro" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="purple"  aria-label="Cambiar a modo claro"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Cambiar a modo claro" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://stahe.github.io/es-word-odt-vers-html-janv-2026" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="index.html" title="Convertir un documento Word u ODT en una página web estática HTML compatible con MkDocs utilizando las IA Gemini 3 y ChatGPT 5.2" class="md-nav__button md-logo" aria-label="Convertir un documento Word u ODT en una página web estática HTML compatible con MkDocs utilizando las IA Gemini 3 y ChatGPT 5.2" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Convertir un documento Word u ODT en una página web estática HTML compatible con MkDocs utilizando las IA Gemini 3 y ChatGPT 5.2
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://stahe.github.io/es-word-odt-vers-html-janv-2026" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bienvenidos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="introduccion.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1. Introducción
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="los-ejemplos-de-este-documento----.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2. Los ejemplos de este documento    
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="lo-que-hay-en-internet.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3. Lo que hay en Internet
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="la-indicacion-inicial-para-gemini-3.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4. La indicación inicial para Gemini 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="crear-un-entorno-de-trabajo-python.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5. Crear un entorno de trabajo Python
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="la-carpeta-de-trabajo-del-conversor.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    6. La carpeta de trabajo del conversor
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="los-archivos-de-configuracion-de-los-convertidores.html" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    7. Los archivos de configuración de los convertidores
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="uso-del-conversor-odt---html.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    8. Uso del conversor ODT → HTML
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="uso-del-conversor-docx---html.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    9. Uso del conversor DOCX → HTML
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="creacion-del-sitio-html-estatico.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10. Creación del sitio HTML estático
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="revision-del-sitio-html-generado.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    11. Revisión del sitio HTML generado
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="alojar-el-sitio-html-en-github.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    12. Alojar el sitio HTML en GitHub
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="realizar-un-seguimiento-del-sitio-con-google-analytics-y-google-search-console.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    13. Realizar un seguimiento del sitio con Google Analytics y Google Search Console
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="conclusion.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    14. Conclusión
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="7-los-archivos-de-configuracion-de-los-convertidores">7. <span style="color: #0f4761">Los archivos de configuración de los convertidores</span></h1>
+<p></li>
+</ul></p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000018A000001BE564EDFF0.png" style="display:inline-block; margin:4px;width:5.212cm;height:5.9cm;" class="odt-zoomable" data-zoom-src="images/100000000000018A000001BE564EDFF0.png" /></td></tr></table>
+
+<p>El archivo de configuración [config.py] recopila la información que puede variar de un documento a otro. Utiliza otros seis archivos de configuración. En estos últimos se han reunido los parámetros más susceptibles de cambiar al pasar de un documento a otro para la conversión.</p>
+<p>El archivo [config.py] importa el contenido de los otros 6 archivos de configuración:</p>
+<div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-python">
+<span class="odt-code-line"><span style="color:#0000ff">from </span><span style="color:#000000">config_urls </span><span style="color:#0000ff">import </span><span style="color:#000000">URLS</span></span>
+<span class="odt-code-line"><span style="color:#0000ff">from </span><span style="color:#000000">config_texts </span><span style="color:#0000ff">import </span><span style="color:#000000">TEXTS</span></span>
+<span class="odt-code-line"><span style="color:#0000ff">from </span><span style="color:#000000">config_code </span><span style="color:#0000ff">import </span><span style="color:#000000">CODE</span></span>
+<span class="odt-code-line"><span style="color:#0000ff">from </span><span style="color:#000000">config_styles </span><span style="color:#0000ff">import </span><span style="color:#000000">STYLES</span></span>
+<span class="odt-code-line"><span style="color:#0000ff">from </span><span style="color:#000000">config_colors </span><span style="color:#0000ff">import </span><span style="color:#000000">COLORS</span></span>
+<span class="odt-code-line"><span style="color:#0000ff">from </span><span style="color:#000000">config_presentation </span><span style="color:#0000ff">import </span><span style="color:#000000">PRESENTATION</span></span>
+</code></pre></div>
+
+<p><u><strong>config_urls</strong></u></p>
+<p><span style="color: #000000">Este archivo recopila las tres URL de la configuración [config.py]. Estas cambian con cada documento.</span></p>
+<div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-text">
+<span class="odt-code-line">URLS = {</span>
+<span class="odt-code-line"><span style="color:#a31515">&quot;site_url&quot;</span><span style="color:#000000">: </span><span style="color:#a31515">&quot;https://stahe.github.io/word-odt-vers-html-janv-2026/&quot;</span><span style="color:#000000">,</span></span>
+<span class="odt-code-line"><span style="color:#a31515">&quot;repo_url&quot;</span><span style="color:#000000">: </span><span style="color:#a31515">&quot;https://stahe.github.io/word-odt-vers-html-janv-2026&quot;</span><span style="color:#000000">,</span></span>
+<span class="odt-code-line"><span style="color:#a31515">&quot;author_site&quot;</span><span style="color:#000000">: </span><span style="color:#a31515">&quot;https://tahe.developpez.com&quot;</span><span style="color:#000000">,</span></span>
+<span class="odt-code-line">}<span style="color:#000000"></span></span>
+</code></pre></div>
+
+<ul>
+  <li><span style="color: #000000">línea 2: la URL del sitio web donde vas a implementar el sitio HTML generado por el conversor;</span>
+  </li>
+  <li><span style="color: #000000">línea 3: la URL de tu repositorio Git (véase el apartado</span><span style="color: #000000"><a href="alojar-el-sitio-html-en-github.html#refheadingtoc55961226647236">12</a></span><span style="color: #000000"> );</span>
+  </li>
+  <li><span style="color: #000000">línea 4: el sitio web del creador del sitio web. Esta URL se coloca en la parte inferior de las páginas del sitio web. Puede estar vacía.</span>
+  </li>
+</ul>
+
+<p><u><strong><span style="color: #000000">config_texts</span></strong></u></p>
+<p><span style="color: #000000">Este archivo recopila los textos de [config.py] que pueden cambiar al cambiar el idioma del sitio HTML generado.</span></p>
+<div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-text">
+<span class="odt-code-line">TEXTS = {</span>
+<span class="odt-code-line"><span style="color:#a31515">&quot;home_label&quot;</span><span style="color:#000000">: </span><span style="color:#a31515">&quot;Inicio&quot;</span><span style="color:#000000">,</span></span>
+<span class="odt-code-line"><span style="color:#a31515">&quot;site_name&quot;</span><span style="color:#000000">: </span><span style="color:#a31515">&quot;Convertir un documento Word u ODT a un sitio HTML estático compatible con MkDocs con las IA Gemini 3 y ChatGPT 5.2&quot;</span><span style="color:#000000">,</span></span>
+<span class="odt-code-line"><span style="color:#a31515">&quot;site_description&quot;</span><span style="color:#000000">: </span><span style="color:#a31515">&quot;Convertir un documento Word u ODT a un sitio HTML estático compatible con </span><span style="color:#a31515">MkDocs y las IA Gemini 3 y ChatGPT 5.2&quot;</span><span style="color:#000000">,</span></span>
+<span class="odt-code-line"><span style="color:#a31515">&quot;toggle_to_dark&quot;</span><span style="color:#000000">: </span><span style="color:#a31515">&quot;Cambiar al modo oscuro&quot;</span><span style="color:#000000">,</span></span>
+<span class="odt-code-line"><span style="color:#a31515">&quot;toggle_to_light&quot;</span><span style="color:#000000">: </span><span style="color:#a31515">&quot;Cambiar a modo claro&quot;</span><span style="color:#000000">,</span></span>
+<span class="odt-code-line"><span style="color:#a31515">&quot;footer_license_sentence&quot;</span><span style="color:#000000">: (</span></span>
+<span class="odt-code-line"><span style="color:#a31515">&quot;Este curso-tutorial escrito por &lt;strong&gt;Serge Tahé&lt;/strong&gt; se pone a disposición del público según los términos de la\n&quot;</span><span style="color:#a31515"></span></span>
+<span class="odt-code-line"><span style="color:#a31515">&quot;        &lt;em&gt;Licencia Creative Commons Reconocimiento – Sin uso comercial –\n&quot;</span><span style="color:#a31515"></span></span>
+<span class="odt-code-line"><span style="color:#a31515">&quot;        Compartir en las mismas condiciones 3.0 no adaptada&lt;/em&gt;.\n&quot;</span><span style="color:#a31515"></span></span>
+<span class="odt-code-line">),</span>
+<span class="odt-code-line"><span style="color:#a31515">&quot;copy_label&quot;</span><span style="color:#000000">: </span><span style="color:#a31515">&quot;Copiar&quot;</span><span style="color:#000000">,</span></span>
+<span class="odt-code-line"><span style="color:#a31515">&quot;copy_copied_label&quot;</span><span style="color:#000000">: </span><span style="color:#a31515">&quot;Copiado&quot;</span><span style="color:#000000">,</span></span>
+<span class="odt-code-line">}</span>
+</code></pre></div>
+
+<ul>
+  <li>línea 2: el nombre del primer enlace en la tabla de contenidos. Su contenido recoge todo lo que hay en el documento antes del primer título de nivel 1 (Título 1). Es el inicio del documento;
+  </li>
+  <li>línea 3: el título del documento. Se muestra en la barra superior del sitio web generado;
+  </li>
+  <li>línea 4: también el título del documento, esta vez destinado a los motores de búsqueda;
+  </li>
+  <li>líneas 5-6: las burbujas que aparecen al pasar el ratón por el icono de la barra superior del sitio para cambiar del modo claro al oscuro o viceversa;
+  </li>
+  <li>líneas 7-11: la licencia del sitio. Se muestra en el pie de página del sitio generado;
+  </li>
+  <li>líneas 12-13: el código que se muestra en el sitio, acompañado de un botón que permite copiar el código al portapapeles. La línea 12 es el texto del botón antes de copiar, la línea 13 el texto una vez que se ha copiado el código;
+  </li>
+</ul>
+
+<p>Así es como se ve este archivo para una versión en inglés del documento:</p>
+<div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-csharp">
+<span class="odt-code-line">TEXTS = {</span>
+<span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#a31515">&quot;home_label&quot;</span><span style="color:#000000">: </span><span style="color:#a31515">&quot;Welcome&quot;</span><span style="color:#000000">,</span></span>
+<span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#a31515">&quot;site_name&quot;</span><span style="color:#000000">: </span><span style="color:#a31515">&quot;Convert a Word or ODT document into a static HTML website using Gemini 3 and ChatGPT 5.2&quot;</span><span style="color:#000000">,</span></span>
+<span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#a31515">&quot;site_description&quot;</span><span style="color:#000000">: </span><span style="color:#a31515">&quot;Convertir un documento de Word u ODT en un sitio web HTML estático utilizando Gemini 3 y ChatGPT 5.2 AI&quot;</span><span style="color:#000000">,</span></span>
+<span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#a31515">&quot;toggle_to_dark&quot;</span><span style="color:#000000">: </span><span style="color:#a31515">&quot;Cambiar al modo oscuro&quot;</span><span style="color:#000000">,</span></span>
+<span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#a31515">&quot;toggle_to_light&quot;</span><span style="color:#000000">: </span><span style="color:#a31515">&quot;Cambiar al modo claro&quot;</span><span style="color:#000000">,</span></span>
+<span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#a31515">&quot;footer_license_sentence&quot;</span><span style="color:#000000">: (</span></span>
+<span class="odt-code-line"><span style="color:#000000">        </span><span style="color:#a31515">&#x27;Este tutorial, escrito por &lt;strong&gt;Serge Tahé&lt;/strong&gt;, se pone a disposición del público bajo los términos de la\n&#x27;</span></span>
+<span class="odt-code-line"><span style="color:#000000">        </span><span style="color:#a31515">&#x27;&lt;em&gt;Creative Commons Attribution – Non-Commercial –\n&#x27;</span></span>
+<span class="odt-code-line"><span style="color:#000000">        </span><span style="color:#a31515">&#x27;ShareAlike 3.0 Unported&lt;/em&gt;.&#x27;</span></span>
+<span class="odt-code-line">    ),</span>
+<span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#a31515">&quot;copy_label&quot;</span><span style="color:#000000">: </span><span style="color:#a31515">&quot;Copiar&quot;</span><span style="color:#000000">,</span></span>
+<span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#a31515">&quot;copy_copied_label&quot;</span><span style="color:#000000">: </span><span style="color:#a31515">&quot;Copiado&quot;</span><span style="color:#000000">,</span></span>
+<span class="odt-code-line">}</span>
+</code></pre></div>
+
+<p><u><strong>config_styles</strong></u></p>
+<p>Este archivo sirve para asignar el nombre del estilo del título del documento. En un documento DOCX, suele ser «Título», pero en un documento ODT varía según el documento.</p>
+<div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-text">
+<span class="odt-code-line">STYLES = {</span>
+<span class="odt-code-line"><span style="color:#a31515">&quot;style_names&quot;</span><span style="color:#000000">: [</span></span>
+<span class="odt-code-line"><span style="color:#a31515">&quot;P1&quot;</span><span style="color:#a31515"></span></span>
+<span class="odt-code-line">]</span>
+<span class="odt-code-line">}</span>
+</code></pre></div>
+
+<ul>
+  <li>línea 2: [styles_names] es una matriz. En ella se pueden introducir los nombres de los estilos que puede tener el título del documento;
+  </li>
+  <li>línea 3: el documento [word-odt-vers-html-janv-2026.odt] tiene un título con el estilo P1;
+  </li>
+</ul>
+
+<p><u><strong>config_code</strong></u></p>
+<p>Los bloques de código en el documento DOCX u ODT pueden encontrarse en dos formas:</p>
+<ul>
+  <li>código enriquecido (colores, negrita, cursiva, etc.). En este caso, se copia tal cual en el sitio HTML;
+  </li>
+  <li>código sin formato (texto plano). En este caso, se dan indicaciones a los convertidores para que identifiquen por sí mismos el lenguaje utilizado en el bloque de código. Para ello, se les proporcionan palabras clave:
+  </li>
+</ul>
+
+<div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
+<span class="odt-code-line">CODE = {</span>
+<span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#008000"># Reglas de detección automática de lenguaje basadas en el contenido</span></span>
+<span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#a31515">&quot;detection_rules&quot;</span><span style="color:#000000">: {</span></span>
+<span class="odt-code-line"><span style="color:#000000">        </span><span style="color:#a31515">&quot;</span><span style="background-color:#fff5ce;color:#a31515">csharp</span><span style="color:#a31515">&quot;</span><span style="color:#000000">: [</span></span>
+<span class="odt-code-line"><span style="color:#000000">            </span><span style="color:#a31515">&quot;using&quot;</span><span style="color:#000000">, </span><span style="color:#a31515">&quot;Console.WriteLine&quot;</span><span style="color:#000000">, </span><span style="color:#a31515">&quot;public static void Main&quot;</span><span style="color:#000000">, </span><span style="color:#a31515">&quot;WebMethod&quot;</span><span style="color:#000000">,</span></span>
+<span class="odt-code-line"><span style="color:#000000">            </span><span style="color:#a31515">&quot;TryParse&quot;</span><span style="color:#000000">, </span><span style="color:#a31515">&quot;EventArgs&quot;</span><span style="color:#000000">, </span><span style="color:#a31515">&quot;String.Format&quot;</span><span style="color:#000000">, </span><span style="color:#a31515">&quot;System.Web.Services&quot;</span></span>
+<span class="odt-code-line">        ],</span>
+<span class="odt-code-line"><span style="color:#000000">        </span><span style="color:#a31515">&quot;</span><span style="background-color:#fff5ce;color:#a31515">java</span><span style="color:#a31515">&quot;</span><span style="color:#000000">: [</span></span>
+<span class="odt-code-line"><span style="color:#000000">            </span><span style="color:#a31515">&quot;System.out.println&quot;</span><span style="color:#000000">, </span><span style="color:#a31515">&quot;public static void main(String&quot;</span><span style="color:#000000">, </span><span style="color:#a31515">&quot;package&quot;</span><span style="color:#000000">,</span></span>
+<span class="odt-code-line"><span style="color:#000000">            </span><span style="color:#a31515">&quot;JUnitTest&quot;</span><span style="color:#000000">, </span><span style="color:#a31515">&quot;Class.forName&quot;</span><span style="color:#000000">, </span><span style="color:#a31515">&quot;PreparedStatement&quot;</span><span style="color:#000000">, </span><span style="color:#a31515">&quot;private static void&quot;</span><span style="color:#000000">,</span></span>
+<span class="odt-code-line"><span style="color:#000000">            </span><span style="color:#a31515">&quot;private void&quot;</span><span style="color:#000000">, </span><span style="color:#a31515">&quot;getAgendaMedecinJour&quot;</span><span style="color:#000000">, </span><span style="color:#a31515">&quot;@PostConstruct&quot;</span><span style="color:#000000">, </span><span style="color:#a31515">&quot;@ResponseBody&quot;</span><span style="color:#000000">,</span></span>
+<span class="odt-code-line"><span style="color:#000000">            </span><span style="color:#a31515">&quot;@RequestMapping&quot;</span><span style="color:#000000">, </span><span style="color:#a31515">&quot;getMedecin&quot;</span><span style="color:#000000">, </span><span style="color:#a31515">&quot;@Entity&quot;</span><span style="color:#000000">, </span><span style="color:#a31515">&quot;@Autowired&quot;</span><span style="color:#000000">, </span><span style="color:#a31515">&quot;@Bean&quot;</span><span style="color:#000000">,</span></span>
+<span class="odt-code-line"><span style="color:#000000">            </span><span style="color:#a31515">&quot;Serializable&quot;</span><span style="color:#000000">, </span><span style="color:#a31515">&quot;getClient&quot;</span><span style="color:#000000">, </span><span style="color:#a31515">&quot;getCreneau&quot;</span><span style="color:#000000">, </span><span style="color:#a31515">&quot;getRv&quot;</span><span style="color:#000000">, </span><span style="color:#a31515">&quot;PostAjouterRv&quot;</span><span style="color:#000000">,</span></span>
+<span class="odt-code-line"><span style="color:#000000">            </span><span style="color:#a31515">&quot;PostSupprimerRv&quot;</span><span style="color:#000000">, </span><span style="color:#a31515">&quot;@EnableJpaRepositories&quot;</span><span style="color:#000000">, </span><span style="color:#a31515">&quot;@Component&quot;</span><span style="color:#000000">, </span><span style="color:#a31515">&quot;getAgendaMedecinJour&quot;</span><span style="color:#000000">,</span></span>
+<span class="odt-code-line"><span style="color:#000000">            </span><span style="color:#a31515">&quot;getResponse&quot;</span><span style="color:#000000">, </span><span style="color:#a31515">&quot;getMessagesForException&quot;</span><span style="color:#000000">, </span><span style="color:#a31515">&quot;getBase64&quot;</span><span style="color:#000000">, </span><span style="color:#a31515">&quot;ajouterRv&quot;</span><span style="color:#000000">,</span></span>
+<span class="odt-code-line"><span style="color:#000000">            </span><span style="color:#a31515">&quot;Respuesta&quot;</span><span style="color:#000000">, </span><span style="color:#a31515">&quot;getPartialViewAgenda&quot;</span><span style="color:#000000">, </span><span style="color:#a31515">&quot;setModelforAgenda&quot;</span><span style="color:#000000">, </span><span style="color:#a31515">&quot;ActionContext&quot;</span><span style="color:#000000">,</span></span>
+<span class="odt-code-line"><span style="color:#000000">            </span><span style="color:#a31515">&quot;getActionContext&quot;</span><span style="color:#000000">, </span><span style="color:#a31515">&quot;PostLang&quot;</span><span style="color:#000000">, </span><span style="color:#a31515">&quot;PostUser&quot;</span><span style="color:#000000">, </span><span style="color:#a31515">&quot;PostGetAgenda&quot;</span><span style="color:#000000">, </span><span style="color:#a31515">&quot;@NotNull&quot;</span><span style="color:#000000">,</span></span>
+<span class="odt-code-line"><span style="color:#000000">            </span><span style="color:#a31515">&quot;@EnableAutoConfiguration&quot;</span><span style="color:#000000">, </span><span style="color:#a31515">&quot;HttpSecurity&quot;</span></span>
+<span class="odt-code-line">        ],</span>
+<span class="odt-code-line"><span style="color:#000000">        </span><span style="color:#a31515">&quot;</span><span style="background-color:#fff5ce;color:#a31515">html</span><span style="color:#a31515">&quot;</span><span style="color:#000000">: [</span></span>
+<span class="odt-code-line"><span style="color:#000000">            </span><span style="color:#a31515">&quot;&lt;html&gt;&quot;</span><span style="color:#000000">, </span><span style="color:#a31515">&quot;&lt;/div&gt;&quot;</span><span style="color:#000000">, </span><span style="color:#a31515">&quot;&lt;body&gt;&quot;</span><span style="color:#000000">, </span><span style="color:#a31515">&quot;&lt;script&gt;&quot;</span><span style="color:#000000">, </span><span style="color:#a31515">&quot;href=&quot;</span><span style="color:#000000">, </span><span style="color:#a31515">&quot;&lt;span&gt;&quot;</span><span style="color:#000000">, </span><span style="color:#a31515">&quot;&lt;p&gt;&quot;</span><span style="color:#000000">,</span></span>
+<span class="odt-code-line"><span style="color:#000000">            </span><span style="color:#a31515">&quot;&lt;h2&gt;&quot;</span><span style="color:#000000">, </span><span style="color:#a31515">&quot;&lt;form&quot;</span><span style="color:#000000">, </span><span style="color:#a31515">&quot;&lt;table&quot;</span><span style="color:#000000">, </span><span style="color:#a31515">&quot;&lt;input&quot;</span></span>
+<span class="odt-code-line">        ],</span>
+<span class="odt-code-line"><span style="color:#000000">        </span><span style="color:#a31515">&quot;</span><span style="background-color:#fff5ce;color:#a31515">sql</span><span style="color:#a31515">&quot;</span><span style="color:#000000">: [</span></span>
+<span class="odt-code-line"><span style="color:#000000">            </span><span style="color:#a31515">&quot;SELECT&quot;</span><span style="color:#000000">, </span><span style="color:#a31515">&quot;INSERT INTO&quot;</span><span style="color:#000000">, </span><span style="color:#a31515">&quot;UPDATE&quot;</span><span style="color:#000000">, </span><span style="color:#a31515">&quot;DELETE FROM&quot;</span><span style="color:#000000">, </span><span style="color:#a31515">&quot;WHERE&quot;</span><span style="color:#000000">,</span></span>
+<span class="odt-code-line"><span style="color:#000000">            </span><span style="color:#a31515">&quot;CREATE TABLE&quot;</span><span style="color:#000000">, </span><span style="color:#a31515">&quot;ALTER TABLE&quot;</span></span>
+<span class="odt-code-line">        ],</span>
+<span class="odt-code-line"><span style="color:#000000">        </span><span style="color:#a31515">&quot;</span><span style="background-color:#fff5ce;color:#a31515">python</span><span style="color:#a31515">&quot;</span><span style="color:#000000">: [</span></span>
+<span class="odt-code-line"><span style="color:#000000">            </span><span style="color:#a31515">&quot;def&quot;</span><span style="color:#000000">, </span><span style="color:#a31515">&quot;import&quot;</span><span style="color:#000000">, </span><span style="color:#a31515">&quot;print(&quot;</span><span style="color:#000000">, </span><span style="color:#a31515">&quot;from&quot;</span></span>
+<span class="odt-code-line">        ],</span>
+<span class="odt-code-line"><span style="color:#000000">        </span><span style="color:#a31515">&quot;</span><span style="background-color:#fff5ce;color:#a31515">xml</span><span style="color:#a31515">&quot;</span><span style="color:#000000">: [</span></span>
+<span class="odt-code-line"><span style="color:#000000">            </span><span style="color:#a31515">&quot;&lt;?xml&quot;</span><span style="color:#000000">, </span><span style="color:#a31515">&quot;&lt;project&quot;</span><span style="color:#000000">, </span><span style="color:#a31515">&quot;&lt;version&gt;&quot;</span><span style="color:#000000">, </span><span style="color:#a31515">&quot;&lt;configuration&gt;&quot;</span><span style="color:#000000">, </span><span style="color:#a31515">&quot;&lt;build&gt;&quot;</span><span style="color:#000000">,</span></span>
+<span class="odt-code-line"><span style="color:#000000">            </span><span style="color:#a31515">&quot;&lt;dependency&gt;&quot;</span><span style="color:#000000">, </span><span style="color:#a31515">&quot;&lt;properties&gt;&quot;</span><span style="color:#000000">, </span><span style="color:#a31515">&quot;&lt;configuration&gt;&quot;</span><span style="color:#000000">, </span><span style="color:#a31515">&quot;&lt;start-class&gt;&quot;</span></span>
+<span class="odt-code-line">        ],</span>
+<span class="odt-code-line"><span style="color:#000000">        </span><span style="color:#a31515">&quot;</span><span style="background-color:#fff5ce;color:#a31515">javascript</span><span style="color:#a31515">&quot;</span><span style="color:#000000">: [</span></span>
+<span class="odt-code-line"><span style="color:#000000">            </span><span style="color:#a31515">&quot;use strict&quot;</span><span style="color:#000000">, </span><span style="color:#a31515">&quot;console.log&quot;</span><span style="color:#000000">, </span><span style="color:#a31515">&quot;let&quot;</span><span style="color:#000000">, </span><span style="color:#a31515">&quot;constructor&quot;</span><span style="color:#000000">, </span><span style="color:#a31515">&quot;async&quot;</span><span style="color:#000000">, </span><span style="color:#a31515">&quot;export&quot;</span></span>
+<span class="odt-code-line">        ],</span>
+<span class="odt-code-line"><span style="color:#000000">        </span><span style="color:#a31515">&quot;</span><span style="background-color:#fff5ce;color:#a31515">php</span><span style="color:#a31515">&quot;</span><span style="color:#000000">: [</span></span>
+<span class="odt-code-line"><span style="color:#000000">            </span><span style="color:#a31515">&quot;&lt;?php&quot;</span><span style="color:#000000">, </span><span style="color:#a31515">&quot;declare&quot;</span><span style="color:#000000">, </span><span style="color:#a31515">&quot;require&quot;</span></span>
+<span class="odt-code-line">        ],</span>
+<span class="odt-code-line"><span style="color:#000000">        </span><span style="color:#a31515">&quot;</span><span style="background-color:#fff5ce;color:#a31515">vbscript</span><span style="color:#a31515">&quot;</span><span style="color:#000000">: [</span></span>
+<span class="odt-code-line"><span style="color:#000000">            </span><span style="color:#a31515">&quot;Option&quot;</span><span style="color:#000000">, </span><span style="color:#a31515">&quot;Dim&quot;</span><span style="color:#000000">, </span><span style="color:#a31515">&quot;Explicit&quot;</span></span>
+<span class="odt-code-line">        ],</span>
+<span class="odt-code-line"><span style="color:#000000">        </span><span style="color:#a31515">&quot;</span><span style="background-color:#fff5ce;color:#a31515">markdown</span><span style="color:#a31515">&quot;</span><span style="color:#000000">: [</span></span>
+<span class="odt-code-line"><span style="color:#000000">            </span><span style="color:#a31515">&quot;# &quot;</span><span style="color:#000000">, </span><span style="color:#a31515">&quot;## &quot;</span><span style="color:#000000">, </span><span style="color:#a31515">&quot;### &quot;</span><span style="color:#000000">, </span><span style="color:#a31515">&quot;**&quot;</span><span style="color:#000000">, </span><span style="color:#a31515">&quot;__&quot;</span><span style="color:#000000">, </span><span style="color:#a31515">&quot;![&quot;</span><span style="color:#000000">, </span><span style="color:#a31515">&quot;](&quot;</span><span style="color:#000000">  </span><span style="color:#008000"> # Marcadores típicos de Markdown</span></span>
+<span class="odt-code-line">        ],</span>
+<span class="odt-code-line">    },</span>
+<span class="odt-code-line">}</span>
+</code></pre></div>
+
+<p>Una vez más, estas reglas de detección solo se aplican a los bloques de código en «texto sin formato» y no a los bloques de código enriquecido. Si descubres en tu sitio web que algunos bloques de código no se han resaltado, aquí es donde debes acudir.</p>
+<p>Para cada lenguaje se indican las cadenas de caracteres que permiten identificarlo. Algunas palabras clave pueden aparecer en varios lenguajes. El conversor selecciona el lenguaje para el que ha encontrado más palabras clave. El principio es sencillo: revisa tu código, selecciona palabras clave características y las introduces en estas líneas para el lenguaje adecuado. Ten en cuenta que no puedes poner cualquier cosa como nombre de lenguaje: debes utilizar los nombres reconocidos por MkDocs;</p>
+<p><u><strong>config_presentation</strong></u></p>
+<p>Este archivo define el aspecto de los diferentes elementos del sitio web generado. No es algo que se suela cambiar a menudo:</p>
+<div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-sql">
+<span class="odt-code-line">PRESENTATION = {</span>
+<span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#008000"># -------------------------------------------------------------------------</span></span>
+<span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#008000"># Título del documento</span></span>
+<span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#008000"># -------------------------------------------------------------------------</span></span>
+<span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#a31515">&quot;document_title&quot;</span><span style="color:#000000">: {</span></span>
+<span class="odt-code-line"><span style="color:#000000">        </span><span style="color:#a31515">&quot;tamaño_fuente&quot;</span><span style="color:#000000">: </span><span style="color:#a31515">&quot;28px&quot;</span><span style="color:#000000">,</span></span>
+<span class="odt-code-line"><span style="color:#000000">        </span><span style="color:#a31515">&quot;peso_de_la_fuente&quot;</span><span style="color:#000000">: </span><span style="color:#a31515">&quot;negrita&quot;</span><span style="color:#000000">,</span></span>
+<span class="odt-code-line"><span style="color:#000000">        </span><span style="color:#a31515">&quot;margen_inferior&quot;</span><span style="color:#000000">: </span><span style="color:#a31515">&quot;1em&quot;</span><span style="color:#000000">,</span></span>
+<span class="odt-code-line"><span style="color:#000000">        </span><span style="color:#a31515">&quot;line_height&quot;</span><span style="color:#000000">: </span><span style="color:#a31515">&quot;1.2&quot;</span></span>
+<span class="odt-code-line">    },</span>
+<span class="odt-code-line"></span>
+<span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#008000"># -------------------------------------------------------------------------</span></span>
+<span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#008000"># Bloques de código enriquecidos</span></span>
+<span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#008000"># -------------------------------------------------------------------------</span></span>
+<span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#a31515">&quot;code&quot;</span><span style="color:#000000">: {</span></span>
+<span class="odt-code-line"><span style="color:#000000">        </span><span style="color:#a31515">&quot;rich_line_height&quot;</span><span style="color:#000000">: </span><span style="color:#a31515">&quot;12px&quot;</span><span style="color:#000000">,</span></span>
+<span class="odt-code-line"><span style="color:#000000">        </span><span style="color:#a31515">&quot;rich_font_family&quot;</span><span style="color:#000000">: </span><span style="color:#a31515">&quot;Consolas, &#x27;Courier New&#x27;, monospace&quot;</span><span style="color:#000000">,</span></span>
+<span class="odt-code-line"><span style="color:#000000">        </span><span style="color:#a31515">&quot;rich_font_size&quot;</span><span style="color:#000000">: </span><span style="color:#a31515">&quot;15px&quot;</span></span>
+<span class="odt-code-line">    },</span>
+<span class="odt-code-line"></span>
+<span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#008000"># -------------------------------------------------------------------------</span></span>
+<span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#008000"># Botón Copiar</span></span>
+<span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#008000"># -------------------------------------------------------------------------</span></span>
+<span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#a31515">&quot;copy_button&quot;</span><span style="color:#000000">: {</span></span>
+<span class="odt-code-line"><span style="color:#000000">        </span><span style="color:#a31515">&quot;container&quot;</span><span style="color:#000000">: </span><span style="color:#a31515">&quot;position: relative;&quot;</span><span style="color:#000000">,</span></span>
+<span class="odt-code-line"><span style="color:#000000">        </span><span style="color:#a31515">&quot;btn&quot;</span><span style="color:#000000">: (</span></span>
+<span class="odt-code-line"><span style="color:#000000">            </span><span style="color:#a31515">&quot;position:absolute; top:.5rem; right:.5rem; &quot;</span></span>
+<span class="odt-code-line"><span style="color:#000000">            </span><span style="color:#a31515">&quot;display:inline-flex; align-items:center; justify-content:center; &quot;</span></span>
+<span class="odt-code-line"><span style="color:#000000">            </span><span style="color:#a31515">&quot;gap: 0.35rem; &quot;</span></span>
+<span class="odt-code-line"><span style="color:#000000">            </span><span style="color:#a31515">&quot;padding: 0.25rem 0.6rem; &quot;</span></span>
+<span class="odt-code-line"><span style="color:#000000">            </span><span style="color:#a31515">&quot;font-size:.72rem; font-weight:600; letter-spacing:.01em; &quot;</span></span>
+<span class="odt-code-line"><span style="color:#000000">            </span><span style="color:#a31515">&quot;line-height:1.2; &quot;</span></span>
+<span class="odt-code-line"><span style="color:#000000">            </span><span style="color:#a31515">&quot;border-radius:999px; &quot;</span></span>
+<span class="odt-code-line"><span style="color:#000000">            </span><span style="color:#a31515">&quot;sombra de cuadro: 0 1px 2px rgba(0,0,0,.10); &quot;</span></span>
+<span class="odt-code-line"><span style="color:#000000">            </span><span style="color:#a31515">&quot;backdrop-filter:saturate(180%) blur(6px); &quot;</span></span>
+<span class="odt-code-line"><span style="color:#000000">            </span><span style="color:#a31515">&quot;cursor:pointer; user-select:none; &quot;</span></span>
+<span class="odt-code-line"><span style="color:#000000">            </span><span style="color:#a31515">&quot;transition:transform .08s ease, box-shadow .12s ease, background .12s ease; &quot;</span></span>
+<span class="odt-code-line"><span style="color:#000000">            </span><span style="color:#a31515">&quot;z-index:5;&quot;</span></span>
+<span class="odt-code-line">        ),</span>
+<span class="odt-code-line"><span style="color:#000000">        </span><span style="color:#a31515">&quot;btn_hover&quot;</span><span style="color:#000000">: (</span></span>
+<span class="odt-code-line"><span style="color:#000000">            </span><span style="color:#a31515">&quot;sombra de cuadro: 0 3px 10px rgba(0,0,0,.18); &quot;</span></span>
+<span class="odt-code-line"><span style="color:#000000">            </span><span style="color:#a31515">&quot;transform:translateY(-1px);&quot;</span></span>
+<span class="odt-code-line">        ),</span>
+<span class="odt-code-line"><span style="color:#000000">        </span><span style="color:#a31515">&quot;btn_copied&quot;</span><span style="color:#000000">: </span><span style="color:#a31515">&quot;opacity:.85;&quot;</span></span>
+<span class="odt-code-line">    },</span>
+<span class="odt-code-line"></span>
+<span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#008000"># -------------------------------------------------------------------------</span></span>
+<span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#008000"># Imágenes</span></span>
+<span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#008000"># -------------------------------------------------------------------------</span></span>
+<span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#a31515">&quot;imágenes&quot;</span><span style="color:#000000">: {</span></span>
+<span class="odt-code-line"><span style="color:#000000">        </span><span style="color:#a31515">&quot;sombra&quot;</span><span style="color:#000000">: {</span></span>
+<span class="odt-code-line"><span style="color:#000000">            </span><span style="color:#a31515">&quot;enabled&quot;</span><span style="color:#000000">: </span><span style="color:#0000ff">True</span><span style="color:#000000">,</span></span>
+<span class="odt-code-line"><span style="color:#000000">            </span><span style="color:#a31515">&quot;border_radius&quot;</span><span style="color:#000000">: </span><span style="color:#a31515">&quot;8px&quot;</span></span>
+<span class="odt-code-line">        }</span>
+<span class="odt-code-line">    },</span>
+<span class="odt-code-line"></span>
+<span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#008000"># -------------------------------------------------------------------------</span></span>
+<span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#008000"># Marco / borde del encabezado</span></span>
+<span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#008000"># -------------------------------------------------------------------------</span></span>
+<span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#a31515">&quot;frame&quot;</span><span style="color:#000000">: {</span></span>
+<span class="odt-code-line"><span style="color:#000000">        </span><span style="color:#a31515">&quot;ancho_borde_superior_encabezado&quot;</span><span style="color:#000000">: </span><span style="color:#a31515">&quot;4px&quot;</span></span>
+<span class="odt-code-line">    }</span>
+<span class="odt-code-line">}</span>
+</code></pre></div>
+
+<p>Si lo deseas, puedes modificar el aspecto:</p>
+<ul>
+  <li>líneas 5-10: del título del documento;
+  </li>
+  <li>líneas 15-19: de las líneas de código enriquecido;
+  </li>
+  <li>líneas 24-45: del botón [Copiar], que permite guardar el código en el portapapeles;
+  </li>
+  <li>líneas 50-55: de las sombras de las imágenes;
+  </li>
+  <li>líneas 60-62: del marco que bordea la barra superior de las páginas del sitio;
+  </li>
+</ul>
+
+<p><u><strong>config_colors</strong></u></p>
+<p>En este archivo se controlan los colores del sitio web, principalmente el color de fondo de la barra superior de las páginas:</p>
+<div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-javascript">
+<span class="odt-code-line">COLORS = {</span>
+<span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#a31515">&quot;theme&quot;</span><span style="color:#000000">: {</span></span>
+<span class="odt-code-line"><span style="color:#000000">        </span><span style="color:#a31515">&quot;paleta&quot;</span><span style="color:#000000">: {</span></span>
+<span class="odt-code-line"><span style="color:#000000">            </span><span style="color:#a31515">&quot;light&quot;</span><span style="color:#000000">: {</span></span>
+<span class="odt-code-line"><span style="color:#000000">                </span><span style="color:#a31515">&quot;media&quot;</span><span style="color:#000000">: </span><span style="color:#a31515">&quot;(prefers-color-scheme: light)&quot;</span><span style="color:#000000">,</span></span>
+<span class="odt-code-line"><span style="color:#000000">                </span><span style="color:#a31515">&quot;esquema&quot;</span><span style="color:#000000">: </span><span style="color:#a31515">&quot;predeterminado&quot;</span><span style="color:#000000">,</span></span>
+<span class="odt-code-line"><span style="color:#000000">                </span><span style="color:#a31515">&quot;primario&quot;</span><span style="color:#000000">: </span><span style="color:#a31515">&quot;</span><span style="background-color:#fff5ce;color:#a31515">verde azulado</span><span style="color:#a31515">&quot;</span><span style="color:#000000">,</span></span>
+<span class="odt-code-line"><span style="color:#000000">                </span><span style="color:#a31515">&quot;accent&quot;</span><span style="color:#000000">: </span><span style="color:#a31515">&quot;purple&quot;</span></span>
+<span class="odt-code-line">            },</span>
+<span class="odt-code-line"><span style="color:#000000">            </span><span style="color:#a31515">&quot;dark&quot;</span><span style="color:#000000">: {</span></span>
+<span class="odt-code-line"><span style="color:#000000">                </span><span style="color:#a31515">&quot;media&quot;</span><span style="color:#000000">: </span><span style="color:#a31515">&quot;(prefers-color-scheme: dark)&quot;</span><span style="color:#000000">,</span></span>
+<span class="odt-code-line"><span style="color:#000000">                </span><span style="color:#a31515">&quot;esquema&quot;</span><span style="color:#000000">: </span><span style="color:#a31515">&quot;pizarra&quot;</span><span style="color:#000000">,</span></span>
+<span class="odt-code-line"><span style="color:#000000">                </span><span style="color:#a31515">&quot;primario&quot;</span><span style="color:#000000">: </span><span style="color:#a31515">&quot;</span><span style="background-color:#fff5ce;color:#a31515">verde azulado</span><span style="color:#a31515">&quot;</span><span style="color:#000000">,</span></span>
+<span class="odt-code-line"><span style="color:#000000">                </span><span style="color:#a31515">&quot;accent&quot;</span><span style="color:#000000">: </span><span style="color:#a31515">&quot;purple&quot;</span></span>
+<span class="odt-code-line">            }</span>
+<span class="odt-code-line">        }</span>
+<span class="odt-code-line">    },</span>
+<span class="odt-code-line"></span>
+<span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#a31515">&quot;frame&quot;</span><span style="color:#000000">: {</span></span>
+<span class="odt-code-line"><span style="color:#000000">        </span><span style="color:#008000"># &quot;header_bg_light&quot;: &quot;#1E88E5&quot;, (azul)</span></span>
+<span class="odt-code-line"><span style="color:#000000">        </span><span style="color:#a31515">&quot;header_bg_light&quot;</span><span style="color:#000000">: </span><span style="color:#a31515">&quot;&quot;</span><span style="color:#000000">,</span></span>
+<span class="odt-code-line"><span style="color:#000000">        </span><span style="color:#a31515">&quot;header_bg_dark&quot;</span><span style="color:#000000">: </span><span style="color:#a31515">&quot;&quot;</span><span style="color:#000000">,</span></span>
+<span class="odt-code-line"><span style="color:#000000">        </span><span style="color:#a31515">&quot;header_top_border_light&quot;</span><span style="color:#000000">: </span><span style="color:#a31515">&quot;&quot;</span><span style="color:#000000">,</span></span>
+<span class="odt-code-line"><span style="color:#000000">        </span><span style="color:#a31515">&quot;header_top_border_dark&quot;</span><span style="color:#000000">: </span><span style="color:#a31515">&quot;&quot;</span></span>
+<span class="odt-code-line">    },</span>
+<span class="odt-code-line"></span>
+<span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#a31515">&quot;document_title&quot;</span><span style="color:#000000">: {</span></span>
+<span class="odt-code-line"><span style="color:#000000">        </span><span style="color:#a31515">&quot;color&quot;</span><span style="color:#000000">: </span><span style="color:#a31515">&quot;#2c3e50&quot;</span></span>
+<span class="odt-code-line">    },</span>
+<span class="odt-code-line"></span>
+<span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#a31515">&quot;copy_button&quot;</span><span style="color:#000000">: {</span></span>
+<span class="odt-code-line"><span style="color:#000000">        </span><span style="color:#a31515">&quot;border&quot;</span><span style="color:#000000">: </span><span style="color:#a31515">&quot;rgba(0,150,136,.45)&quot;</span><span style="color:#000000">,</span></span>
+<span class="odt-code-line"><span style="color:#000000">        </span><span style="color:#a31515">&quot;background&quot;</span><span style="color:#000000">: </span><span style="color:#a31515">&quot;rgba(0,150,136,.12)&quot;</span><span style="color:#000000">,</span></span>
+<span class="odt-code-line"><span style="color:#000000">        </span><span style="color:#a31515">&quot;text&quot;</span><span style="color:#000000">: </span><span style="color:#a31515">&quot;rgb(0,150,136)&quot;</span><span style="color:#000000">,</span></span>
+<span class="odt-code-line"><span style="color:#000000">        </span><span style="color:#a31515">&quot;background_hover&quot;</span><span style="color:#000000">: </span><span style="color:#a31515">&quot;rgba(0,150,136,.20)&quot;</span></span>
+<span class="odt-code-line">    },</span>
+<span class="odt-code-line"></span>
+<span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#a31515">&quot;images&quot;</span><span style="color:#000000">: {</span></span>
+<span class="odt-code-line"><span style="color:#000000">        </span><span style="color:#a31515">&quot;sombra&quot;</span><span style="color:#000000">: {</span></span>
+<span class="odt-code-line"><span style="color:#000000">            </span><span style="color:#a31515">&quot;zoomable&quot;</span><span style="color:#000000">: </span><span style="color:#a31515">&quot;0 8px 24px rgba(0,0,0,.28), 0 18px 60px rgba(0,0,0,.20)&quot;</span><span style="color:#000000">,</span></span>
+<span class="odt-code-line"><span style="color:#000000">            </span><span style="color:#a31515">&quot;zoomable_hover&quot;</span><span style="color:#000000">: </span><span style="color:#a31515">&quot;0 12px 30px rgba(0,0,0,.32), 0 26px 80px rgba(0,0,0,.22)&quot;</span><span style="color:#000000">,</span></span>
+<span class="odt-code-line"><span style="color:#000000">            </span><span style="color:#a31515">&quot;lightbox&quot;</span><span style="color:#000000">: </span><span style="color:#a31515">&quot;0 24px 80px rgba(0,0,0,.65)&quot;</span></span>
+<span class="odt-code-line">        }</span>
+<span class="odt-code-line">    }</span>
+<span class="odt-code-line">}</span>
+</code></pre></div>
+
+<p>Aquí hay que tener algunos conocimientos de CSS, cosa que no es mi caso. Solo he utilizado los colores de las líneas 7 y 13, que definen el color de la barra superior.</p>
+<p><u><strong>config_files_to_copy</strong></u></p>
+<p>Este archivo enumera los archivos que deben copiarse en la raíz del sitio web generado:</p>
+<div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-text">
+<span class="odt-code-line">FILES_TO_COPY =[</span>
+<span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#a31515">&quot;google5179c0eaff293e02.html&quot;</span><span style="color:#000000">,</span></span>
+<span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#a31515">&quot;robots.txt&quot;</span><span style="color:#000000">,</span></span>
+<span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#a31515">&quot;word-odt-a-html-ene-2026.pdf&quot;</span><span style="color:#000000">,</span></span>
+<span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#a31515">&quot;word-odt-vers-html-janv-2026.zip&quot;</span></span>
+<span class="odt-code-line">]</span>
+</code></pre></div>
+
+<ul>
+  <li>líneas 2-3: son necesarias para el seguimiento de Google del sitio generado (véase el apartado<a href="realizar-un-seguimiento-del-sitio-con-google-analytics-y-google-search-console.html#refheadingtoc129003578294640">13</a> );
+  </li>
+  <li>líneas 4-5: los archivos que desea copiar en la raíz de su sitio web para ponerlos a disposición de sus visitantes;
+  </li>
+</ul>
+
+<p><u><strong>config</strong></u></p>
+<p>El archivo [config.py] es el archivo de configuración utilizado por los dos convertidores. Reúne toda la información que necesitan. Es un archivo que, en principio, nunca debería modificarse. Es complejo y, por eso, se ha decidido extraer los parámetros de configuración susceptibles de cambiar y colocarlos en archivos externos.</p>
+<div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-python">
+<span class="odt-code-line"><span style="color:#0000ff">from </span><span style="color:#000000">config_urls </span><span style="color:#0000ff">import </span><span style="color:#000000">URLS</span></span>
+<span class="odt-code-line"><span style="color:#0000ff">from </span><span style="color:#000000">config_texts </span><span style="color:#0000ff">import </span><span style="color:#000000">TEXTS</span></span>
+<span class="odt-code-line"><span style="color:#0000ff">from </span><span style="color:#000000">config_code </span><span style="color:#0000ff">import </span><span style="color:#000000">CODE</span></span>
+<span class="odt-code-line"><span style="color:#0000ff">from </span><span style="color:#000000">config_styles </span><span style="color:#0000ff">import </span><span style="color:#000000">STYLES</span></span>
+<span class="odt-code-line"><span style="color:#0000ff">from </span><span style="color:#000000">config_colors </span><span style="color:#0000ff">import </span><span style="color:#000000">COLORS</span></span>
+<span class="odt-code-line"><span style="color:#0000ff">from </span><span style="color:#000000">config_presentation </span><span style="color:#0000ff">import </span><span style="color:#000000">PRESENTATION</span></span>
+<span class="odt-code-line"><span style="color:#0000ff">from </span><span style="color:#000000">config_files_to_copy </span><span style="color:#0000ff">import </span><span style="color:#000000">FILES_TO_COPY</span></span>
+<span class="odt-code-line"></span>
+<span class="odt-code-line">config = {</span>
+<span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#a31515">&quot;toc&quot;</span><span style="color:#000000">: {</span></span>
+<span class="odt-code-line"><span style="color:#000000">        </span><span style="color:#a31515">&quot;home_label&quot;</span><span style="color:#000000">: TEXTS[</span><span style="color:#a31515">&quot;home_label&quot;</span><span style="color:#000000">]</span></span>
+<span class="odt-code-line">    },</span>
+<span class="odt-code-line"></span>
+<span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#a31515">&quot;mkdocs&quot;</span><span style="color:#000000">: {</span></span>
+<span class="odt-code-line"><span style="color:#000000">        </span><span style="color:#a31515">&quot;site_name&quot;</span><span style="color:#000000">: TEXTS[</span><span style="color:#a31515">&quot;site_name&quot;</span><span style="color:#000000">],</span></span>
+<span class="odt-code-line"><span style="color:#000000">        </span><span style="color:#a31515">&quot;site_url&quot;</span><span style="color:#000000">: URLS[</span><span style="color:#a31515">&quot;site_url&quot;</span><span style="color:#000000">],</span></span>
+<span class="odt-code-line"><span style="color:#000000">        </span><span style="color:#a31515">&quot;site_description&quot;</span><span style="color:#000000">: TEXTS[</span><span style="color:#a31515">&quot;site_description&quot;</span><span style="color:#000000">],</span></span>
+<span class="odt-code-line"><span style="color:#000000">        </span><span style="color:#a31515">&quot;site_author&quot;</span><span style="color:#000000">: </span><span style="color:#a31515">&quot;Serge Tahé&quot;</span><span style="color:#000000">,</span></span>
+<span class="odt-code-line"><span style="color:#000000">        </span><span style="color:#a31515">&quot;repo_url&quot;</span><span style="color:#000000">: URLS[</span><span style="color:#a31515">&quot;repo_url&quot;</span><span style="color:#000000">],</span></span>
+<span class="odt-code-line"><span style="color:#000000">        </span><span style="color:#a31515">&quot;repo_name&quot;</span><span style="color:#000000">: </span><span style="color:#a31515">&quot;GitHub&quot;</span><span style="color:#000000">,</span></span>
+<span class="odt-code-line"><span style="color:#000000">        </span><span style="color:#a31515">&quot;use_directory_urls&quot;</span><span style="color:#000000">: </span><span style="color:#0000ff">False</span><span style="color:#000000">,</span></span>
+<span class="odt-code-line"></span>
+<span class="odt-code-line"><span style="color:#000000">        </span><span style="color:#a31515">&quot;theme&quot;</span><span style="color:#000000">: {</span></span>
+<span class="odt-code-line"><span style="color:#000000">            </span><span style="color:#a31515">&quot;name&quot;</span><span style="color:#000000">: </span><span style="color:#a31515">&quot;material&quot;</span><span style="color:#000000">,</span></span>
+<span class="odt-code-line"><span style="color:#000000">            </span><span style="color:#a31515">&quot;custom_dir&quot;</span><span style="color:#000000">: </span><span style="color:#a31515">&quot;overrides&quot;</span><span style="color:#000000">,</span></span>
+<span class="odt-code-line"><span style="color:#000000">            </span><span style="color:#a31515">&quot;features&quot;</span><span style="color:#000000">: [</span></span>
+<span class="odt-code-line"><span style="color:#000000">                </span><span style="color:#a31515">&quot;navigation.sections&quot;</span><span style="color:#000000">,</span></span>
+<span class="odt-code-line"><span style="color:#000000">                </span><span style="color:#a31515">&quot;navegación.índices&quot;</span><span style="color:#000000">,</span></span>
+<span class="odt-code-line"><span style="color:#000000">                </span><span style="color:#a31515">&quot;navigation.expand&quot;</span><span style="color:#000000">,</span></span>
+<span class="odt-code-line"><span style="color:#000000">                </span><span style="color:#a31515">&quot;toc.integrate&quot;</span><span style="color:#000000">,</span></span>
+<span class="odt-code-line"><span style="color:#000000">                </span><span style="color:#a31515">&quot;navegación.top&quot;</span></span>
+<span class="odt-code-line">            ],</span>
+<span class="odt-code-line"><span style="color:#000000">            </span><span style="color:#a31515">&quot;paleta&quot;</span><span style="color:#000000">: [</span></span>
+<span class="odt-code-line">                {</span>
+<span class="odt-code-line"><span style="color:#000000">                    </span><span style="color:#a31515">&quot;media&quot;</span><span style="color:#000000">: COLORS[</span><span style="color:#a31515">&quot;theme&quot;</span><span style="color:#000000">][</span><span style="color:#a31515">&quot;palette&quot;</span><span style="color:#000000">][</span><span style="color:#a31515">&quot;light&quot;</span><span style="color:#000000">][</span><span style="color:#a31515">&quot;media&quot;</span><span style="color:#000000">],</span></span>
+<span class="odt-code-line"><span style="color:#000000">                    </span><span style="color:#a31515">&quot;esquema&quot;</span><span style="color:#000000">: COLORS[</span><span style="color:#a31515">&quot;tema&quot;</span><span style="color:#000000">][</span><span style="color:#a31515">&quot;paleta&quot;</span><span style="color:#000000">][</span><span style="color:#a31515">&quot;claro&quot;</span><span style="color:#000000">][</span><span style="color:#a31515">&quot;esquema&quot;</span><span style="color:#000000">],</span></span>
+<span class="odt-code-line"><span style="color:#000000">                    </span><span style="color:#a31515">&quot;primary&quot;</span><span style="color:#000000">: COLORS[</span><span style="color:#a31515">&quot;theme&quot;</span><span style="color:#000000">][</span><span style="color:#a31515">&quot;palette&quot;</span><span style="color:#000000">][</span><span style="color:#a31515">&quot;light&quot;</span><span style="color:#000000">][</span><span style="color:#a31515">&quot;primary&quot;</span><span style="color:#000000">],</span></span>
+<span class="odt-code-line"><span style="color:#000000">                    </span><span style="color:#a31515">&quot;accent&quot;</span><span style="color:#000000">: COLORS[</span><span style="color:#a31515">&quot;theme&quot;</span><span style="color:#000000">][</span><span style="color:#a31515">&quot;palette&quot;</span><span style="color:#000000">][</span><span style="color:#a31515">&quot;light&quot;</span><span style="color:#000000">][</span><span style="color:#a31515">&quot;accent&quot;</span><span style="color:#000000">],</span></span>
+<span class="odt-code-line"><span style="color:#000000">                    </span><span style="color:#a31515">&quot;toggle&quot;</span><span style="color:#000000">: {</span></span>
+<span class="odt-code-line"><span style="color:#000000">                        </span><span style="color:#a31515">&quot;icono&quot;</span><span style="color:#000000">: </span><span style="color:#a31515">&quot;material/brightness-7&quot;</span><span style="color:#000000">,</span></span>
+<span class="odt-code-line"><span style="color:#000000">                        </span><span style="color:#a31515">&quot;name&quot;</span><span style="color:#000000">: TEXTS[</span><span style="color:#a31515">&quot;toggle_to_dark&quot;</span><span style="color:#000000">]</span></span>
+<span class="odt-code-line">                    }</span>
+<span class="odt-code-line">                },</span>
+<span class="odt-code-line">                {</span>
+<span class="odt-code-line"><span style="color:#000000">                    </span><span style="color:#a31515">&quot;media&quot;</span><span style="color:#000000">: COLORS[</span><span style="color:#a31515">&quot;theme&quot;</span><span style="color:#000000">][</span><span style="color:#a31515">&quot;palette&quot;</span><span style="color:#000000">][</span><span style="color:#a31515">&quot;dark&quot;</span><span style="color:#000000">][</span><span style="color:#a31515">&quot;media&quot;</span><span style="color:#000000">],</span></span>
+<span class="odt-code-line"><span style="color:#000000">                    </span><span style="color:#a31515">&quot;scheme&quot;</span><span style="color:#000000">: COLORS[</span><span style="color:#a31515">&quot;theme&quot;</span><span style="color:#000000">][</span><span style="color:#a31515">&quot;palette&quot;</span><span style="color:#000000">][</span><span style="color:#a31515">&quot;dark&quot;</span><span style="color:#000000">][</span><span style="color:#a31515">&quot;scheme&quot;</span><span style="color:#000000">],</span></span>
+<span class="odt-code-line"><span style="color:#000000">                    </span><span style="color:#a31515">&quot;primary&quot;</span><span style="color:#000000">: COLORS[</span><span style="color:#a31515">&quot;theme&quot;</span><span style="color:#000000">][</span><span style="color:#a31515">&quot;palette&quot;</span><span style="color:#000000">][</span><span style="color:#a31515">&quot;dark&quot;</span><span style="color:#000000">][</span><span style="color:#a31515">&quot;primary&quot;</span><span style="color:#000000">],</span></span>
+<span class="odt-code-line"><span style="color:#000000">                    </span><span style="color:#a31515">&quot;accent&quot;</span><span style="color:#000000">: COLORS[</span><span style="color:#a31515">&quot;theme&quot;</span><span style="color:#000000">][</span><span style="color:#a31515">&quot;palette&quot;</span><span style="color:#000000">][</span><span style="color:#a31515">&quot;dark&quot;</span><span style="color:#000000">][</span><span style="color:#a31515">&quot;accent&quot;</span><span style="color:#000000">],</span></span>
+<span class="odt-code-line"><span style="color:#000000">                    </span><span style="color:#a31515">&quot;toggle&quot;</span><span style="color:#000000">: {</span></span>
+<span class="odt-code-line"><span style="color:#000000">                        </span><span style="color:#a31515">&quot;icon&quot;</span><span style="color:#000000">: </span><span style="color:#a31515">&quot;material/brightness-4&quot;</span><span style="color:#000000">,</span></span>
+<span class="odt-code-line"><span style="color:#000000">                        </span><span style="color:#a31515">&quot;name&quot;</span><span style="color:#000000">: TEXTS[</span><span style="color:#a31515">&quot;toggle_to_light&quot;</span><span style="color:#000000">]</span></span>
+<span class="odt-code-line">                    }</span>
+<span class="odt-code-line">                }</span>
+<span class="odt-code-line">            ]</span>
+<span class="odt-code-line">        },</span>
+<span class="odt-code-line"></span>
+<span class="odt-code-line"><span style="color:#000000">        </span><span style="color:#a31515">&quot;markdown_extensions&quot;</span><span style="color:#000000">: [</span></span>
+<span class="odt-code-line"><span style="color:#000000">            </span><span style="color:#a31515">&quot;admonition&quot;</span><span style="color:#000000">,</span></span>
+<span class="odt-code-line"><span style="color:#000000">            </span><span style="color:#a31515">&quot;attr_list&quot;</span><span style="color:#000000">,</span></span>
+<span class="odt-code-line"><span style="color:#000000">            </span><span style="color:#a31515">&quot;pymdownx.superfences&quot;</span><span style="color:#000000">,</span></span>
+<span class="odt-code-line"><span style="color:#000000">            </span><span style="color:#a31515">&quot;pymdownx.mark&quot;</span><span style="color:#000000">,</span></span>
+<span class="odt-code-line">            {</span>
+<span class="odt-code-line"><span style="color:#000000">                </span><span style="color:#a31515">&quot;pymdownx.highlight&quot;</span><span style="color:#000000">: {</span></span>
+<span class="odt-code-line"><span style="color:#000000">                    </span><span style="color:#a31515">&quot;anchor_linenums&quot;</span><span style="color:#000000">: </span><span style="color:#0000ff">True</span><span style="color:#000000">,</span></span>
+<span class="odt-code-line"><span style="color:#000000">                    </span><span style="color:#a31515">&quot;linenums&quot;</span><span style="color:#000000">: </span><span style="color:#0000ff">None</span></span>
+<span class="odt-code-line">                }</span>
+<span class="odt-code-line">            },</span>
+<span class="odt-code-line"><span style="color:#000000">            </span><span style="color:#a31515">&quot;md_in_html&quot;</span><span style="color:#000000">,</span></span>
+<span class="odt-code-line"><span style="color:#000000">            </span><span style="color:#a31515">&quot;footnotes&quot;</span></span>
+<span class="odt-code-line">        ],</span>
+<span class="odt-code-line"></span>
+<span class="odt-code-line"><span style="color:#000000">        </span><span style="color:#a31515">&quot;extra_javascript&quot;</span><span style="color:#000000">: [</span></span>
+<span class="odt-code-line"><span style="color:#000000">            </span><span style="color:#a31515">&quot;javascripts/focus.js&quot;</span></span>
+<span class="odt-code-line">        ],</span>
+<span class="odt-code-line"><span style="color:#000000">        </span><span style="color:#a31515">&quot;extra_css&quot;</span><span style="color:#000000">: [</span></span>
+<span class="odt-code-line"><span style="color:#000000">            </span><span style="color:#a31515">&quot;stylesheets/focus.css&quot;</span></span>
+<span class="odt-code-line">        ]</span>
+<span class="odt-code-line">    },</span>
+<span class="odt-code-line"></span>
+<span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#a31515">&quot;footer&quot;</span><span style="color:#000000">: (</span></span>
+<span class="odt-code-line"><span style="color:#000000">        </span><span style="color:#a31515">&quot;{% block footer %}\n&quot;</span></span>
+<span class="odt-code-line"><span style="color:#000000">        </span><span style="color:#a31515">&quot;  &lt;div class=\&quot;md-footer-meta md-typeset\&quot;&gt;\n&quot;</span></span>
+<span class="odt-code-line"><span style="color:#000000">        </span><span style="color:#a31515">&quot;    &lt;div class=\&quot;md-footer-meta__inner\&quot;&gt;\n\n&quot;</span></span>
+<span class="odt-code-line"><span style="color:#000000">        </span><span style="color:#a31515">&quot;      &lt;div&gt;\n&quot;</span></span>
+<span class="odt-code-line"><span style="color:#000000">        </span><span style="color:#0000ff">f</span><span style="color:#a31515">&quot;        &lt;a href=\&quot;</span><span style="color:#000000">{URLS[</span><span style="color:#a31515">&#x27;author_site&#x27;</span><span style="color:#000000">]}</span><span style="color:#a31515">\&quot; target=\&quot;_blank\&quot;&gt;\n&quot;</span></span>
+<span class="odt-code-line"><span style="color:#000000">        </span><span style="color:#0000ff">f</span><span style="color:#a31515">&quot;          </span><span style="color:#000000">{URLS[</span><span style="color:#a31515">&#x27;author_site&#x27;</span><span style="color:#000000">]}</span><span style="color:#a31515">\n&quot;</span></span>
+<span class="odt-code-line"><span style="color:#000000">        </span><span style="color:#a31515">&quot;        &lt;/a&gt;\n&quot;</span></span>
+<span class="odt-code-line"><span style="color:#000000">        </span><span style="color:#a31515">&quot;        &lt;br&gt;\n&quot;</span></span>
+<span class="odt-code-line"><span style="color:#000000">        </span><span style="color:#0000ff">f</span><span style="color:#a31515">&quot;        </span><span style="color:#000000">{TEXTS[</span><span style="color:#a31515">&#x27;footer_license_sentence&#x27;</span><span style="color:#000000">]}</span><span style="color:#a31515">\n&quot;</span></span>
+<span class="odt-code-line"><span style="color:#000000">        </span><span style="color:#a31515">&quot;      &lt;/div&gt;\n\n&quot;</span></span>
+<span class="odt-code-line"><span style="color:#000000">        </span><span style="color:#a31515">&quot;    &lt;/div&gt;\n&quot;</span></span>
+<span class="odt-code-line"><span style="color:#000000">        </span><span style="color:#a31515">&quot;  &lt;/div&gt;\n&quot;</span></span>
+<span class="odt-code-line"><span style="color:#000000">        </span><span style="color:#a31515">&quot;{% endblock %}&quot;</span></span>
+<span class="odt-code-line">    ),</span>
+<span class="odt-code-line"></span>
+<span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#a31515">&quot;extra&quot;</span><span style="color:#000000">: {</span></span>
+<span class="odt-code-line"><span style="color:#000000">        </span><span style="color:#a31515">&quot;analytics&quot;</span><span style="color:#000000">: {</span></span>
+<span class="odt-code-line"><span style="color:#000000">            </span><span style="color:#a31515">&quot;provider&quot;</span><span style="color:#000000">: </span><span style="color:#a31515">&quot;google&quot;</span><span style="color:#000000">,</span></span>
+<span class="odt-code-line"><span style="color:#000000">            </span><span style="color:#a31515">&quot;property&quot;</span><span style="color:#000000">: </span><span style="color:#a31515">&quot;G-XXXXXXXX&quot;</span></span>
+<span class="odt-code-line">        }</span>
+<span class="odt-code-line">    },</span>
+<span class="odt-code-line"></span>
+<span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#a31515">&quot;document_title&quot;</span><span style="color:#000000">: {</span></span>
+<span class="odt-code-line"><span style="color:#000000">        </span><span style="color:#a31515">&quot;style_names&quot;</span><span style="color:#000000">: STYLES[</span><span style="color:#a31515">&quot;style_names&quot;</span><span style="color:#000000">],</span></span>
+<span class="odt-code-line"><span style="color:#000000">        </span><span style="color:#a31515">&quot;css&quot;</span><span style="color:#000000">: (</span></span>
+<span class="odt-code-line"><span style="color:#000000">            </span><span style="color:#0000ff">f</span><span style="color:#a31515">&quot;font-size: </span><span style="color:#000000">{PRESENTATION[</span><span style="color:#a31515">&#x27;document_title&#x27;</span><span style="color:#000000">][</span><span style="color:#a31515">&#x27;font_size&#x27;</span><span style="color:#000000">]}</span><span style="color:#a31515">; &quot;</span></span>
+<span class="odt-code-line"><span style="color:#000000">            </span><span style="color:#0000ff">f</span><span style="color:#a31515">&quot;font-weight: </span><span style="color:#000000">{PRESENTATION[</span><span style="color:#a31515">&#x27;document_title&#x27;</span><span style="color:#000000">][</span><span style="color:#a31515">&#x27;font_weight&#x27;</span><span style="color:#000000">]}</span><span style="color:#a31515">; &quot;</span></span>
+<span class="odt-code-line"><span style="color:#000000">            </span><span style="color:#0000ff">f</span><span style="color:#a31515">&quot;margin-bottom: </span><span style="color:#000000">{PRESENTATION[</span><span style="color:#a31515">&#x27;document_title&#x27;</span><span style="color:#000000">][</span><span style="color:#a31515">&#x27;margin_bottom&#x27;</span><span style="color:#000000">]}</span><span style="color:#a31515">; &quot;</span></span>
+<span class="odt-code-line"><span style="color:#000000">            </span><span style="color:#0000ff">f</span><span style="color:#a31515">&quot;line-height: </span><span style="color:#000000">{PRESENTATION[</span><span style="color:#a31515">&#x27;document_title&#x27;</span><span style="color:#000000">][</span><span style="color:#a31515">&#x27;line_height&#x27;</span><span style="color:#000000">]}</span><span style="color:#a31515">; &quot;</span></span>
+<span class="odt-code-line"><span style="color:#000000">            </span><span style="color:#0000ff">f</span><span style="color:#a31515">&quot;color: </span><span style="color:#000000">{COLORS[</span><span style="color:#a31515">&#x27;document_title&#x27;</span><span style="color:#000000">][</span><span style="color:#a31515">&#x27;color&#x27;</span><span style="color:#000000">]}</span><span style="color:#a31515">;&quot;</span></span>
+<span class="odt-code-line">        )</span>
+<span class="odt-code-line">    },</span>
+<span class="odt-code-line"></span>
+<span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#a31515">&quot;code&quot;</span><span style="color:#000000">: {</span></span>
+<span class="odt-code-line"><span style="color:#000000">        </span><span style="color:#a31515">&quot;case_insensitive_languages&quot;</span><span style="color:#000000">: [</span><span style="color:#a31515">&quot;sql&quot;</span><span style="color:#000000">, </span><span style="color:#a31515">&quot;html&quot;</span><span style="color:#000000">, </span><span style="color:#a31515">&quot;vbnet&quot;</span><span style="color:#000000">, </span><span style="color:#a31515">&quot;vbscript&quot;</span><span style="color:#000000">],</span></span>
+<span class="odt-code-line"><span style="color:#000000">        </span><span style="color:#a31515">&quot;palabras_clave_de_estilo&quot;</span><span style="color:#000000">: [</span><span style="color:#a31515">&quot;código&quot;</span><span style="color:#000000">],</span></span>
+<span class="odt-code-line"><span style="color:#000000">        </span><span style="color:#a31515">&quot;default_language&quot;</span><span style="color:#000000">: </span><span style="color:#a31515">&quot;text&quot;</span><span style="color:#000000">,</span></span>
+<span class="odt-code-line"><span style="color:#000000">        </span><span style="color:#a31515">&quot;rich_line_height&quot;</span><span style="color:#000000">: PRESENTATION[</span><span style="color:#a31515">&quot;code&quot;</span><span style="color:#000000">][</span><span style="color:#a31515">&quot;rich_line_height&quot;</span><span style="color:#000000">],</span></span>
+<span class="odt-code-line"><span style="color:#000000">        </span><span style="color:#a31515">&quot;rich_font_family&quot;</span><span style="color:#000000">: PRESENTATION[</span><span style="color:#a31515">&quot;code&quot;</span><span style="color:#000000">][</span><span style="color:#a31515">&quot;rich_font_family&quot;</span><span style="color:#000000">],</span></span>
+<span class="odt-code-line"><span style="color:#000000">        </span><span style="color:#a31515">&quot;rich_font_size&quot;</span><span style="color:#000000">: PRESENTACIÓN[</span><span style="color:#a31515">&quot;code&quot;</span><span style="color:#000000">][</span><span style="color:#a31515">&quot;rich_font_size&quot;</span><span style="color:#000000">],</span></span>
+<span class="odt-code-line"><span style="color:#000000">        </span><span style="color:#a31515">&quot;detection_rules&quot;</span><span style="color:#000000">: CODE[</span><span style="color:#a31515">&quot;detection_rules&quot;</span><span style="color:#000000">],</span></span>
+<span class="odt-code-line"><span style="color:#000000">        </span><span style="color:#a31515">&quot;copy_button&quot;</span><span style="color:#000000">: </span><span style="color:#0000ff">True</span><span style="color:#000000">,</span></span>
+<span class="odt-code-line"><span style="color:#000000">        </span><span style="color:#a31515">&quot;copy_label&quot;</span><span style="color:#000000">: TEXTOS[</span><span style="color:#a31515">&quot;copy_label&quot;</span><span style="color:#000000">],</span></span>
+<span class="odt-code-line"><span style="color:#000000">        </span><span style="color:#a31515">&quot;copy_copied_label&quot;</span><span style="color:#000000">: TEXTS[</span><span style="color:#a31515">&quot;copy_copied_label&quot;</span><span style="color:#000000">],</span></span>
+<span class="odt-code-line"><span style="color:#000000">        </span><span style="color:#a31515">&quot;copy_only_recognized_language&quot;</span><span style="color:#000000">: </span><span style="color:#0000ff">True</span><span style="color:#000000">,</span></span>
+<span class="odt-code-line"><span style="color:#000000">        </span><span style="color:#a31515">&quot;copy_min_lines&quot;</span><span style="color:#000000">: 4,</span></span>
+<span class="odt-code-line"><span style="color:#000000">        </span><span style="color:#a31515">&quot;copy_allow_pygments_heuristic&quot;</span><span style="color:#000000">: </span><span style="color:#0000ff">True</span><span style="color:#000000">,</span></span>
+<span class="odt-code-line"><span style="color:#000000">        </span><span style="color:#a31515">&quot;copy_style&quot;</span><span style="color:#000000">: {</span></span>
+<span class="odt-code-line"><span style="color:#000000">            </span><span style="color:#a31515">&quot;container&quot;</span><span style="color:#000000">: PRESENTATION[</span><span style="color:#a31515">&quot;copy_button&quot;</span><span style="color:#000000">][</span><span style="color:#a31515">&quot;container&quot;</span><span style="color:#000000">],</span></span>
+<span class="odt-code-line"><span style="color:#000000">            </span><span style="color:#a31515">&quot;btn&quot;</span><span style="color:#000000">: (</span></span>
+<span class="odt-code-line"><span style="color:#000000">                PRESENTATION[</span><span style="color:#a31515">&quot;copy_button&quot;</span><span style="color:#000000">][</span><span style="color:#a31515">&quot;btn&quot;</span><span style="color:#000000">]</span></span>
+<span class="odt-code-line"><span style="color:#000000">                + </span><span style="color:#0000ff">f</span><span style="color:#a31515">&quot;border:1px solid </span><span style="color:#000000">{COLORS[</span><span style="color:#a31515">&#x27;copy_button&#x27;</span><span style="color:#000000">][</span><span style="color:#a31515">&#x27;border&#x27;</span><span style="color:#000000">]}</span><span style="color:#a31515">; &quot;</span></span>
+<span class="odt-code-line"><span style="color:#000000">                + </span><span style="color:#0000ff">f</span><span style="color:#a31515">&quot;background:</span><span style="color:#000000">{COLORS[</span><span style="color:#a31515">&#x27;copy_button&#x27;</span><span style="color:#000000">][</span><span style="color:#a31515">&#x27;background&#x27;</span><span style="color:#000000">]}</span><span style="color:#a31515">; &quot;</span></span>
+<span class="odt-code-line"><span style="color:#000000">                + </span><span style="color:#0000ff">f</span><span style="color:#a31515">&quot;color:</span><span style="color:#000000">{COLORS[</span><span style="color:#a31515">&#x27;copy_button&#x27;</span><span style="color:#000000">][</span><span style="color:#a31515">&#x27;text&#x27;</span><span style="color:#000000">]}</span><span style="color:#a31515">; &quot;</span></span>
+<span class="odt-code-line">            ),</span>
+<span class="odt-code-line"><span style="color:#000000">            </span><span style="color:#a31515">&quot;btn_hover&quot;</span><span style="color:#000000">: (</span></span>
+<span class="odt-code-line"><span style="color:#000000">                </span><span style="color:#0000ff">f</span><span style="color:#a31515">&quot;background:</span><span style="color:#000000">{COLORS[</span><span style="color:#a31515">&#x27;copy_button&#x27;</span><span style="color:#000000">][</span><span style="color:#a31515">&#x27;background_hover&#x27;</span><span style="color:#000000">]}</span><span style="color:#a31515">; &quot;</span></span>
+<span class="odt-code-line"><span style="color:#000000">                + PRESENTATION[</span><span style="color:#a31515">&quot;copy_button&quot;</span><span style="color:#000000">][</span><span style="color:#a31515">&quot;btn_hover&quot;</span><span style="color:#000000">]</span></span>
+<span class="odt-code-line">            ),</span>
+<span class="odt-code-line"><span style="color:#000000">            </span><span style="color:#a31515">&quot;btn_copied&quot;</span><span style="color:#000000">: PRESENTATION[</span><span style="color:#a31515">&quot;copy_button&quot;</span><span style="color:#000000">][</span><span style="color:#a31515">&quot;btn_copied&quot;</span><span style="color:#000000">]</span></span>
+<span class="odt-code-line">        }</span>
+<span class="odt-code-line">    },</span>
+<span class="odt-code-line"></span>
+<span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#a31515">&quot;imágenes&quot;</span><span style="color:#000000">: {</span></span>
+<span class="odt-code-line"><span style="color:#000000">        </span><span style="color:#a31515">&quot;shadow&quot;</span><span style="color:#000000">: {</span></span>
+<span class="odt-code-line"><span style="color:#000000">            </span><span style="color:#a31515">&quot;enabled&quot;</span><span style="color:#000000">: PRESENTACIÓN[</span><span style="color:#a31515">&quot;imágenes&quot;</span><span style="color:#000000">][</span><span style="color:#a31515">&quot;sombra&quot;</span><span style="color:#000000">][</span><span style="color:#a31515">&quot;enabled&quot;</span><span style="color:#000000">],</span></span>
+<span class="odt-code-line"><span style="color:#000000">            </span><span style="color:#a31515">&quot;border_radius&quot;</span><span style="color:#000000">: PRESENTATION[</span><span style="color:#a31515">&quot;images&quot;</span><span style="color:#000000">][</span><span style="color:#a31515">&quot;shadow&quot;</span><span style="color:#000000">][</span><span style="color:#a31515">&quot;border_radius&quot;</span><span style="color:#000000">],</span></span>
+<span class="odt-code-line"><span style="color:#000000">            </span><span style="color:#a31515">&quot;zoomable&quot;</span><span style="color:#000000">: COLORS[</span><span style="color:#a31515">&quot;images&quot;</span><span style="color:#000000">][</span><span style="color:#a31515">&quot;shadow&quot;</span><span style="color:#000000">][</span><span style="color:#a31515">&quot;zoomable&quot;</span><span style="color:#000000">],</span></span>
+<span class="odt-code-line"><span style="color:#000000">            </span><span style="color:#a31515">&quot;zoomable_hover&quot;</span><span style="color:#000000">: COLORS[</span><span style="color:#a31515">&quot;images&quot;</span><span style="color:#000000">][</span><span style="color:#a31515">&quot;shadow&quot;</span><span style="color:#000000">][</span><span style="color:#a31515">&quot;zoomable_hover&quot;</span><span style="color:#000000">],</span></span>
+<span class="odt-code-line"><span style="color:#000000">            </span><span style="color:#a31515">&quot;lightbox&quot;</span><span style="color:#000000">: COLORS[</span><span style="color:#a31515">&quot;images&quot;</span><span style="color:#000000">][</span><span style="color:#a31515">&quot;shadow&quot;</span><span style="color:#000000">][</span><span style="color:#a31515">&quot;lightbox&quot;</span><span style="color:#000000">],</span></span>
+<span class="odt-code-line">        }</span>
+<span class="odt-code-line">    },</span>
+<span class="odt-code-line"></span>
+<span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#a31515">&quot;frame&quot;</span><span style="color:#000000">: {</span></span>
+<span class="odt-code-line"><span style="color:#000000">        </span><span style="color:#a31515">&quot;header_bg_light&quot;</span><span style="color:#000000">: COLORS[</span><span style="color:#a31515">&quot;frame&quot;</span><span style="color:#000000">][</span><span style="color:#a31515">&quot;header_bg_light&quot;</span><span style="color:#000000">],</span></span>
+<span class="odt-code-line"><span style="color:#000000">        </span><span style="color:#a31515">&quot;header_bg_dark&quot;</span><span style="color:#000000">: COLORS[</span><span style="color:#a31515">&quot;frame&quot;</span><span style="color:#000000">][</span><span style="color:#a31515">&quot;header_bg_dark&quot;</span><span style="color:#000000">],</span></span>
+<span class="odt-code-line"><span style="color:#000000">        </span><span style="color:#a31515">&quot;header_top_border_light&quot;</span><span style="color:#000000">: COLORS[</span><span style="color:#a31515">&quot;frame&quot;</span><span style="color:#000000">][</span><span style="color:#a31515">&quot;header_top_border_light&quot;</span><span style="color:#000000">],</span></span>
+<span class="odt-code-line"><span style="color:#000000">        </span><span style="color:#a31515">&quot;header_top_border_dark&quot;</span><span style="color:#000000">: COLORS[</span><span style="color:#a31515">&quot;frame&quot;</span><span style="color:#000000">][</span><span style="color:#a31515">&quot;header_top_border_dark&quot;</span><span style="color:#000000">],</span></span>
+<span class="odt-code-line"><span style="color:#000000">        </span><span style="color:#a31515">&quot;header_top_border_width&quot;</span><span style="color:#000000">: PRESENTATION[</span><span style="color:#a31515">&quot;frame&quot;</span><span style="color:#000000">][</span><span style="color:#a31515">&quot;header_top_border_width&quot;</span><span style="color:#000000">]</span></span>
+<span class="odt-code-line">    },</span>
+<span class="odt-code-line"></span>
+<span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#a31515">&quot;files_to_copy&quot;</span><span style="color:#000000">: FILES_TO_COPY,</span></span>
+<span class="odt-code-line"></span>
+<span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#a31515">&quot;debug&quot;</span><span style="color:#000000">: </span><span style="color:#0000ff">True</span></span>
+<span class="odt-code-line">}</span>
+</code></pre></div>
+
+<ul>
+  <li>líneas 1-7: se importan todos los archivos de configuración;
+  </li>
+  <li>línea 9: el archivo de configuración es un script de Python. Define una única variable [config]. Esta es un diccionario que contendrá todos los valores de la configuración;
+  </li>
+  <li>línea 11: el texto del enlace «Inicio»;
+  </li>
+  <li>línea 14: el diccionario [mkdocs] configurará el archivo [mkdocs.yml] generado por el conversor Gemini / ChatGPT. Este archivo se utiliza posteriormente en el script [build] para construir un sitio HTML a partir del sitio MkDocs generado por el conversor;
+  </li>
+  <li>líneas 15-20: configuran el sitio GitHub que alojará el sitio HTML creado a partir del documento ODT / DOCX (véase el apartado<a href="alojar-el-sitio-html-en-github.html#refheadingtoc55961226647236">12</a> )
+  </li>
+  <li>línea 21: esta línea es importante. Si no está presente, en lugar de mostrar una página HTML, el navegador abrirá la carpeta de dicha página;
+  </li>
+  <li>línea 24: MkDocs ofrece varios temas para un sitio MkDocs / HTML. Aquí hemos elegido el tema «material», línea 24;
+  </li>
+  <li>líneas 27-31: configuración de la navegación en el sitio. Esta se realizará mediante una tabla de contenidos situada en la columna izquierda de la página mostrada (línea 30);
+  </li>
+  <li>líneas 33-54: definen dos paletas de colores: el modo claro (líneas 35-42) o el modo oscuro (líneas 45-52). Un icono en la barra superior de las páginas mostradas permite cambiar de uno a otro;
+  </li>
+  <li>líneas 57-70: extensiones del lenguaje Markdown utilizado por MkDocs. Estas extensiones han sido generadas por Gemini a raíz de algunas de mis peticiones;
+  </li>
+  <li>línea 73: el script [focus.js] es un script de JavaScript generado por Gemini. Está asociado al botón de la barra superior del sitio para mostrar u ocultar la tabla de contenidos;
+  </li>
+  <li>línea 76: el CSS utilizado por este botón;
+  </li>
+  <li>líneas 80-95: la definición del pie de página del sitio HTML. Ha sido generado por Gemini a partir de un texto de ejemplo que le proporcioné;
+  </li>
+  <li>líneas 97-100: definición del marcador de Google Analytics (GA) que permitirá realizar un seguimiento de las visitas al sitio;
+  </li>
+  <li>línea 99: introduzca aquí su código de GA;
+  </li>
+  <li>líneas 103-112: el estilo del título del documento, el que aparece en el documento ODT/DOCX antes del primer título de nivel 1. El estilo indicado en la línea 104 cambia con cada documento ODT. En cambio, puede ser constante («Título») para los documentos DOCX. Por defecto, el conversor registra los estilos de todos los párrafos del documento ODT/DOCX que preceden al primer título de nivel 1. Por lo tanto, hay que realizar una primera ejecución, localizar el estilo del párrafo que se quiere convertir en título y, a continuación, introducirlo en el archivo [config_styles];;
+  </li>
+  <li>líneas 105-111: el estilo CSS que desea aplicar al título del documento. Este título se encuentra en la página «Inicio», la primera página que se muestra al abrir el sitio;
+  </li>
+  <li>línea 115: aquí se introducen los idiomas que no distinguen entre mayúsculas y minúsculas;
+  </li>
+  <li>línea 116: los bloques de código se identifican por sus estilos en el documento ODT / DOCX. Puede haber varios. En la línea 116, se incluyen todas las palabras clave que permiten detectar un estilo de código. En mis documentos, todos mis estilos de código tienen la palabra «code» en su nombre. Y ningún otro estilo tiene esa palabra en su nombre. Por lo tanto, me basta con poner una sola palabra clave. Si hay varias, se separan con comas en la línea 116;
+  </li>
+  <li>línea 117: establece el lenguaje por defecto. En el caso de un bloque de código «texto sin formato», si no se detecta ningún lenguaje, el lenguaje por defecto será «texto». Para MkDocs, esto significa un bloque de código sin coloración sintáctica. Es, por ejemplo, el caso de los resultados de ejecución;
+  </li>
+  <li>línea 121: esta configuración se utiliza para los códigos en «texto sin formato» que inicialmente no tienen coloración sintáctica. Estas líneas tienen como objetivo proporcionarles una según el lenguaje utilizado en el bloque de código. <b>Cabe señalar que si todos sus códigos están formateados porque proceden de un IDE como Eclipse, Visual Studio, etc., y no tiene ningún bloque de código de «texto sin formato» asociado a un lenguaje, entonces no tiene que introducir nada en esta parte de la configuración. Puede dejar vacías las tablas asociadas a los lenguajes. </b>Todo esto se lleva a cabo en el archivo de configuración del código [config_code];
+  </li>
+  <li>líneas 118-120: estas líneas se refieren a los bloques de código enriquecidos (negrita, cursiva, subrayado, resaltado, color de los caracteres). Estos bloques no se someten al mismo tratamiento que los bloques de código «texto sin formato». Se representan tal cual en el HTML;
+    <ul>
+      <li>línea 118: establece la altura de las líneas de código;
+      </li>
+      <li>línea 119: establece la fuente CSS del bloque de código;
+      </li>
+      <li>línea 120: establece el tamaño de los caracteres;
+      </li>
+    </ul>
+  </li>
+  <li>líneas 144-152: establecen el aspecto de las imágenes;
+  </li>
+  <li>líneas 154-160: establecen el aspecto del marco en el que se muestra la página web;
+  </li>
+  <li>línea 162: la lista de archivos que se deben copiar en el directorio raíz del sitio HTML;
+  </li>
+  <li>línea 164: [debug] en True permite los registros de los estilos de los párrafos que preceden al primer título de nivel 1 del documento ODT / DOCX. Es en estos registros donde se encontrará el estilo exacto del párrafo que servirá de título en la página de inicio del sitio;
+  </li>
+</ul>
+
+<p>Al final, al pasar de un documento ODT/DOCX a otro, no se modificará nada en el archivo [config.py]. Solo se modificarán los demás archivos de configuración.</p>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner">
+
+      <div>
+        <a href="https://tahe.developpez.com" target="_blank">
+          https://tahe.developpez.com
+        </a>
+        <br>
+        Este curso-tutorial escrito por <strong>Serge Tahé</strong> se pone a disposición del público según los términos de la
+        <em>Licencia Creative Commons Reconocimiento – Sin uso comercial –
+        Compartir en las mismas condiciones 3.0 no adaptada</em>.
+
+      </div>
+
+    </div>
+  </div>
+
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": ["navigation.sections", "navigation.indexes", "navigation.expand", "toc.integrate", "navigation.top"], "search": "assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="assets/javascripts/bundle.e71a0d61.min.js"></script>
+      
+        <script src="javascripts/focus.js"></script>
+      
+    
+  </body>
+</html>

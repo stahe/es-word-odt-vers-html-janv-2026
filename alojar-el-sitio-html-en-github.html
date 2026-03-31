@@ -1,0 +1,1194 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Convertir un documento Word u ODT en una página web estática HTML compatible con MkDocs utilizando las IA Gemini 3 y ChatGPT 5.2">
+      
+      
+        <meta name="author" content="Serge Tahé">
+      
+      
+        <link rel="canonical" href="https://stahe.github.io/es-word-odt-vers-html-janv-2026/alojar-el-sitio-html-en-github.html">
+      
+      
+        <link rel="prev" href="revision-del-sitio-html-generado.html">
+      
+      
+        <link rel="next" href="realizar-un-seguimiento-del-sitio-con-google-analytics-y-google-search-console.html">
+      
+      
+        
+      
+      
+      <link rel="icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
+    
+    
+      
+        <title>12. Alojar el sitio HTML en GitHub - Convertir un documento Word u ODT en una página web estática HTML compatible con MkDocs utilizando las IA Gemini 3 y ChatGPT 5.2</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.618322db.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="stylesheets/focus.css">
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EBZC3JVJNR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    var siteName = "Convertir un documento Word u ODT en una página web estática HTML compatible con MkDocs utilizando las IA Gemini 3 y ChatGPT 5.2";
+    gtag('config', 'G-EBZC3JVJNR', {
+        'page_title': siteName
+    });
+  </script>
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="purple">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#12-alojar-el-sitio-html-en-github" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="index.html" title="Convertir un documento Word u ODT en una página web estática HTML compatible con MkDocs utilizando las IA Gemini 3 y ChatGPT 5.2" class="md-header__button md-logo" aria-label="Convertir un documento Word u ODT en una página web estática HTML compatible con MkDocs utilizando las IA Gemini 3 y ChatGPT 5.2" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Convertir un documento Word u ODT en una página web estática HTML compatible con MkDocs utilizando las IA Gemini 3 y ChatGPT 5.2
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              12. Alojar el sitio HTML en GitHub
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="purple"  aria-label="Cambiar a modo oscuro"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Cambiar a modo oscuro" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="purple"  aria-label="Cambiar a modo claro"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Cambiar a modo claro" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://stahe.github.io/es-word-odt-vers-html-janv-2026" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="index.html" title="Convertir un documento Word u ODT en una página web estática HTML compatible con MkDocs utilizando las IA Gemini 3 y ChatGPT 5.2" class="md-nav__button md-logo" aria-label="Convertir un documento Word u ODT en una página web estática HTML compatible con MkDocs utilizando las IA Gemini 3 y ChatGPT 5.2" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Convertir un documento Word u ODT en una página web estática HTML compatible con MkDocs utilizando las IA Gemini 3 y ChatGPT 5.2
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://stahe.github.io/es-word-odt-vers-html-janv-2026" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bienvenidos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="introduccion.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1. Introducción
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="los-ejemplos-de-este-documento----.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2. Los ejemplos de este documento    
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="lo-que-hay-en-internet.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3. Lo que hay en Internet
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="la-indicacion-inicial-para-gemini-3.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4. La indicación inicial para Gemini 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="crear-un-entorno-de-trabajo-python.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5. Crear un entorno de trabajo Python
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="la-carpeta-de-trabajo-del-conversor.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    6. La carpeta de trabajo del conversor
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="los-archivos-de-configuracion-de-los-convertidores.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    7. Los archivos de configuración de los convertidores
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="uso-del-conversor-odt---html.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    8. Uso del conversor ODT → HTML
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="uso-del-conversor-docx---html.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    9. Uso del conversor DOCX → HTML
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="creacion-del-sitio-html-estatico.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10. Creación del sitio HTML estático
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="revision-del-sitio-html-generado.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    11. Revisión del sitio HTML generado
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="alojar-el-sitio-html-en-github.html" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    12. Alojar el sitio HTML en GitHub
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="realizar-un-seguimiento-del-sitio-con-google-analytics-y-google-search-console.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    13. Realizar un seguimiento del sitio con Google Analytics y Google Search Console
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="conclusion.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    14. Conclusión
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<p><a id="refheadingtoc55961226647236"></a></p>
+<h1 id="12-alojar-el-sitio-html-en-github">12. <span style="color: #0f4761">Alojar el sitio HTML en GitHub</span></h1>
+<p>Fue el propio Gemini quien me propuso alojar en GitHub el sitio HTML generado por sus dos scripts:<sup id="fnref:4"><a class="footnote-ref" href="#fn:4">1</a></sup> . No sabía que eso fuera posible.<a id="github"></a> GitHub es un sitio que aloja proyectos de desarrollo. Publicar allí cursos de programación parece lo más lógico.</p>
+<p>Primero debes tener una cuenta <a href="https://github.com/"><u><span style="color: #467886">de GitHub</span></u></a>. Si es necesario, créala.</p>
+<p>Inicie sesión en su cuenta de GitHub:</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000002D4000003E006BE0AD4.png" style="display:inline-block; margin:4px;width:6.699cm;height:9.19cm;" class="odt-zoomable" data-zoom-src="images/10000000000002D4000003E006BE0AD4.png" /></td></tr></table>
+
+<ul>
+  <li>En [2], tus repositorios existentes, si los tienes;
+  </li>
+  <li>En [3], crea un nuevo repositorio de GitHub;
+  </li>
+</ul>
+
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000638000005EB4390F9C6.png" style="display:inline-block; margin:4px;width:14.741cm;height:14.03cm;" class="odt-zoomable" data-zoom-src="images/1000000000000638000005EB4390F9C6.png" /></td></tr></table>
+
+<ul>
+  <li>En [1], utiliza el nombre que has puesto en [config.py]:
+  </li>
+</ul>
+
+<div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-text">
+<span class="odt-code-line">  &quot;repo_url&quot;: &quot;<span style="font-weight:bold">https://github.com/stahe/word-odt-vers-html-janv-2026</span>&quot;,</span>
+</code></pre></div>
+
+<ul>
+  <li>En [2], también puedes poner lo mismo que en [config.py]:
+  </li>
+</ul>
+
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a>  &quot;site_description&quot;: &quot;Convertir un documento Word u ODT en un sitio HTML estático utilizando las IA Gemini 3 y ChatGPT 5.2&quot;,
+</code></pre></div></td></tr></table></div>
+<ul>
+  <li>En [3], confirma la creación de tu repositorio GitHub;
+  </li>
+</ul>
+
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000081C00000523F98D559B.png" style="display:inline-block; margin:4px;width:16.002cm;height:10.135cm;" class="odt-zoomable" data-zoom-src="images/100000000000081C00000523F98D559B.png" /></td></tr></table>
+
+<p>Se recomienda crear un archivo [README.md] para cada repositorio de GitHub, que se mostrará en lugar de la pantalla anterior. Debe estar escrito en Markdown, algo que no es sencillo. Por lo tanto, vamos a escribir un archivo de texto con el contenido que nos gustaría ver en el README. Luego le pediremos a la IA que nos proporcione el README.md correspondiente.</p>
+<p>El archivo de texto [readme.txt] será el siguiente:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span>
+<span class="normal"><a href="#__codelineno-1-2">2</a></span>
+<span class="normal"><a href="#__codelineno-1-3">3</a></span>
+<span class="normal"><a href="#__codelineno-1-4">4</a></span>
+<span class="normal"><a href="#__codelineno-1-5">5</a></span>
+<span class="normal"><a href="#__codelineno-1-6">6</a></span>
+<span class="normal"><a href="#__codelineno-1-7">7</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a>En este artículo nos proponemos poner a disposición del lector un conversor en Python de documentos Word u ODT a un sitio web estático en HTML.
+<a id="__codelineno-1-2" name="__codelineno-1-2"></a>
+<a id="__codelineno-1-3" name="__codelineno-1-3"></a>Este conversor ha sido creado por la IA Gemini 3.
+<a id="__codelineno-1-4" name="__codelineno-1-4"></a>
+<a id="__codelineno-1-5" name="__codelineno-1-5"></a>Cuando el documento ODT es adecuado, el conversor genera un sitio HTML a través de MkDocs que tiene el aspecto profesional de los sitios generados por Pandoc.
+<a id="__codelineno-1-6" name="__codelineno-1-6"></a>
+<a id="__codelineno-1-7" name="__codelineno-1-7"></a>He utilizado Gemini 3 con una suscripción pro.
+</code></pre></div></td></tr></table></div>
+<p>La línea de comandos de Gemini es la siguiente:</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000600000002158E6D0EE4.png" style="display:inline-block; margin:4px;width:14.22cm;height:4.941cm;" class="odt-zoomable" data-zoom-src="images/1000000000000600000002158E6D0EE4.png" /></td></tr></table>
+
+<ul>
+  <li>En [1], el archivo adjunto [readme.txt];
+  </li>
+  <li>En [2], la indicación;
+  </li>
+</ul>
+
+<p>Copia la respuesta que te da Gemini en el archivo [README.md] de tu carpeta de trabajo. Esta es la respuesta que me dio Gemini:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-2-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-2-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-2-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-2-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-2-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-2-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-2-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-2-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-2-10">10</a></span>
+<span class="normal"><a href="#__codelineno-2-11">11</a></span>
+<span class="normal"><a href="#__codelineno-2-12">12</a></span>
+<span class="normal"><a href="#__codelineno-2-13">13</a></span>
+<span class="normal"><a href="#__codelineno-2-14">14</a></span>
+<span class="normal"><a href="#__codelineno-2-15">15</a></span>
+<span class="normal"><a href="#__codelineno-2-16">16</a></span>
+<span class="normal"><a href="#__codelineno-2-17">17</a></span>
+<span class="normal"><a href="#__codelineno-2-18">18</a></span>
+<span class="normal"><a href="#__codelineno-2-19">19</a></span>
+<span class="normal"><a href="#__codelineno-2-20">20</a></span>
+<span class="normal"><a href="#__codelineno-2-21">21</a></span>
+<span class="normal"><a href="#__codelineno-2-22">22</a></span>
+<span class="normal"><a href="#__codelineno-2-23">23</a></span>
+<span class="normal"><a href="#__codelineno-2-24">24</a></span>
+<span class="normal"><a href="#__codelineno-2-25">25</a></span>
+<span class="normal"><a href="#__codelineno-2-26">26</a></span>
+<span class="normal"><a href="#__codelineno-2-27">27</a></span>
+<span class="normal"><a href="#__codelineno-2-28">28</a></span>
+<span class="normal"><a href="#__codelineno-2-29">29</a></span>
+<span class="normal"><a href="#__codelineno-2-30">30</a></span>
+<span class="normal"><a href="#__codelineno-2-31">31</a></span>
+<span class="normal"><a href="#__codelineno-2-32">32</a></span>
+<span class="normal"><a href="#__codelineno-2-33">33</a></span>
+<span class="normal"><a href="#__codelineno-2-34">34</a></span>
+<span class="normal"><a href="#__codelineno-2-35">35</a></span>
+<span class="normal"><a href="#__codelineno-2-36">36</a></span>
+<span class="normal"><a href="#__codelineno-2-37">37</a></span>
+<span class="normal"><a href="#__codelineno-2-38">38</a></span>
+<span class="normal"><a href="#__codelineno-2-39">39</a></span>
+<span class="normal"><a href="#__codelineno-2-40">40</a></span>
+<span class="normal"><a href="#__codelineno-2-41">41</a></span>
+<span class="normal"><a href="#__codelineno-2-42">42</a></span>
+<span class="normal"><a href="#__codelineno-2-43">43</a></span>
+<span class="normal"><a href="#__codelineno-2-44">44</a></span>
+<span class="normal"><a href="#__codelineno-2-45">45</a></span>
+<span class="normal"><a href="#__codelineno-2-46">46</a></span>
+<span class="normal"><a href="#__codelineno-2-47">47</a></span>
+<span class="normal"><a href="#__codelineno-2-48">48</a></span>
+<span class="normal"><a href="#__codelineno-2-49">49</a></span>
+<span class="normal"><a href="#__codelineno-2-50">50</a></span>
+<span class="normal"><a href="#__codelineno-2-51">51</a></span>
+<span class="normal"><a href="#__codelineno-2-52">52</a></span>
+<span class="normal"><a href="#__codelineno-2-53">53</a></span>
+<span class="normal"><a href="#__codelineno-2-54">54</a></span>
+<span class="normal"><a href="#__codelineno-2-55">55</a></span>
+<span class="normal"><a href="#__codelineno-2-56">56</a></span>
+<span class="normal"><a href="#__codelineno-2-57">57</a></span>
+<span class="normal"><a href="#__codelineno-2-58">58</a></span>
+<span class="normal"><a href="#__codelineno-2-59">59</a></span>
+<span class="normal"><a href="#__codelineno-2-60">60</a></span>
+<span class="normal"><a href="#__codelineno-2-61">61</a></span>
+<span class="normal"><a href="#__codelineno-2-62">62</a></span>
+<span class="normal"><a href="#__codelineno-2-63">63</a></span>
+<span class="normal"><a href="#__codelineno-2-64">64</a></span>
+<span class="normal"><a href="#__codelineno-2-65">65</a></span>
+<span class="normal"><a href="#__codelineno-2-66">66</a></span>
+<span class="normal"><a href="#__codelineno-2-67">67</a></span>
+<span class="normal"><a href="#__codelineno-2-68">68</a></span>
+<span class="normal"><a href="#__codelineno-2-69">69</a></span>
+<span class="normal"><a href="#__codelineno-2-70">70</a></span>
+<span class="normal"><a href="#__codelineno-2-71">71</a></span>
+<span class="normal"><a href="#__codelineno-2-72">72</a></span>
+<span class="normal"><a href="#__codelineno-2-73">73</a></span>
+<span class="normal"><a href="#__codelineno-2-74">74</a></span>
+<span class="normal"><a href="#__codelineno-2-75">75</a></span>
+<span class="normal"><a href="#__codelineno-2-76">76</a></span>
+<span class="normal"><a href="#__codelineno-2-77">77</a></span>
+<span class="normal"><a href="#__codelineno-2-78">78</a></span>
+<span class="normal"><a href="#__codelineno-2-79">79</a></span>
+<span class="normal"><a href="#__codelineno-2-80">80</a></span>
+<span class="normal"><a href="#__codelineno-2-81">81</a></span>
+<span class="normal"><a href="#__codelineno-2-82">82</a></span>
+<span class="normal"><a href="#__codelineno-2-83">83</a></span>
+<span class="normal"><a href="#__codelineno-2-84">84</a></span>
+<span class="normal"><a href="#__codelineno-2-85">85</a></span>
+<span class="normal"><a href="#__codelineno-2-86">86</a></span>
+<span class="normal"><a href="#__codelineno-2-87">87</a></span>
+<span class="normal"><a href="#__codelineno-2-88">88</a></span>
+<span class="normal"><a href="#__codelineno-2-89">89</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="gh"># Convertidor de Word/ODT a sitio HTML (MkDocs)</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2"></a>
+<a id="__codelineno-2-3" name="__codelineno-2-3"></a>🔗 <span class="gs">**[Ver el sitio de demostración generado](https://stahe.github.io/word-odt-vers-html-janv-2026/)**</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4"></a>
+<a id="__codelineno-2-5" name="__codelineno-2-5"></a>---
+<a id="__codelineno-2-6" name="__codelineno-2-6"></a>
+<a id="__codelineno-2-7" name="__codelineno-2-7"></a><span class="gu">## 📝 Descripción</span>
+<a id="__codelineno-2-8" name="__codelineno-2-8"></a>
+<a id="__codelineno-2-9" name="__codelineno-2-9"></a>El objetivo de este proyecto es poner a disposición del lector un conversor en Python de documentos Word u ODT a un sitio web HTML estático.
+<a id="__codelineno-2-10" name="__codelineno-2-10"></a>
+<a id="__codelineno-2-11" name="__codelineno-2-11"></a>Cuando el documento ODT es adecuado, el conversor genera un sitio HTML mediante <span class="gs">**MkDocs**</span> que tiene el aspecto profesional de los sitios generados por Pandoc.
+<a id="__codelineno-2-12" name="__codelineno-2-12"></a>
+<a id="__codelineno-2-13" name="__codelineno-2-13"></a><span class="gu">## 🤖 Contexto de creación</span>
+<a id="__codelineno-2-14" name="__codelineno-2-14"></a>
+<a id="__codelineno-2-15" name="__codelineno-2-15"></a>Este conversor ha sido creado íntegramente por la IA <span class="gs">**Gemini 3**</span> (con una suscripción pro). Es el resultado de sucesivas iteraciones para gestionar con precisión la estructura de los documentos ODT (OpenDocument Text).
+<a id="__codelineno-2-16" name="__codelineno-2-16"></a>
+<a id="__codelineno-2-17" name="__codelineno-2-17"></a><span class="gu">## ✨ Funcionalidades</span>
+<a id="__codelineno-2-18" name="__codelineno-2-18"></a>
+<a id="__codelineno-2-19" name="__codelineno-2-19"></a>El script <span class="sb">`convert.py`</span> realiza las siguientes acciones:
+<a id="__codelineno-2-20" name="__codelineno-2-20"></a>
+<a id="__codelineno-2-21" name="__codelineno-2-21"></a><span class="k">*</span><span class="w"> </span><span class="gs">**Conversión de ODT a Markdown**</span>: Analiza el archivo <span class="sb">`.odt`</span> (XML) para extraer su estructura.
+<a id="__codelineno-2-22" name="__codelineno-2-22"></a><span class="k">*</span><span class="w"> </span><span class="gs">**Gestión de títulos**</span>: Genera automáticamente la tabla de contenidos (TOC) y la navegación lateral.
+<a id="__codelineno-2-23" name="__codelineno-2-23"></a><span class="k">*</span><span class="w"> </span><span class="gs">**Bloques de código**</span>: Detección automática de lenguajes, coloración sintáctica y <span class="gs">**gestión precisa de la numeración de líneas**</span> (atributos <span class="sb">`start-value`</span>).
+<a id="__codelineno-2-24" name="__codelineno-2-24"></a><span class="k">*</span><span class="w"> </span><span class="gs">**Listas**</span>: Compatibilidad con listas con viñetas y numeradas con la sangría correcta.
+<a id="__codelineno-2-25" name="__codelineno-2-25"></a><span class="k">*</span><span class="w"> </span><span class="gs">**Formato**</span>: Compatibilidad con <span class="ge">*negrita*</span>, <span class="ge">*cursiva*</span>, <span class="ge">*subrayado*</span> y <span class="ge">*resaltado*</span> (respetando los colores originales).
+<a id="__codelineno-2-26" name="__codelineno-2-26"></a><span class="k">*</span><span class="w"> </span><span class="gs">**Imágenes**</span>: Extracción e integración automática de las imágenes contenidas en el documento.
+<a id="__codelineno-2-27" name="__codelineno-2-27"></a><span class="k">*</span><span class="w"> </span><span class="gs">**Configuración**</span>: Personalización mediante un archivo <span class="sb">`config.py`</span> (pie de página, Google Analytics, etc.).
+<a id="__codelineno-2-28" name="__codelineno-2-28"></a>
+<a id="__codelineno-2-29" name="__codelineno-2-29"></a><span class="gu">## 🚀 Instalación</span>
+<a id="__codelineno-2-30" name="__codelineno-2-30"></a>
+<a id="__codelineno-2-31" name="__codelineno-2-31"></a><span class="gu">### Requisitos previos</span>
+<a id="__codelineno-2-32" name="__codelineno-2-32"></a>
+<a id="__codelineno-2-33" name="__codelineno-2-33"></a><span class="k">*</span><span class="w"> </span>Python 3.x
+<a id="__codelineno-2-34" name="__codelineno-2-34"></a><span class="k">*</span><span class="w"> </span>Las siguientes bibliotecas:
+<a id="__codelineno-2-35" name="__codelineno-2-35"></a>
+<a id="__codelineno-2-36" name="__codelineno-2-36"></a><span class="sb">```bash</span>
+<a id="__codelineno-2-37" name="__codelineno-2-37"></a>pip<span class="w"> </span>install<span class="w"> </span>odfpy<span class="w"> </span>unidecode<span class="w"> </span>mkdocs<span class="w"> </span>mkdocs-material
+<a id="__codelineno-2-38" name="__codelineno-2-38"></a>
+<a id="__codelineno-2-39" name="__codelineno-2-39"></a><span class="sb">```</span>
+<a id="__codelineno-2-40" name="__codelineno-2-40"></a>
+<a id="__codelineno-2-41" name="__codelineno-2-41"></a><span class="gu">### Estructura del proyecto</span>
+<a id="__codelineno-2-42" name="__codelineno-2-42"></a>
+<a id="__codelineno-2-43" name="__codelineno-2-43"></a>Asegúrate de tener los siguientes archivos:
+<a id="__codelineno-2-44" name="__codelineno-2-44"></a>
+<a id="__codelineno-2-45" name="__codelineno-2-45"></a><span class="k">*</span><span class="w"> </span><span class="sb">`convert.py`</span>: El script de conversión.
+<a id="__codelineno-2-46" name="__codelineno-2-46"></a><span class="k">*</span><span class="w"> </span><span class="sb">`config.py`</span>: Tu archivo de configuración.
+<a id="__codelineno-2-47" name="__codelineno-2-47"></a><span class="k">*</span><span class="w"> </span><span class="sb">`tu-documento.odt`</span>: El documento de origen.
+<a id="__codelineno-2-48" name="__codelineno-2-48"></a>
+<a id="__codelineno-2-49" name="__codelineno-2-49"></a><span class="gu">## 💻 Uso</span>
+<a id="__codelineno-2-50" name="__codelineno-2-50"></a>
+<a id="__codelineno-2-51" name="__codelineno-2-51"></a><span class="k">1.</span> <span class="gs">**Conversión**</span>
+<a id="__codelineno-2-52" name="__codelineno-2-52"></a>Ejecuta el script indicando el archivo ODT de origen y el archivo de configuración:
+<a id="__codelineno-2-53" name="__codelineno-2-53"></a><span class="sb">```bash</span>
+<a id="__codelineno-2-54" name="__codelineno-2-54"></a>python<span class="w"> </span>convert.py<span class="w"> </span>su-documento.odt<span class="w"> </span>config.py
+<a id="__codelineno-2-55" name="__codelineno-2-55"></a>
+<a id="__codelineno-2-56" name="__codelineno-2-56"></a><span class="sb">```</span>
+<a id="__codelineno-2-57" name="__codelineno-2-57"></a>
+<a id="__codelineno-2-58" name="__codelineno-2-58"></a>
+<a id="__codelineno-2-59" name="__codelineno-2-59"></a><span class="ge">*Esto generará una carpeta `docs/` que contendrá los archivos Markdown y un archivo `mkdocs.yml`.*</span>
+<a id="__codelineno-2-60" name="__codelineno-2-60"></a><span class="k">2.</span> <span class="gs">**Vista previa**</span>
+<a id="__codelineno-2-61" name="__codelineno-2-61"></a>Para ver el sitio en local:
+<a id="__codelineno-2-62" name="__codelineno-2-62"></a><span class="sb">```bash</span>
+<a id="__codelineno-2-63" name="__codelineno-2-63"></a>mkdocs<span class="w"> </span>serve
+<a id="__codelineno-2-64" name="__codelineno-2-64"></a>
+<a id="__codelineno-2-65" name="__codelineno-2-65"></a><span class="sb">```</span>
+<a id="__codelineno-2-66" name="__codelineno-2-66"></a>
+<a id="__codelineno-2-67" name="__codelineno-2-67"></a>
+<a id="__codelineno-2-68" name="__codelineno-2-68"></a><span class="k">3.</span> <span class="gs">**Generación**</span>
+<a id="__codelineno-2-69" name="__codelineno-2-69"></a>Para compilar el sitio estático (carpeta <span class="sb">`site/`</span>):
+<a id="__codelineno-2-70" name="__codelineno-2-70"></a><span class="sb">```bash</span>
+<a id="__codelineno-2-71" name="__codelineno-2-71"></a>mkdocs<span class="w"> </span>build
+<a id="__codelineno-2-72" name="__codelineno-2-72"></a>
+<a id="__codelineno-2-73" name="__codelineno-2-73"></a><span class="sb">```</span>
+<a id="__codelineno-2-74" name="__codelineno-2-74"></a>
+<a id="__codelineno-2-75" name="__codelineno-2-75"></a>
+<a id="__codelineno-2-76" name="__codelineno-2-76"></a>
+<a id="__codelineno-2-77" name="__codelineno-2-77"></a><span class="gu">## ⚙️ Configuración (`config.py`)</span>
+<a id="__codelineno-2-78" name="__codelineno-2-78"></a>
+<a id="__codelineno-2-79" name="__codelineno-2-79"></a>El archivo <span class="sb">`config.py`</span> permite controlar el aspecto del sitio:
+<a id="__codelineno-2-80" name="__codelineno-2-80"></a>
+<a id="__codelineno-2-81" name="__codelineno-2-81"></a><span class="k">*</span><span class="w"> </span><span class="gs">**mkdocs**</span>: Parámetros generales del sitio (título, descripción, tema Material).
+<a id="__codelineno-2-82" name="__codelineno-2-82"></a><span class="k">*</span><span class="w"> </span><span class="gs">**pie de página**</span>: Código HTML completo para personalizar el pie de página.
+<a id="__codelineno-2-83" name="__codelineno-2-83"></a><span class="k">*</span><span class="w"> </span><span class="gs">**código**</span>: Reglas de detección de lenguajes para el resaltado sintáctico.
+<a id="__codelineno-2-84" name="__codelineno-2-84"></a><span class="k">*</span><span class="w"> </span><span class="gs">**extra**</span>: Configuración de Google Analytics (GA4).
+<a id="__codelineno-2-85" name="__codelineno-2-85"></a>
+<a id="__codelineno-2-86" name="__codelineno-2-86"></a><span class="gu">## 📄 Licencia</span>
+<a id="__codelineno-2-87" name="__codelineno-2-87"></a>
+<a id="__codelineno-2-88" name="__codelineno-2-88"></a>Este tutorial escrito por <span class="gs">**Serge Tahé**</span> se pone a disposición del público según los términos de la:
+<a id="__codelineno-2-89" name="__codelineno-2-89"></a><span class="ge">*Licencia Creative Commons Reconocimiento – Sin uso comercial – Compartir bajo las mismas condiciones 3.0 no adaptada.*</span>
+</code></pre></div></td></tr></table></div>
+<p>Es un README muy completo el que me ha proporcionado. Esto se debe a que Gemini conoce muy bien este proyecto en el que llevamos trabajando semanas. Seguramente tendrás un [README.md] menos detallado.</p>
+<p>Ahora volvamos a nuestra carpeta de trabajo:</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000002DD00000333C17E2269.png" style="display:inline-block; margin:4px;width:6.789cm;height:7.579cm;" class="odt-zoomable" data-zoom-src="images/10000000000002DD00000333C17E2269.png" /></td></tr></table>
+
+<ul>
+  <li>En [2], el archivo README que acabáis de modificar;
+  </li>
+  <li>En [1], el archivo [deploy.txt] explica cómo exportar tu sitio HTML a tu repositorio de GitHub;
+  </li>
+</ul>
+
+<p>El contenido del archivo [deploy.txt] es el siguiente:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1">1</a></span>
+<span class="normal"><a href="#__codelineno-3-2">2</a></span>
+<span class="normal"><a href="#__codelineno-3-3">3</a></span>
+<span class="normal"><a href="#__codelineno-3-4">4</a></span>
+<span class="normal"><a href="#__codelineno-3-5">5</a></span>
+<span class="normal"><a href="#__codelineno-3-6">6</a></span>
+<span class="normal"><a href="#__codelineno-3-7">7</a></span>
+<span class="normal"><a href="#__codelineno-3-8">8</a></span>
+<span class="normal"><a href="#__codelineno-3-9">9</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1"></a>git init
+<a id="__codelineno-3-2" name="__codelineno-3-2"></a>git branch -M main
+<a id="__codelineno-3-3" name="__codelineno-3-3"></a><span class="gh"># ¡Comprueba primero .gitignore!</span>
+<a id="__codelineno-3-4" name="__codelineno-3-4"></a>git add .
+<a id="__codelineno-3-5" name="__codelineno-3-5"></a><span class="gh"># primera confirmación</span>
+<a id="__codelineno-3-6" name="__codelineno-3-6"></a>git commit -m &quot;Commit inicial: Código fuente MkDocs&quot;
+<a id="__codelineno-3-7" name="__codelineno-3-7"></a>git remote add origin https://github.com/stahe/word-odt-vers-html-janv-2026.git
+<a id="__codelineno-3-8" name="__codelineno-3-8"></a>git push -u origin main
+<a id="__codelineno-3-9" name="__codelineno-3-9"></a>python -m mkdocs gh-deploy
+</code></pre></div></td></tr></table></div>
+<p>Esta es la secuencia de comandos que exportará tu sitio HTML a tu repositorio de GitHub. Tendrás que modificar la línea 7 con la URL de tu propio repositorio de GitHub, que se encuentra en el archivo [config.py]:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-4-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1"></a>    &quot;repo_url&quot;: &quot;https://github.com/stahe/word-odt-vers-html-janv-2026&quot;,
+</code></pre></div></td></tr></table></div>
+<p>También debes comprobar otra URL que aparece en el archivo [robots.txt]:</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000002990000020922B87B41.png" style="display:inline-block; margin:4px;width:8.798cm;height:6.893cm;" class="odt-zoomable" data-zoom-src="images/10000000000002990000020922B87B41.png" /></td></tr></table>
+
+<p>El contenido del archivo [robots.txt] es el siguiente:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-5-1">1</a></span>
+<span class="normal"><a href="#__codelineno-5-2">2</a></span>
+<span class="normal"><a href="#__codelineno-5-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1"></a>User-agent: *
+<a id="__codelineno-5-2" name="__codelineno-5-2"></a>Allow: /
+<a id="__codelineno-5-3" name="__codelineno-5-3"></a>Sitemap: https://stahe.github.io/word-odt-vers-html-janv-2026/sitemap.xml
+</code></pre></div></td></tr></table></div>
+<p>En la línea 3, introduce la URL de tu sitio web, la misma que en el archivo [config.py]:</p>
+<div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-markdown">
+<span class="odt-code-line"><span style="color:#000000">  </span><span style="color:#000000">      </span><span style="color:#008000"># URL de publicación del sitio (p. ej.: GitHub Pages)</span></span>
+<span class="odt-code-line"><span style="color:#000000">        </span><span style="color:#a31515">&quot;site_url&quot;</span><span style="color:#000000">: </span><span style="color:#a31515">&quot;https://stahe.github.io/word-odt-vers-html-janv-2026/&quot;</span><span style="color:#000000">,</span></span>
+</code></pre></div>
+
+<p>El archivo [robots.txt] no se utiliza durante la compilación local del sitio, pero sí se utilizará cuando esté alojado en GitHub.</p>
+<p>La secuencia de comandos de [deploy.txt] utiliza un software llamado Git. Debes instalarlo [<a href="https://git-scm.com/install/windows"><u><span style="color: #467886">Git - Install for Windows</span></u></a>].</p>
+<p>Una vez hecho esto, comprueba el archivo llamado [.gitignore] en tu carpeta de trabajo. Este le indica a Git qué archivos debe ignorar. Mi archivo [.gitignore] es el siguiente:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-6-1">1</a></span>
+<span class="normal"><a href="#__codelineno-6-2">2</a></span>
+<span class="normal"><a href="#__codelineno-6-3">3</a></span>
+<span class="normal"><a href="#__codelineno-6-4">4</a></span>
+<span class="normal"><a href="#__codelineno-6-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1"></a><span class="gh"># 1. Se ignoran TODOS los archivos y carpetas del proyecto</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2"></a>*
+<a id="__codelineno-6-3" name="__codelineno-6-3"></a>
+<a id="__codelineno-6-4" name="__codelineno-6-4"></a><span class="gh"># 3. Se hace una excepción (!) para el único archivo que quieres conservar</span>
+<a id="__codelineno-6-5" name="__codelineno-6-5"></a>!README.md
+</code></pre></div></td></tr></table></div>
+<p>Es muy sencillo. Se ignoran todos los archivos (línea 2) excepto el archivo [README.md] (línea 5). GitHub está pensado para alojar proyectos de desarrollo. Por lo general, se exporta todo el proyecto de desarrollo a GitHub. Nosotros solo queremos exportar un sitio HTML, no un proyecto de desarrollo. El único archivo que queremos exportar a nuestro repositorio de GitHub es el archivo [README.md], que explica a los visitantes qué contiene nuestro sitio HTML.</p>
+<p>Ahora, en tu terminal, escribe la siguiente secuencia de comandos en el orden indicado por [deploy.txt] hasta llegar al comando 8. No ejecutes el comando 9 por el momento.</p>
+<div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-text">
+<span class="odt-code-line">PS C:\Data\st-2025\GitHub Pages\word-odt-vers-html\v2&gt; <span style="background-color:#fff5ce">git init</span></span>
+<span class="odt-code-line">Repositorio Git vacío inicializado en C:/Data/st-2025/GitHub Pages/word-odt-vers-html/v2/.git/</span>
+<span class="odt-code-line">PS C:\Data\st-2025\GitHub Pages\word-odt-vers-html\v2&gt; <span style="background-color:#fff5ce">git branch -M main</span></span>
+<span class="odt-code-line">PS C:\Data\st-2025\GitHub Pages\word-odt-vers-html\v2&gt; <span style="background-color:#fff5ce">git add .</span></span>
+<span class="odt-code-line">PS C:\Data\st-2025\GitHub Pages\word-odt-vers-html\v2&gt; <span style="background-color:#fff5ce">git commit -m &quot;Commit inicial: Código fuente MkDocs&quot;</span></span>
+<span class="odt-code-line">[main (root-commit) 7cba5b1] Commit inicial: Fuente MkDocs</span>
+<span class="odt-code-line"> 1 archivo modificado, 89 inserciones(+)</span>
+<span class="odt-code-line"> crear modo 100644 README.md</span>
+<span class="odt-code-line">PS C:\Data\st-2025\GitHub Pages\word-odt-vers-html\v2&gt; <span style="background-color:#fff5ce">git remote add origin https://github.com/stahe/word-odt-vers-html-janv-2026.git</span></span>
+<span class="odt-code-line">PS C:\Data\st-2025\GitHub Pages\word-odt-vers-html\v2&gt; <span style="background-color:#fff5ce">git push -u origin main</span></span>
+<span class="odt-code-line">Enumerando objetos: 3, hecho.</span>
+<span class="odt-code-line">Contando objetos: 100 % (3/3), hecho.</span>
+<span class="odt-code-line">Compresión delta utilizando hasta 8 subprocesos</span>
+<span class="odt-code-line">Comprimiendo objetos: 100 % (2/2), hecho.</span>
+<span class="odt-code-line">Escribiendo objetos: 100 % (3/3), 1,70 KiB | 1,70 MiB/s, hecho.</span>
+<span class="odt-code-line">Total 3 (delta 0), reutilizados 0 (delta 0), paquetes reutilizados 0 (de 0)</span>
+<span class="odt-code-line">A<span style="background-color:#fff5ce"> https://github.com/stahe/word-odt-vers-html-janv-2026.git</span></span>
+<span class="odt-code-line"> * [nueva rama]      main -&gt; main</span>
+<span class="odt-code-line">Rama «main» configurada para seguir «origin/main».</span>
+</code></pre></div>
+
+<p>Haz clic con el botón derecho del ratón sobre la URL de la línea 17. Esto te llevará a tu repositorio de GitHub:</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000007A800000694D031AD8E.png" style="display:inline-block; margin:4px;width:16.002cm;height:13.748cm;" class="odt-zoomable" data-zoom-src="images/10000000000007A800000694D031AD8E.png" /></td></tr></table>
+
+<ul>
+  <li>En [1], la URL de tu repositorio de GitHub;
+  </li>
+  <li>En [2], el nuevo README.md;
+  </li>
+</ul>
+
+<p>Ahora pasemos al comando 9 del archivo [deploy.txt]. Es el que exporta el sitio HTML a GitHub:</p>
+<div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-javascript">
+<span class="odt-code-line">PS C:\Data\st-2025\GitHub Pages\word-odt-vers-html\v2&gt; <span style="background-color:#fff5ce">python -m mkdocs gh-deploy</span></span>
+<span class="odt-code-line">INFO    -  Limpieza del directorio del sitio</span>
+<span class="odt-code-line">INFO    -  Compilación de la documentación en el directorio: C:\Data\st-2025\GitHub Pages\word-odt-vers-html\v2\site</span>
+<span class="odt-code-line">INFO    -  El archivo de documentación «les-exemples.md» contiene un enlace «#_Les_exemples», pero no existe tal ancla en esta página.</span>
+<span class="odt-code-line">INFO    -  Documentación generada en 1,79 segundos</span>
+<span class="odt-code-line">ADVERTENCIA -  Se ha omitido la comprobación de la versión: no se ha especificado ninguna versión en la implementación anterior.</span>
+<span class="odt-code-line">INFO    -  Copiando «C:\Data\st-2025\GitHub Pages\word-odt-vers-html\v2\site» a la rama «gh-pages» y subiéndolo a GitHub.</span>
+<span class="odt-code-line">Enumerando objetos: 91, hecho.</span>
+<span class="odt-code-line">Contando objetos: 100 % (91/91), hecho.</span>
+<span class="odt-code-line">Compresión delta utilizando hasta 8 subprocesos</span>
+<span class="odt-code-line">Comprimiendo objetos: 100 % (85/85), hecho.</span>
+<span class="odt-code-line">Escribiendo objetos: 100 % (91/91), 1,64 MiB | 2,01 MiB/s, hecho.</span>
+<span class="odt-code-line">Total 91 (delta 9), reutilizados 0 (delta 0), paquetes reutilizados 0 (de 0)</span>
+<span class="odt-code-line">remoto: Resolución de deltas: 100 % (9/9), completado.</span>
+<span class="odt-code-line">remoto: </span>
+<span class="odt-code-line">remoto: Crea una solicitud de extracción para «gh-pages» en GitHub visitando:</span>
+<span class="odt-code-line">remoto:      https://github.com/stahe/word-odt-vers-html-janv-2026/pull/new/gh-pages</span>
+<span class="odt-code-line">remoto: </span>
+<span class="odt-code-line">A https://github.com/stahe/word-odt-vers-html-janv-2026.git</span>
+<span class="odt-code-line"> * [nueva rama]      gh-pages -&gt; gh-pages</span>
+<span class="odt-code-line">INFO    -  Tu documentación estará disponible en breve en:<span style="background-color:#fff5ce"> https://stahe.github.io/word-odt-vers-html-janv-2026/</span></span>
+</code></pre></div>
+
+<p>Haz clic con el botón derecho del ratón en la URL de la línea 21. Esto te llevará a tu nuevo sitio HTML en GitHub:</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000009150000053EA9B99A0A.png" style="display:inline-block; margin:4px;width:16.002cm;height:9.23cm;" class="odt-zoomable" data-zoom-src="images/10000000000009150000053EA9B99A0A.png" /></td></tr></table>
+
+<ul>
+  <li>En [1], vemos que estás mostrando un sitio web en GitHub;
+  </li>
+</ul>
+
+<p>Es muy fácil equivocarse al ejecutar los comandos de [deploy.txt]. Entonces es difícil dar marcha atrás, ya que Git guarda un registro de lo que se ha hecho (mal). Para empezar de cero, visualice la carpeta de trabajo:</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000011A000002A20980080A.png" style="display:inline-block; margin:4px;width:3.731cm;height:8.916cm;" class="odt-zoomable" data-zoom-src="images/100000000000011A000002A20980080A.png" /></td></tr></table>
+
+<ul>
+  <li>En [1], elimine la carpeta [.git];
+  </li>
+</ul>
+
+<p>Vuelve luego a PyCharm y vuelve a ejecutar la serie de comandos de [deploy.txt].</p>
+<p>¿Qué hacer si modificas tu documento ODT / DOCX? Haz lo siguiente:</p>
+<ol>
+  <li>vuelve a convertir tu documento ODT/DOCX con [convert];
+  </li>
+  <li>crea el sitio HTML con [build];
+  </li>
+  <li>Exporte el sitio HTML a GitHub con el comando [python -m mkdocs gh-deploy]. Este comando es suficiente siempre que no modifique el archivo [README.md]. Si modifica el archivo [README.md], tendrá que ejecutar algunos comandos más:
+  </li>
+</ol>
+
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-7-1">1</a></span>
+<span class="normal"><a href="#__codelineno-7-2">2</a></span>
+<span class="normal"><a href="#__codelineno-7-3">3</a></span>
+<span class="normal"><a href="#__codelineno-7-4">4</a></span>
+<span class="normal"><a href="#__codelineno-7-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1"></a>git add README.md
+<a id="__codelineno-7-2" name="__codelineno-7-2"></a><span class="gh"># commit</span>
+<a id="__codelineno-7-3" name="__codelineno-7-3"></a>git commit -m &quot;modif README&quot;
+<a id="__codelineno-7-4" name="__codelineno-7-4"></a>git push -u origin main
+<a id="__codelineno-7-5" name="__codelineno-7-5"></a>python -m mkdocs gh-deploy
+</code></pre></div></td></tr></table></div>
+<p>Si solo has modificado el README, solo son necesarios los comandos 1, 3 y 4. El comando 5 es innecesario si ya has desplegado el sitio HTML y no ha cambiado desde entonces.</p>
+<p>¿Qué hacer si quieres empezar de cero porque las cosas se han descontrolado? Puedes eliminar tu repositorio de GitHub y volver a realizar todas las operaciones del capítulo<a href="#refheadingtoc55961226647236">12</a> . La opción para eliminar un repositorio de GitHub está bien escondida:</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000077A0000020CE87A763A.png" style="display:inline-block; margin:4px;width:16.002cm;height:4.38cm;" class="odt-zoomable" data-zoom-src="images/100000000000077A0000020CE87A763A.png" /></td></tr></table>
+
+<ul>
+  <li>En [1], ve a la configuración del repositorio;
+  </li>
+</ul>
+
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000692000003CC33A8B24D.png" style="display:inline-block; margin:4px;width:16.002cm;height:9.246cm;" class="odt-zoomable" data-zoom-src="images/1000000000000692000003CC33A8B24D.png" /></td></tr></table>
+
+<p>Ve hasta la parte inferior de la página de [configuración]. Allí encontrarás el botón para eliminar tu repositorio [2].</p>
+<hr />
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:4">
+<p>Nota al pie para GitHub&#160;<a class="footnote-backref" href="#fnref:4" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner">
+
+      <div>
+        <a href="https://tahe.developpez.com" target="_blank">
+          https://tahe.developpez.com
+        </a>
+        <br>
+        Este curso-tutorial escrito por <strong>Serge Tahé</strong> se pone a disposición del público según los términos de la
+        <em>Licencia Creative Commons Reconocimiento – Sin uso comercial –
+        Compartir en las mismas condiciones 3.0 no adaptada</em>.
+
+      </div>
+
+    </div>
+  </div>
+
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": ["navigation.sections", "navigation.indexes", "navigation.expand", "toc.integrate", "navigation.top"], "search": "assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="assets/javascripts/bundle.e71a0d61.min.js"></script>
+      
+        <script src="javascripts/focus.js"></script>
+      
+    
+  </body>
+</html>
