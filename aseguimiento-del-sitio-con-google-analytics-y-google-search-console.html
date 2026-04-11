@@ -1,0 +1,971 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Convertir un documento Word u ODT en una página web estática HTML compatible con MkDocs utilizando las IA Gemini 3 y ChatGPT 5.2">
+      
+      
+        <meta name="author" content="Serge Tahé">
+      
+      
+        <link rel="canonical" href="https://stahe.github.io/es-word-odt-vers-html-janv-2026/aseguimiento-del-sitio-con-google-analytics-y-google-search-console.html">
+      
+      
+        <link rel="prev" href="aloje-el-sitio-web-html-en-github.html">
+      
+      
+        <link rel="next" href="conclusion.html">
+      
+      
+        
+      
+      
+      <link rel="icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
+    
+    
+      
+        <title>13. Aseguimiento del sitio con Google Analytics y Google Search Console - Convertir un documento Word u ODT en una página web estática HTML compatible con MkDocs utilizando las IA Gemini 3 y ChatGPT 5.2</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.618322db.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="stylesheets/focus.css">
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EBZC3JVJNR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    var siteName = "Convertir un documento Word u ODT en una página web estática HTML compatible con MkDocs utilizando las IA Gemini 3 y ChatGPT 5.2";
+    gtag('config', 'G-EBZC3JVJNR', {
+        'page_title': siteName
+    });
+  </script>
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="purple">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#13-aseguimiento-del-sitio-con-google-analytics-y-google-search-console" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="index.html" title="Convertir un documento Word u ODT en una página web estática HTML compatible con MkDocs utilizando las IA Gemini 3 y ChatGPT 5.2" class="md-header__button md-logo" aria-label="Convertir un documento Word u ODT en una página web estática HTML compatible con MkDocs utilizando las IA Gemini 3 y ChatGPT 5.2" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Convertir un documento Word u ODT en una página web estática HTML compatible con MkDocs utilizando las IA Gemini 3 y ChatGPT 5.2
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              13. Aseguimiento del sitio con Google Analytics y Google Search Console
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="purple"  aria-label="Cambiar a modo oscuro"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Cambiar a modo oscuro" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="purple"  aria-label="Cambiar a modo claro"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Cambiar a modo claro" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://stahe.github.io/es-word-odt-vers-html-janv-2026" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="index.html" title="Convertir un documento Word u ODT en una página web estática HTML compatible con MkDocs utilizando las IA Gemini 3 y ChatGPT 5.2" class="md-nav__button md-logo" aria-label="Convertir un documento Word u ODT en una página web estática HTML compatible con MkDocs utilizando las IA Gemini 3 y ChatGPT 5.2" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Convertir un documento Word u ODT en una página web estática HTML compatible con MkDocs utilizando las IA Gemini 3 y ChatGPT 5.2
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://stahe.github.io/es-word-odt-vers-html-janv-2026" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bienvenidos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="introduccion.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1. Introducción
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="ejemplos-de-este-documento----.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2. Ejemplos de este documento    
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="que-existe-en-internet.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3. ¿Qué existe? en internet
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="el-mensaje-inicial-a-gemini-3.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4. El mensaje inicial a Gemini 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="crear-un-entorno-de-trabajo-python.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5. Crear un entorno de trabajo Python
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="el-expediente-de-trabajo-del-convertidor.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    6. El expediente de trabajo del convertidor
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="los-archivos-de-configuracion-de-los-convertidores.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    7. Los archivos de configuración de los convertidores
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="como-usar-el-conversor-de-odt-a-html.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    8. Cómo usar el conversor de ODT a HTML
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="utilizar-el-conversor-docx---html.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    9. Utilizar el conversor DOCX → HTML
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="construccion-de-obras-html-estatico.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10. Construcción de obras HTML estático
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="revision-de-sitio-web-html-generado.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    11. Revisión de sitio web HTML generado
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="aloje-el-sitio-web-html-en-github.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    12. Aloje el sitio web HTML en GitHub
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="aseguimiento-del-sitio-con-google-analytics-y-google-search-console.html" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    13. Aseguimiento del sitio con Google Analytics y Google Search Console
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="conclusion.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    14. Conclusión
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<p><a id="refheadingtoc129003578294640"></a></p>
+<h1 id="13-aseguimiento-del-sitio-con-google-analytics-y-google-search-console">13. <span style="color: #0f4761">Aseguimiento del sitio con Google Analytics y Google Search Console</span></h1>
+<p>Si aloja su sitio en GitHub probablemente estará interesado en conocer el número de visitantes del sitio. Para ello, necesita una etiqueta de Google Analytics (GA). Le pedimos <a href="https://chatgpt.com/">ChatGPT</a> cómo crear un marcador GA :</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000079C000004059469F85D.png" style="display:inline-block; margin:4px;width:16.002cm;height:8.453cm;" class="odt-zoomable" data-zoom-src="images/100000000000079C000004059469F85D.png" /></td></tr></table>
+
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000005C70000026FED90F828.png" style="display:inline-block; margin:4px;width:13.7cm;height:5.77cm;" class="odt-zoomable" data-zoom-src="images/10000000000005C70000026FED90F828.png" /></td></tr></table>
+
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000332000001F667AE1FF1.png" style="display:inline-block; margin:4px;width:7.571cm;height:4.65cm;" class="odt-zoomable" data-zoom-src="images/1000000000000332000001F667AE1FF1.png" /></td></tr></table>
+
+<ul>
+  <li>En [1], establezca el URL de su sitio web en GitHub ;
+  </li>
+</ul>
+
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000062D0000025A516EBE37.png" style="display:inline-block; margin:4px;width:14.64cm;height:5.57cm;" class="odt-zoomable" data-zoom-src="images/100000000000062D0000025A516EBE37.png" /></td></tr></table>
+
+<ul>
+  <li>En [2], anote el marcador de su sitio ;
+  </li>
+</ul>
+
+<p>Coloque este marcador en el archivo de configuración [config.py] :</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span>
+<span class="normal"><a href="#__codelineno-0-2">2</a></span>
+<span class="normal"><a href="#__codelineno-0-3">3</a></span>
+<span class="normal"><a href="#__codelineno-0-4">4</a></span>
+<span class="normal"><a href="#__codelineno-0-5">5</a></span>
+<span class="normal"><a href="#__codelineno-0-6">6</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a>  &quot;extra&quot;: {
+<a id="__codelineno-0-2" name="__codelineno-0-2"></a>    &quot;analytics&quot;: {
+<a id="__codelineno-0-3" name="__codelineno-0-3"></a>      &quot;provider&quot;: &quot;google&quot;,
+<a id="__codelineno-0-4" name="__codelineno-0-4"></a>      &quot;property&quot;: &quot;G-XXXXXXXXX&quot;
+<a id="__codelineno-0-5" name="__codelineno-0-5"></a>    }
+<a id="__codelineno-0-6" name="__codelineno-0-6"></a>  },
+</code></pre></div></td></tr></table></div>
+<p>En la línea 4, introduzca su marcador. MkDocs lo pondrá automáticamente en todas sus páginas HTML cuando genere el sitio HTML. Por lo tanto, no necesita seguir las otras instrucciones de ChatGPT que muestran cómo instalar el marcador GA en sus páginas HTML.</p>
+<p>Vamos a pedir a ChatGPT instrucciones precisas para comprobar que el marcador funciona:</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000069900000387AE83B2C5.png" style="display:inline-block; margin:4px;width:16.002cm;height:8.555cm;" class="odt-zoomable" data-zoom-src="images/100000000000069900000387AE83B2C5.png" /></td></tr></table>
+
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004B70000012018980DBA.png" style="display:inline-block; margin:4px;width:9.58cm;height:2.29cm;" class="odt-zoomable" data-zoom-src="images/10000000000004B70000012018980DBA.png" /></td></tr></table>
+
+<p>El paso anterior no está suficientemente claro. Aquí hay algunas capturas de pantalla para ayudarle:</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000003CC000004C5C148C994.png" style="display:inline-block; margin:4px;width:8.999cm;height:11.31cm;" class="odt-zoomable" data-zoom-src="images/10000000000003CC000004C5C148C994.png" /></td></tr></table>
+
+<ul>
+  <li>En [1], seleccione la cuenta que desea seguir (si tiene más de una);
+  </li>
+  <li>En [2], seleccione el botón de administración ;
+  </li>
+</ul>
+
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000009FB0000052521A40768.png" style="display:inline-block; margin:4px;width:16.002cm;height:8.248cm;" class="odt-zoomable" data-zoom-src="images/10000000000009FB0000052521A40768.png" /></td></tr></table>
+
+<ul>
+  <li>En [3], seleccione [Flujo de datos];
+  </li>
+</ul>
+
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000084E00000178C90BDBA6.png" style="display:inline-block; margin:4px;width:16.002cm;height:2.829cm;" class="odt-zoomable" data-zoom-src="images/100000000000084E00000178C90BDBA6.png" /></td></tr></table>
+
+<ul>
+  <li>En [4], haga clic en el flujo de datos ;
+  </li>
+</ul>
+
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000087E00000286EC068670.png" style="display:inline-block; margin:4px;width:16.002cm;height:4.754cm;" class="odt-zoomable" data-zoom-src="images/100000000000087E00000286EC068670.png" /></td></tr></table>
+
+<ul>
+  <li>En [5], se encuentra el marcador GA4 que ha creado;
+  </li>
+  <li>En [6], el ID de flujo. Este es un concepto diferente de la medición ID ;
+  </li>
+</ul>
+
+<p>Volvamos a la bienvenida en GA :</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000AB300000535EC5CAF95.png" style="display:inline-block; margin:4px;width:16.002cm;height:7.788cm;" class="odt-zoomable" data-zoom-src="images/1000000000000AB300000535EC5CAF95.png" /></td></tr></table>
+
+<ul>
+  <li>En [1], se solicita la visualización en tiempo real de las visitas;
+  </li>
+</ul>
+
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000844000004542C37A72F.png" style="display:inline-block; margin:4px;width:16.002cm;height:8.378cm;" class="odt-zoomable" data-zoom-src="images/1000000000000844000004542C37A72F.png" /></td></tr></table>
+
+<ul>
+  <li>En [1], ves a tus visitantes;
+  </li>
+  <li>En [2], la página visitada. He pedido al conversor Gemini que asocie el nombre del sitio en lugar del nombre de la página a la etiqueta GA4. Es el archivo [analytics.html] el que realiza este cambio de nombre asociado a GA4 :
+  </li>
+</ul>
+
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000001DC000001387934B72D.png" style="display:inline-block; margin:4px;width:4.41cm;height:2.889cm;" class="odt-zoomable" data-zoom-src="images/10000000000001DC000001387934B72D.png" /></td></tr></table>
+
+<p>Mahora podemos continuar con las explicaciones de ChatGPT :</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004D80000018B0393EAE6.png" style="display:inline-block; margin:4px;width:11.479cm;height:3.66cm;" class="odt-zoomable" data-zoom-src="images/10000000000004D80000018B0393EAE6.png" /><img src="images/10000000000004360000019E9DDEACF8.png" style="display:inline-block; margin:4px;width:9.98cm;height:3.829cm;" class="odt-zoomable" data-zoom-src="images/10000000000004360000019E9DDEACF8.png" /></td></tr></table>
+
+<p>Hice lo que se pide en [4] sin pasar por una ventana privada. Y obtuve lo siguiente:</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000083100000435D8C645A7.png" style="display:inline-block; margin:4px;width:16.002cm;height:8.218cm;" class="odt-zoomable" data-zoom-src="images/100000000000083100000435D8C645A7.png" /></td></tr></table>
+
+<p>Ll marcador GA4 de Goggle Analytics es totalmente funcional.</p>
+<p>Ahora vamos a presentar otra herramienta para monitorizar tu sitio [Google Search Console]. Preguntemos a ChatGPT para qué sirve esta herramienta:</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000003A10000019A26251BA5.png" style="display:inline-block; margin:4px;width:8.601cm;height:3.799cm;" class="odt-zoomable" data-zoom-src="images/10000000000003A10000019A26251BA5.png" /></td></tr></table>
+
+<p>Casi nunca utilizo esta herramienta. Sólo la utilizo para animar al motor de búsqueda de Google a explorarlo e indexarlo para que la gente pueda encontrarlo.</p>
+<p>El URL de la [<a href="https://search.google.com/search-console">https://search.google.com/search-console</a>] :</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000002C1000001A022B0104E.png" style="display:inline-block; margin:4px;width:6.53cm;height:3.851cm;" class="odt-zoomable" data-zoom-src="images/10000000000002C1000001A022B0104E.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000003A900000513536403B2.png" style="display:inline-block; margin:4px;width:8.001cm;height:11.091cm;" class="odt-zoomable" data-zoom-src="images/10000000000003A900000513536403B2.png" /></td></tr></table>
+
+<ul>
+  <li>Véase [1] para consultar la lista de sitios declarados a Google;
+  </li>
+  <li>Consulte [3] para obtener una lista de sus sitios;
+  </li>
+  <li>En [4], añada su nuevo sitio;
+  </li>
+</ul>
+
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000060B00000465891F01A1.png" style="display:inline-block; margin:4px;width:14.33cm;height:10.419cm;" class="odt-zoomable" data-zoom-src="images/100000000000060B00000465891F01A1.png" /></td></tr></table>
+
+<ul>
+  <li>En [5], introduzca el URL de su sitio. Se encuentra en el archivo [config.py]:
+  </li>
+</ul>
+
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a>    &quot;site_url&quot;: &quot;https://stahe.github.io/word-odt-vers-html-janv-2026/&quot;,
+</code></pre></div></td></tr></table></div>
+<ul>
+  <li>en [6a continuación, vaya al siguiente paso ;
+  </li>
+</ul>
+
+<p>Normalmente, en esta fase, Google Search Console te ofrece un archivo [googlexxxxx.html] que debes descargar. A mí no me apareció esta pantalla porque ya tenía este archivo en el sitio desplegado. Se trata de uno de los dos archivos declarados en [config.py]</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span>
+<span class="normal"><a href="#__codelineno-2-2">2</a></span>
+<span class="normal"><a href="#__codelineno-2-3">3</a></span>
+<span class="normal"><a href="#__codelineno-2-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a>  &quot;files_to_copy&quot;: [
+<a id="__codelineno-2-2" name="__codelineno-2-2"></a>    &quot;google5179xxxxx.html&quot;,
+<a id="__codelineno-2-3" name="__codelineno-2-3"></a>    &quot;robots.txt&quot;
+<a id="__codelineno-2-4" name="__codelineno-2-4"></a>  ]
+</code></pre></div></td></tr></table></div>
+<p>Ponga el archivo [googlexxxxx.html] en la raíz de su carpeta de trabajo e introduzca su nombre en la línea 2 anterior en el archivo [config.py]. El script [convert] se encarga de poner los dos archivos anteriores en la raíz del sitio MkDocs que genera. El script [build] se encargará de ponerlos en la raíz del sitio HTML que genera.</p>
+<p>Cuando haya copiado el archivo [googlexxxxx.html] en la raíz de su carpeta de trabajo, comprobar el contenido del fichero [robots.txt] :</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000002990000020922B87B41.png" style="display:inline-block; margin:4px;width:8.798cm;height:6.893cm;" class="odt-zoomable" data-zoom-src="images/10000000000002990000020922B87B41.png" /></td></tr></table>
+
+<p>El contenido del fichero [robots.txt] es el siguiente:</p>
+<div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-text">
+<span class="odt-code-line">User-agent: *</span>
+<span class="odt-code-line">Allow: /</span>
+<span class="odt-code-line">Sitemap: https://stahe.github.io/<span style="background-color:#fff5ce">word-odt-vers-html-janv-2026</span>/sitemap.xml</span>
+</code></pre></div>
+
+<p>En línea 3, comprobar que  el URL es que de su sitio, el mismo que en el archivo [config.py].</p>
+<p>Replote su sitio web en GitHub escribiendo los tres comandos siguientes en su terminal Python :</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1">1</a></span>
+<span class="normal"><a href="#__codelineno-3-2">2</a></span>
+<span class="normal"><a href="#__codelineno-3-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1"></a>python .\convert.py .\word-odt-vers-HTML.odt config.py
+<a id="__codelineno-3-2" name="__codelineno-3-2"></a>python .\build.py
+<a id="__codelineno-3-3" name="__codelineno-3-3"></a>python -m mkdocs gh-deploy
+</code></pre></div></td></tr></table></div>
+<p>Una vez hecho esto, vuelve a [Mar de Googlerch Console] y seleccione la propiedad que creó anteriormente.</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000002C20000016916F02C28.png" style="display:inline-block; margin:4px;width:6.541cm;height:3.341cm;" class="odt-zoomable" data-zoom-src="images/10000000000002C20000016916F02C28.png" /></td></tr></table>
+
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000ABE00000265099D5418.png" style="display:inline-block; margin:4px;width:16.002cm;height:3.57cm;" class="odt-zoomable" data-zoom-src="images/1000000000000ABE00000265099D5418.png" /></td></tr></table>
+
+<ul>
+  <li>En [1], seleccione option [Sitemaps] ;
+  </li>
+  <li>En [2], tipo [sitemap.xml] ;
+  </li>
+  <li>En [3], confirme URL ;
+  </li>
+</ul>
+
+<p>El fichero [sitemap.xml] es un fichero que Mkdocs puso en la raíz del sitio HTML exportado a GitHub. Puede comprobar su presencia escribiendo directamente su URL:</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000645000003112262FAE9.png" style="display:inline-block; margin:4px;width:14.861cm;height:7.271cm;" class="odt-zoomable" data-zoom-src="images/1000000000000645000003112262FAE9.png" /></td></tr></table>
+
+<p>El archivo [sitemap.xml] enumera todas las páginas HTML del sitio.</p>
+<p>Si todo va bien, aparecerá la siguiente pantalla:</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000453000001C7E50F9F93.png" style="display:inline-block; margin:4px;width:10.25cm;height:4.21cm;" class="odt-zoomable" data-zoom-src="images/1000000000000453000001C7E50F9F93.png" /></td></tr></table>
+
+<p>Eso es todo. Tendrá que indexar las páginas usted mismo:</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000008CC000004169EC0DDAD.png" style="display:inline-block; margin:4px;width:16.002cm;height:7.431cm;" class="odt-zoomable" data-zoom-src="images/10000000000008CC000004169EC0DDAD.png" /></td></tr></table>
+
+<ul>
+  <li>En [2], introduzca el URL de una de las páginas de su sitio;
+  </li>
+</ul>
+
+<p>Ici, el resultado es el siguiente:</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000007FB000002451BB4E253.png" style="display:inline-block; margin:4px;width:16.002cm;height:4.551cm;" class="odt-zoomable" data-zoom-src="images/10000000000007FB000002451BB4E253.png" /></td></tr></table>
+
+<ul>
+  <li>En [1], Google dice que la página aún no está indexada;
+  </li>
+  <li>En [2], puede solicitar su indexación;
+  </li>
+</ul>
+
+<p>Google Search Console comprueba que la página solicitada puede ser indexada. Si es así, obtenemos el siguiente mensaje:</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000450000001C6CF932895.png" style="display:inline-block; margin:4px;width:10.22cm;height:4.2cm;" class="odt-zoomable" data-zoom-src="images/1000000000000450000001C6CF932895.png" /></td></tr></table>
+
+<p>Vpuede hacer esto para todas las páginas de su sitio, de modo que pueda estar seguro de que su sitio es seguroûr que sea indexado por el motor de búsqueda Google.</p>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner">
+
+      <div>
+        <a href="https://tahe.developpez.com" target="_blank">
+          https://tahe.developpez.com
+        </a>
+        <br>
+        Este curso-tutorial escrito por <strong>Serge Tahé</strong> se pone a disposición del público según los términos de la
+        <em>Licencia Creative Commons Reconocimiento – Sin uso comercial –
+        Compartir en las mismas condiciones 3.0 no adaptada</em>.
+
+      </div>
+
+    </div>
+  </div>
+
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": ["navigation.sections", "navigation.indexes", "navigation.expand", "toc.integrate", "navigation.top"], "search": "assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="assets/javascripts/bundle.e71a0d61.min.js"></script>
+      
+        <script src="javascripts/focus.js"></script>
+      
+    
+  </body>
+</html>
