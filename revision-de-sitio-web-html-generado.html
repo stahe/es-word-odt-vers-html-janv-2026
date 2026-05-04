@@ -1024,7 +1024,7 @@
 <p>Ahora examinaremos la representación HTML de este documento ODT / DOCX. Ya hemos visto que el conversor respeta el índice.</p>
 <h2 id="111-la-barra-superior-del-sitio">11.1. <span style="color: #0f4761">La barra superior del sitio</span></h2>
 <p>Rechemos un vistazo a la barra superior del sitio:</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000ABB0000016D9B3C5647.png" style="display:inline-block; margin:4px;width:16.002cm;height:2.125cm;" class="odt-zoomable" data-zoom-src="images/1000000000000ABB0000016D9B3C5647.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000ABB0000016D9B3C5647.png" width="605" height="80" style="display:inline-block; margin:4px;width:16.002cm;height:2.125cm;" class="odt-zoomable" data-zoom-src="images/1000000000000ABB0000016D9B3C5647.png" /></td></tr></table>
 
 <ul>
   <li>En [1], el nombre del sitio definido en [config.py] ;
@@ -1039,15 +1039,15 @@
 
 <h2 id="112-pie-de-pagina">11.2. <span style="color: #0f4761">Pie de página</span></h2>
 <p>Ahora echemos un vistazo al pie de página:</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000B32000000A5B62D1439.png" style="display:inline-block; margin:4px;width:16.002cm;height:0.921cm;" class="odt-zoomable" data-zoom-src="images/1000000000000B32000000A5B62D1439.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000B32000000A5B62D1439.png" width="605" height="35" style="display:inline-block; margin:4px;width:16.002cm;height:0.921cm;" class="odt-zoomable" data-zoom-src="images/1000000000000B32000000A5B62D1439.png" /></td></tr></table>
 
 <p>Este es el pie de página definido en el archivo [config.py].</p>
 <h2 id="113-la-pagina-de-inicio">11.3. <span style="color: #0f4761">La página de inicio</span></h2>
 <p>La portada del Documento ODT / DOCX era la siguiente:</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000053F00000433A2D9594F.png" style="display:inline-block; margin:4px;width:16.002cm;height:12.808cm;" class="odt-zoomable" data-zoom-src="images/100000000000053F00000433A2D9594F.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000053F00000433A2D9594F.png" width="605" height="484" style="display:inline-block; margin:4px;width:16.002cm;height:12.808cm;" class="odt-zoomable" data-zoom-src="images/100000000000053F00000433A2D9594F.png" /></td></tr></table>
 
 <p>Esta portada del Documento ODT / DOCX se convierte en la página de inicio del sitio HTML :</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000076C000003BEDE4D0541.png" style="display:inline-block; margin:4px;width:16.002cm;height:8.11cm;" class="odt-zoomable" data-zoom-src="images/100000000000076C000003BEDE4D0541.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000076C000003BEDE4D0541.png" width="605" height="307" style="display:inline-block; margin:4px;width:16.002cm;height:8.11cm;" class="odt-zoomable" data-zoom-src="images/100000000000076C000003BEDE4D0541.png" /></td></tr></table>
 
 <p>El Gemini 3 / convertidor ChatGPT pone todo lo que le precede en el Documento ODT / DOCX, el título de primer nivel, en la página de Inicio 1este es el estilo &#x27;Título 1&#x27;. Si añades imágenes como arriba, las mostrará. Así que puedes imaginar darle a tu sitio una portada como la de un libro de verdad. En [1], este es el título principal del documento. Su representación está controlada por las siguientes líneas en el archivo de configuración [config_styles.py]:</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span>
@@ -1073,27 +1073,27 @@
 </code></pre></div></td></tr></table></div>
 <p>Con el valor [true], se mostrará el estilo de los párrafos que preceden al primer título de nivel 1, es decir, los párrafos de la página de inicio, cuando se ejecute el convertidor Gemini / ChatGPT. Para un documento distinto de éste, obtuve los siguientes registros :</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-javascript">
-<span class="odt-code-line">[DEBUG PRE-H1] Style=&#x27;Standard (WW)&#x27; (Clean=&#x27;standard (ww)&#x27;) | Texte=&#x27;...&#x27;</span>
-<span class="odt-code-line">[DEBUG PRE-H1] Style=&#x27;P1&#x27; (Clean=&#x27;p1&#x27;) | Texte=&#x27;...&#x27;</span>
-<span class="odt-code-line">[DEBUG PRE-H1] Style=&#x27;P1&#x27; (Clean=&#x27;p1&#x27;) | Texte=&#x27;...&#x27;</span>
-<span class="odt-code-line">[DEBUG PRE-H1] Style=&#x27;P1&#x27; (Clean=&#x27;p1&#x27;) | Texte=&#x27;...&#x27;</span>
-<span class="odt-code-line">[DEBUG PRE-H1] Style=&#x27;P3&#x27; (Clean=&#x27;p3&#x27;) | Texte=&#x27;...&#x27;</span>
-<span class="odt-code-line">[DEBUG PRE-H1] Style=&#x27;P1&#x27; (Clean=&#x27;p1&#x27;) | Texte=&#x27;...&#x27;</span>
-<span class="odt-code-line">[DEBUG PRE-H1] Style=&#x27;P1&#x27; (Clean=&#x27;p1&#x27;) | Texte=&#x27;...&#x27;</span>
-<span class="odt-code-line">[DEBUG PRE-H1] Style=&#x27;P1&#x27; (Clean=&#x27;p1&#x27;) | Texte=&#x27;...&#x27;</span>
-<span class="odt-code-line">[DEBUG PRE-H1] Style=&#x27;P1&#x27; (Clean=&#x27;p1&#x27;) | Texte=&#x27;...&#x27;</span>
-<span class="odt-code-line">[DEBUG PRE-H1] Style=&#x27;<span style="background-color:#fff5ce">P4</span>&#x27; (Clean=&#x27;p4&#x27;) | Texte=&#x27;Introduction au langage PHP7 par l’exemp...&#x27;</span>
-<span class="odt-code-line">&gt;&gt;&gt; <span style="background-color:#fff5ce">TITRE DOCUMENT DETECTÉ</span> : Introduction au langage PHP7 par l’exemple</span>
-<span class="odt-code-line">[DEBUG PRE-H1] Style=&#x27;Standard (WW)&#x27; (Clean=&#x27;standard (ww)&#x27;) | Texte=&#x27;...&#x27;</span>
-<span class="odt-code-line">[DEBUG PRE-H1] Style=&#x27;Standard (WW)&#x27; (Clean=&#x27;standard (ww)&#x27;) | Texte=&#x27;...&#x27;</span>
-<span class="odt-code-line">[DEBUG PRE-H1] Style=&#x27;Standard (WW)&#x27; (Clean=&#x27;standard (ww)&#x27;) | Texte=&#x27;...&#x27;</span>
-<span class="odt-code-line">[DEBUG PRE-H1] Style=&#x27;Standard (WW)&#x27; (Clean=&#x27;standard (ww)&#x27;) | Texte=&#x27;...&#x27;</span>
-<span class="odt-code-line">[DEBUG PRE-H1] Style=&#x27;Standard (WW)&#x27; (Clean=&#x27;standard (ww)&#x27;) | Texte=&#x27;...&#x27;</span>
-<span class="odt-code-line">[DEBUG PRE-H1] Style=&#x27;Standard (WW)&#x27; (Clean=&#x27;standard (ww)&#x27;) | Texte=&#x27;...&#x27;</span>
-<span class="odt-code-line">[DEBUG PRE-H1] Style=&#x27;P5&#x27; (Clean=&#x27;p5&#x27;) | Texte=&#x27;Serge Tahé, juillet 2019...&#x27;</span>
-<span class="odt-code-line">[DEBUG PRE-H1] Style=&#x27;P5&#x27; (Clean=&#x27;p5&#x27;) | Texte=&#x27;...&#x27;</span>
-<span class="odt-code-line">[DEBUG PRE-H1] Style=&#x27;P6&#x27; (Clean=&#x27;p6&#x27;) | Texte=&#x27;...&#x27;</span>
-<span class="odt-code-line">[DEBUG PRE-H1] Style=&#x27;Heading 1&#x27; (Clean=&#x27;heading 1&#x27;) | Texte=&#x27;Introduction au langage PHP 7...&#x27;</span>
+<span class="odt-code-line"><span class="odt-code-line-content">[DEBUG PRE-H1] Style=&#x27;Standard (WW)&#x27; (Clean=&#x27;standard (ww)&#x27;) | Texte=&#x27;...&#x27;</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">[DEBUG PRE-H1] Style=&#x27;P1&#x27; (Clean=&#x27;p1&#x27;) | Texte=&#x27;...&#x27;</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">[DEBUG PRE-H1] Style=&#x27;P1&#x27; (Clean=&#x27;p1&#x27;) | Texte=&#x27;...&#x27;</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">[DEBUG PRE-H1] Style=&#x27;P1&#x27; (Clean=&#x27;p1&#x27;) | Texte=&#x27;...&#x27;</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">[DEBUG PRE-H1] Style=&#x27;P3&#x27; (Clean=&#x27;p3&#x27;) | Texte=&#x27;...&#x27;</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">[DEBUG PRE-H1] Style=&#x27;P1&#x27; (Clean=&#x27;p1&#x27;) | Texte=&#x27;...&#x27;</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">[DEBUG PRE-H1] Style=&#x27;P1&#x27; (Clean=&#x27;p1&#x27;) | Texte=&#x27;...&#x27;</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">[DEBUG PRE-H1] Style=&#x27;P1&#x27; (Clean=&#x27;p1&#x27;) | Texte=&#x27;...&#x27;</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">[DEBUG PRE-H1] Style=&#x27;P1&#x27; (Clean=&#x27;p1&#x27;) | Texte=&#x27;...&#x27;</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">[DEBUG PRE-H1] Style=&#x27;<span style="background-color:#fff5ce">P4</span>&#x27; (Clean=&#x27;p4&#x27;) | Texte=&#x27;Introduction au langage PHP7 par l’exemp...&#x27;</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">&gt;&gt;&gt; <span style="background-color:#fff5ce">TITRE DOCUMENT DETECTÉ</span> : Introduction au langage PHP7 par l’exemple</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">[DEBUG PRE-H1] Style=&#x27;Standard (WW)&#x27; (Clean=&#x27;standard (ww)&#x27;) | Texte=&#x27;...&#x27;</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">[DEBUG PRE-H1] Style=&#x27;Standard (WW)&#x27; (Clean=&#x27;standard (ww)&#x27;) | Texte=&#x27;...&#x27;</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">[DEBUG PRE-H1] Style=&#x27;Standard (WW)&#x27; (Clean=&#x27;standard (ww)&#x27;) | Texte=&#x27;...&#x27;</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">[DEBUG PRE-H1] Style=&#x27;Standard (WW)&#x27; (Clean=&#x27;standard (ww)&#x27;) | Texte=&#x27;...&#x27;</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">[DEBUG PRE-H1] Style=&#x27;Standard (WW)&#x27; (Clean=&#x27;standard (ww)&#x27;) | Texte=&#x27;...&#x27;</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">[DEBUG PRE-H1] Style=&#x27;Standard (WW)&#x27; (Clean=&#x27;standard (ww)&#x27;) | Texte=&#x27;...&#x27;</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">[DEBUG PRE-H1] Style=&#x27;P5&#x27; (Clean=&#x27;p5&#x27;) | Texte=&#x27;Serge Tahé, juillet 2019...&#x27;</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">[DEBUG PRE-H1] Style=&#x27;P5&#x27; (Clean=&#x27;p5&#x27;) | Texte=&#x27;...&#x27;</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">[DEBUG PRE-H1] Style=&#x27;P6&#x27; (Clean=&#x27;p6&#x27;) | Texte=&#x27;...&#x27;</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">[DEBUG PRE-H1] Style=&#x27;Heading 1&#x27; (Clean=&#x27;heading 1&#x27;) | Texte=&#x27;Introduction au langage PHP 7...&#x27;</span></span>
 </code></pre></div>
 
 <ul>
@@ -1103,12 +1103,12 @@
 
 <p>En el archivo [config.py], tengo entonces ponga las siguientes líneas :</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-text">
-<span class="odt-code-line">  &quot;document_title&quot;: {</span>
-<span class="odt-code-line">    &quot;style_names&quot;: [</span>
-<span class="odt-code-line">      &quot;<span style="background-color:#fff5ce">P4</span>&quot;</span>
-<span class="odt-code-line">    ],</span>
-<span class="odt-code-line">    &quot;css&quot;: &quot;font-size: 28px; font-weight: bold; margin-bottom: 1em; line-height: 1.2; color: #2c3e50;&quot;</span>
-<span class="odt-code-line">  },</span>
+<span class="odt-code-line"><span class="odt-code-line-content">  &quot;document_title&quot;: {</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    &quot;style_names&quot;: [</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">      &quot;<span style="background-color:#fff5ce">P4</span>&quot;</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    ],</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    &quot;css&quot;: &quot;font-size: 28px; font-weight: bold; margin-bottom: 1em; line-height: 1.2; color: #2c3e50;&quot;</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  },</span></span>
 </code></pre></div>
 
 <ul>
@@ -1118,8 +1118,8 @@
 
 <p>Por eso el depurador muestra las líneas :</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-text">
-<span class="odt-code-line">[DEBUG PRE-H1] Style=&#x27;P4&#x27; (Clean=&#x27;p4&#x27;) | Texte=&#x27;Introduction au langage PHP7 par l’exemp...&#x27;</span>
-<span class="odt-code-line">&gt;&gt;&gt; <span style="background-color:#fff5ce">TITRE DOCUMENT DETECTÉ</span> : Introduction au langage PHP7 par l’exemple</span>
+<span class="odt-code-line"><span class="odt-code-line-content">[DEBUG PRE-H1] Style=&#x27;P4&#x27; (Clean=&#x27;p4&#x27;) | Texte=&#x27;Introduction au langage PHP7 par l’exemp...&#x27;</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">&gt;&gt;&gt; <span style="background-color:#fff5ce">TITRE DOCUMENT DETECTÉ</span> : Introduction au langage PHP7 par l’exemple</span></span>
 </code></pre></div>
 
 <p>Ha encontrado el estilo &quot;P4&quot; y ahora muestra que se ha encontrado el título del documento. Una vez encontrado el título, puedez establezca la tecla [debug] en [false] en [config.py] :</p>
@@ -1128,128 +1128,128 @@
 <p>Echemos un vistazo ala conversión de capítulo [Ejemplos], que agrupa los ejemplos que el convertidor Gemini / ChatGPT sabe cómo gestionar :</p>
 <h2 id="114-las-listas">11.4. <span style="color: #0f4761">Las listas</span></h2>
 <p><u><strong>D</strong></u><u><strong>ocu</strong></u><u><strong>m</strong></u><u><strong>ent ODT /</strong> </u><u><strong>DOCX</strong></u> :</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000027F000001B702F16E14.png" style="display:inline-block; margin:4px;width:8.451cm;height:5.81cm;" class="odt-zoomable" data-zoom-src="images/100000000000027F000001B702F16E14.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000027F000001B702F16E14.png" width="319" height="220" style="display:inline-block; margin:4px;width:8.451cm;height:5.81cm;" class="odt-zoomable" data-zoom-src="images/100000000000027F000001B702F16E14.png" /></td></tr></table>
 
 <p>Arriba, el texto [Listas con viñetas] está resaltado porque es una referencia asociada a una referencia cruzada.</p>
 <p><u><strong>Documento HTML</strong></u> :</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000217000002FABCC34DD6.png" style="display:inline-block; margin:4px;width:7.08cm;height:10.081cm;" class="odt-zoomable" data-zoom-src="images/1000000000000217000002FABCC34DD6.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000217000002FABCC34DD6.png" width="268" height="381" style="display:inline-block; margin:4px;width:7.08cm;height:10.081cm;" class="odt-zoomable" data-zoom-src="images/1000000000000217000002FABCC34DD6.png" /></td></tr></table>
 
 <p>Tenga en cuenta que mientras el Documento ODT / DOCX utiliza diferentes chips, el Documento HTML utiliza un único tipo de chip.</p>
 <h2 id="115-listas-numeradas">11.5. <span style="color: #0f4761">Listas numeradas</span></h2>
 <p><u><strong>Documento ODT / DOCX</strong></u> :</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000278000001733D6B4A2B.png" style="display:inline-block; margin:4px;width:8.361cm;height:4.911cm;" class="odt-zoomable" data-zoom-src="images/1000000000000278000001733D6B4A2B.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000278000001733D6B4A2B.png" width="316" height="186" style="display:inline-block; margin:4px;width:8.361cm;height:4.911cm;" class="odt-zoomable" data-zoom-src="images/1000000000000278000001733D6B4A2B.png" /></td></tr></table>
 
 <p><u><strong>Documento HTML</strong></u> :</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000214000002D9A5F7FD1D.png" style="display:inline-block; margin:4px;width:7.04cm;height:9.64cm;" class="odt-zoomable" data-zoom-src="images/1000000000000214000002D9A5F7FD1D.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000214000002D9A5F7FD1D.png" width="266" height="364" style="display:inline-block; margin:4px;width:7.04cm;height:9.64cm;" class="odt-zoomable" data-zoom-src="images/1000000000000214000002D9A5F7FD1D.png" /></td></tr></table>
 
 <h3 id="1151-listas-mixtas-1">11.5.1. <span style="color: #0f4761">Listas mixtas 1</span></h3>
 <p><u><strong>Documento ODT / DOCX</strong></u></p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000259000001C9E9D5D5F1.png" style="display:inline-block; margin:4px;width:7.952cm;height:6.047cm;" class="odt-zoomable" data-zoom-src="images/1000000000000259000001C9E9D5D5F1.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000259000001C9E9D5D5F1.png" width="301" height="229" style="display:inline-block; margin:4px;width:7.952cm;height:6.047cm;" class="odt-zoomable" data-zoom-src="images/1000000000000259000001C9E9D5D5F1.png" /></td></tr></table>
 
 <p><u><strong>Documento HTML</strong></u></p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000002070000030A9D81C032.png" style="display:inline-block; margin:4px;width:6.867cm;height:10.292cm;" class="odt-zoomable" data-zoom-src="images/10000000000002070000030A9D81C032.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000002070000030A9D81C032.png" width="260" height="389" style="display:inline-block; margin:4px;width:6.867cm;height:10.292cm;" class="odt-zoomable" data-zoom-src="images/10000000000002070000030A9D81C032.png" /></td></tr></table>
 
 <p>También en este caso hay a veces diferencias entre los tipos de chip utilizados.</p>
 <h3 id="1152-listas-mixtas-2">11.5.2. <span style="color: #0f4761">Listas mixtas 2</span></h3>
 <p><u><strong>Documento ODT / DOCX</strong></u></p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000024000000185B0E8C579.png" style="display:inline-block; margin:4px;width:7.62cm;height:5.147cm;" class="odt-zoomable" data-zoom-src="images/100000000000024000000185B0E8C579.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000024000000185B0E8C579.png" width="288" height="195" style="display:inline-block; margin:4px;width:7.62cm;height:5.147cm;" class="odt-zoomable" data-zoom-src="images/100000000000024000000185B0E8C579.png" /></td></tr></table>
 
 <p><u><strong>Documento HTML</strong></u></p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000222000002C3C92797DC.png" style="display:inline-block; margin:4px;width:7.223cm;height:9.354cm;" class="odt-zoomable" data-zoom-src="images/1000000000000222000002C3C92797DC.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000222000002C3C92797DC.png" width="273" height="354" style="display:inline-block; margin:4px;width:7.223cm;height:9.354cm;" class="odt-zoomable" data-zoom-src="images/1000000000000222000002C3C92797DC.png" /></td></tr></table>
 
 <h2 id="116-en-bloquea-de-codigo-enriquecido">11.6. <span style="color: #0f4761">En bloquea de código enriquecido</span></h2>
 <p>Los bloques de código enriquecido se representan de forma idéntica en el HTML (aparte del color de fondo). He aquí tres ejemplos:</p>
 <h3 id="1161-ejemplo-1">11.6.1. <span style="color: #0f4761">Ejemplo 1</span></h3>
 <p><u><strong>Documento ODT / DOCX</strong></u></p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004A60000033D6C88CFC0.png" style="display:inline-block; margin:4px;width:11.021cm;height:7.68cm;" class="odt-zoomable" data-zoom-src="images/10000000000004A60000033D6C88CFC0.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004A60000033D6C88CFC0.png" width="417" height="290" style="display:inline-block; margin:4px;width:11.021cm;height:7.68cm;" class="odt-zoomable" data-zoom-src="images/10000000000004A60000033D6C88CFC0.png" /></td></tr></table>
 
 <p><u><strong>Rendu HTML</strong></u></p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004C40000041CE168C351.png" style="display:inline-block; margin:4px;width:11.299cm;height:9.74cm;" class="odt-zoomable" data-zoom-src="images/10000000000004C40000041CE168C351.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004C40000041CE168C351.png" width="427" height="368" style="display:inline-block; margin:4px;width:11.299cm;height:9.74cm;" class="odt-zoomable" data-zoom-src="images/10000000000004C40000041CE168C351.png" /></td></tr></table>
 
 <h3 id="1162-ejemplo-2">11.6.2. <span style="color: #0f4761">Ejemplo 2</span></h3>
 <p><u><strong>Documento ODT / DOCX</strong></u> :</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000002F2000003EF5F4C93D4.png" style="display:inline-block; margin:4px;width:6.98cm;height:9.32cm;" class="odt-zoomable" data-zoom-src="images/10000000000002F2000003EF5F4C93D4.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000002F2000003EF5F4C93D4.png" width="264" height="352" style="display:inline-block; margin:4px;width:6.98cm;height:9.32cm;" class="odt-zoomable" data-zoom-src="images/10000000000002F2000003EF5F4C93D4.png" /></td></tr></table>
 
 <p><u><strong>Renderizado HTML</strong></u></p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000043B000004AE1C7E4A84.png" style="display:inline-block; margin:4px;width:10.029cm;height:11.09cm;" class="odt-zoomable" data-zoom-src="images/100000000000043B000004AE1C7E4A84.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000043B000004AE1C7E4A84.png" width="379" height="419" style="display:inline-block; margin:4px;width:10.029cm;height:11.09cm;" class="odt-zoomable" data-zoom-src="images/100000000000043B000004AE1C7E4A84.png" /></td></tr></table>
 
 <h3 id="1163-ejemplo-3">11.6.3. <span style="color: #0f4761">Ejemplo 3</span></h3>
 <p><u><strong>Documento ODT / DOCX</strong></u></p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000038F00000348ADE46512.png" style="display:inline-block; margin:4px;width:8.43cm;height:7.781cm;" class="odt-zoomable" data-zoom-src="images/100000000000038F00000348ADE46512.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000038F00000348ADE46512.png" width="319" height="294" style="display:inline-block; margin:4px;width:8.43cm;height:7.781cm;" class="odt-zoomable" data-zoom-src="images/100000000000038F00000348ADE46512.png" /></td></tr></table>
 
 <p><u><strong>Renderizado HTML</strong></u></p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000003F000000475DAC3FA92.png" style="display:inline-block; margin:4px;width:9.329cm;height:10.56cm;" class="odt-zoomable" data-zoom-src="images/10000000000003F000000475DAC3FA92.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000003F000000475DAC3FA92.png" width="353" height="399" style="display:inline-block; margin:4px;width:9.329cm;height:10.56cm;" class="odt-zoomable" data-zoom-src="images/10000000000003F000000475DAC3FA92.png" /></td></tr></table>
 
 <h2 id="117-bloques-de-codigo-en-bruto-sin-formato-text">11.7. <span style="color: #0f4761">Bloques de código en bruto (sin formato text)</span></h2>
 <p>Los bloques de código sin procesar que se encuentran en el Documento ODT / DOCX están coloreados sintácticamente por MkDocs según el idioma encontrado en el bloque de código. Para ayudar al conversor a encontrar el idioma correcto, ponemos &quot;cadenas clave&quot; en el archivo [config.py] para cada idioma. El conversor cuenta las &quot;cadenas clave&quot; encontradas. A continuación, asocia el bloque de código al idioma con más &quot;cadenas clave&quot; encontradas.</p>
 <p>Veamos algunos ejemplos.</p>
 <h3 id="1171-ejemplo-1">11.7.1. <span style="color: #0f4761">Ejemplo 1</span></h3>
 <p><u><strong>Documento ODT / DOCX (Java)</strong></u></p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000043A0000032EB12A1213.png" style="display:inline-block; margin:4px;width:10.021cm;height:7.541cm;" class="odt-zoomable" data-zoom-src="images/100000000000043A0000032EB12A1213.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000043A0000032EB12A1213.png" width="379" height="285" style="display:inline-block; margin:4px;width:10.021cm;height:7.541cm;" class="odt-zoomable" data-zoom-src="images/100000000000043A0000032EB12A1213.png" /></td></tr></table>
 
 <p><u><strong>Renderizado HTML</strong></u></p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000055E0000037DF36BF87A.png" style="display:inline-block; margin:4px;width:12.719cm;height:8.271cm;" class="odt-zoomable" data-zoom-src="images/100000000000055E0000037DF36BF87A.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000055E0000037DF36BF87A.png" width="481" height="313" style="display:inline-block; margin:4px;width:12.719cm;height:8.271cm;" class="odt-zoomable" data-zoom-src="images/100000000000055E0000037DF36BF87A.png" /></td></tr></table>
 
 <p>En el documento HTML podemos ver que el código Java ha sido coloreado sintácticamente.</p>
 <h3 id="1172-ejemplo-2">11.7.2. <span style="color: #0f4761">Ejemplo 2</span></h3>
 <p><u><strong>Documento ODT / DOCX (XML)</strong></u></p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004FA0000040E5375A369.png" style="display:inline-block; margin:4px;width:11.8cm;height:9.61cm;" class="odt-zoomable" data-zoom-src="images/10000000000004FA0000040E5375A369.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004FA0000040E5375A369.png" width="446" height="363" style="display:inline-block; margin:4px;width:11.8cm;height:9.61cm;" class="odt-zoomable" data-zoom-src="images/10000000000004FA0000040E5375A369.png" /></td></tr></table>
 
 <p><u><strong>Renderizado HTML</strong></u></p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000044A0000046F3090D14A.png" style="display:inline-block; margin:4px;width:10.171cm;height:10.509cm;" class="odt-zoomable" data-zoom-src="images/100000000000044A0000046F3090D14A.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000044A0000046F3090D14A.png" width="384" height="397" style="display:inline-block; margin:4px;width:10.171cm;height:10.509cm;" class="odt-zoomable" data-zoom-src="images/100000000000044A0000046F3090D14A.png" /></td></tr></table>
 
 <h3 id="1173-ejemplo-3">11.7.3. <span style="color: #0f4761">Ejemplo 3</span></h3>
 <p><u><strong>Documento ODT / DOCX (HTML)</strong></u></p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000040B000004D6C658F970.png" style="display:inline-block; margin:4px;width:9.58cm;height:11.46cm;" class="odt-zoomable" data-zoom-src="images/100000000000040B000004D6C658F970.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000040B000004D6C658F970.png" width="362" height="433" style="display:inline-block; margin:4px;width:9.58cm;height:11.46cm;" class="odt-zoomable" data-zoom-src="images/100000000000040B000004D6C658F970.png" /></td></tr></table>
 
 <p><u><strong>Renderizado HTML</strong></u></p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000003F30000047085672281.png" style="display:inline-block; margin:4px;width:9.359cm;height:10.52cm;" class="odt-zoomable" data-zoom-src="images/10000000000003F30000047085672281.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000003F30000047085672281.png" width="354" height="398" style="display:inline-block; margin:4px;width:9.359cm;height:10.52cm;" class="odt-zoomable" data-zoom-src="images/10000000000003F30000047085672281.png" /></td></tr></table>
 
 <h2 id="118-otros-bloques-de-codigo">11.8. <span style="color: #0f4761">Otros bloques de código</span></h2>
 <p><u><strong>Documento ODT / DOCX</strong></u></p>
 <p>Un resultado de ejecución con una primera línea que no empieza por 1 :</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000325000001CBE53642B5.png" style="display:inline-block; margin:4px;width:10.65cm;height:6.073cm;" class="odt-zoomable" data-zoom-src="images/1000000000000325000001CBE53642B5.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000325000001CBE53642B5.png" width="403" height="230" style="display:inline-block; margin:4px;width:10.65cm;height:6.073cm;" class="odt-zoomable" data-zoom-src="images/1000000000000325000001CBE53642B5.png" /></td></tr></table>
 
 <p><u><strong>Renderizado HTML</strong></u></p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000413000002A44C5BD5A7.png" style="display:inline-block; margin:4px;width:9.661cm;height:6.26cm;" class="odt-zoomable" data-zoom-src="images/1000000000000413000002A44C5BD5A7.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000413000002A44C5BD5A7.png" width="365" height="237" style="display:inline-block; margin:4px;width:9.661cm;height:6.26cm;" class="odt-zoomable" data-zoom-src="images/1000000000000413000002A44C5BD5A7.png" /></td></tr></table>
 
 <p>Un bloque de código sin numerar en ODT permanece sin numerar en HTML :</p>
 <p><u><strong>Documento ODT / DOCX</strong></u></p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000289000000F0F71CAE61.png" style="display:inline-block; margin:4px;width:8.59cm;height:3.18cm;" class="odt-zoomable" data-zoom-src="images/1000000000000289000000F0F71CAE61.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000289000000F0F71CAE61.png" width="325" height="120" style="display:inline-block; margin:4px;width:8.59cm;height:3.18cm;" class="odt-zoomable" data-zoom-src="images/1000000000000289000000F0F71CAE61.png" /></td></tr></table>
 
 <p><u><strong>Renderizado HTML</strong></u></p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000003A20000017F6EA68B1D.png" style="display:inline-block; margin:4px;width:8.61cm;height:3.551cm;" class="odt-zoomable" data-zoom-src="images/10000000000003A20000017F6EA68B1D.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000003A20000017F6EA68B1D.png" width="325" height="134" style="display:inline-block; margin:4px;width:8.61cm;height:3.551cm;" class="odt-zoomable" data-zoom-src="images/10000000000003A20000017F6EA68B1D.png" /></td></tr></table>
 
 <h2 id="119-enlaces">11.9. <span style="color: #0f4761">Enlaces</span></h2>
 <p><u><strong>Documento ODT / DOCX</strong></u></p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000052E000001636CB397E9.png" style="display:inline-block; margin:4px;width:16.002cm;height:4.284cm;" class="odt-zoomable" data-zoom-src="images/100000000000052E000001636CB397E9.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000052E000001636CB397E9.png" width="605" height="162" style="display:inline-block; margin:4px;width:16.002cm;height:4.284cm;" class="odt-zoomable" data-zoom-src="images/100000000000052E000001636CB397E9.png" /></td></tr></table>
 
 <p><u><strong>Renderizado HTML</strong></u></p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000007610000022DCEA8C530.png" style="display:inline-block; margin:4px;width:16.002cm;height:4.71cm;" class="odt-zoomable" data-zoom-src="images/10000000000007610000022DCEA8C530.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000007610000022DCEA8C530.png" width="605" height="178" style="display:inline-block; margin:4px;width:16.002cm;height:4.71cm;" class="odt-zoomable" data-zoom-src="images/10000000000007610000022DCEA8C530.png" /></td></tr></table>
 
 <h2 id="1110-enriquecimiento-del-texto">11.10. <span style="color: #0f4761">Enriquecimiento del texto</span></h2>
 <p><u><strong>Documento ODT / DOCX</strong></u></p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000003E70000006A52EE679D.png" style="display:inline-block; margin:4px;width:13.217cm;height:1.402cm;" class="odt-zoomable" data-zoom-src="images/10000000000003E70000006A52EE679D.png" /><img src="images/10000000000003F50000012E50A437C4.png" style="display:inline-block; margin:4px;width:13.402cm;height:3.995cm;" class="odt-zoomable" data-zoom-src="images/10000000000003F50000012E50A437C4.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000003E70000006A52EE679D.png" width="500" height="53" style="display:inline-block; margin:4px;width:13.217cm;height:1.402cm;" class="odt-zoomable" data-zoom-src="images/10000000000003E70000006A52EE679D.png" /><img src="images/10000000000003F50000012E50A437C4.png" width="507" height="151" style="display:inline-block; margin:4px;width:13.402cm;height:3.995cm;" class="odt-zoomable" data-zoom-src="images/10000000000003F50000012E50A437C4.png" /></td></tr></table>
 
 <p><u><strong>Renderizado HTML</strong></u></p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000620000002FC449B353B.png" style="display:inline-block; margin:4px;width:14.69cm;height:7.181cm;" class="odt-zoomable" data-zoom-src="images/1000000000000620000002FC449B353B.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000620000002FC449B353B.png" width="555" height="271" style="display:inline-block; margin:4px;width:14.69cm;height:7.181cm;" class="odt-zoomable" data-zoom-src="images/1000000000000620000002FC449B353B.png" /></td></tr></table>
 
 <h2 id="1111-las-imagenes">11.11. <span style="color: #0f4761">Las imágenes</span></h2>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000007A50000037C881C8857.png" style="display:inline-block; margin:4px;width:16.002cm;height:7.292cm;" class="odt-zoomable" data-zoom-src="images/10000000000007A50000037C881C8857.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000007A50000037C881C8857.png" width="605" height="276" style="display:inline-block; margin:4px;width:16.002cm;height:7.292cm;" class="odt-zoomable" data-zoom-src="images/10000000000007A50000037C881C8857.png" /></td></tr></table>
 
 <p>Cabe señalar que el Gemini / ChatGPT respeta el redimensionamiento de la imagen realizado en el Documento ODT / DOCX.</p>
 <h2 id="1112-caracteres-protegidos">11.12. <span style="color: #0f4761">Caracteres protegidos</span></h2>
 <p><u><strong>Documento ODT / DOCX</strong></u></p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000003EB00000081BA3AD4EB.png" style="display:inline-block; margin:4px;width:13.27cm;height:1.707cm;" class="odt-zoomable" data-zoom-src="images/10000000000003EB00000081BA3AD4EB.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000003EB00000081BA3AD4EB.png" width="502" height="65" style="display:inline-block; margin:4px;width:13.27cm;height:1.707cm;" class="odt-zoomable" data-zoom-src="images/10000000000003EB00000081BA3AD4EB.png" /></td></tr></table>
 
 <p><u><strong>Renderizado HTML</strong></u></p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000581000000B439DB9ED0.png" style="display:inline-block; margin:4px;width:16.002cm;height:2.043cm;" class="odt-zoomable" data-zoom-src="images/1000000000000581000000B439DB9ED0.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000581000000B439DB9ED0.png" width="605" height="77" style="display:inline-block; margin:4px;width:16.002cm;height:2.043cm;" class="odt-zoomable" data-zoom-src="images/1000000000000581000000B439DB9ED0.png" /></td></tr></table>
 
 <p><u><strong>Documento ODT / DOCX (MarkDown)</strong></u></p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000303000002F6874873ED.png" style="display:inline-block; margin:4px;width:10.201cm;height:10.028cm;" class="odt-zoomable" data-zoom-src="images/1000000000000303000002F6874873ED.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000303000002F6874873ED.png" width="386" height="379" style="display:inline-block; margin:4px;width:10.201cm;height:10.028cm;" class="odt-zoomable" data-zoom-src="images/1000000000000303000002F6874873ED.png" /></td></tr></table>
 
 <p><u><strong>Renderizado HTML</strong></u></p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000058A00000363659035E0.png" style="display:inline-block; margin:4px;width:13.13cm;height:8.029cm;" class="odt-zoomable" data-zoom-src="images/100000000000058A00000363659035E0.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000058A00000363659035E0.png" width="496" height="303" style="display:inline-block; margin:4px;width:13.13cm;height:8.029cm;" class="odt-zoomable" data-zoom-src="images/100000000000058A00000363659035E0.png" /></td></tr></table>
 
 <ul>
   <li>ll código MarkDown se ha conservado ;
@@ -1258,13 +1258,13 @@
 
 <h2 id="1113-los-cuadros">11.13. <span style="color: #0f4761">Los cuadros</span></h2>
 <p><u><strong>Documento ODT / DOCX</strong></u></p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004AF000003003B1A0D20.png" style="display:inline-block; margin:4px;width:15.863cm;height:10.16cm;" class="odt-zoomable" data-zoom-src="images/10000000000004AF000003003B1A0D20.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004AF000003003B1A0D20.png" width="600" height="384" style="display:inline-block; margin:4px;width:15.863cm;height:10.16cm;" class="odt-zoomable" data-zoom-src="images/10000000000004AF000003003B1A0D20.png" /></td></tr></table>
 
 <p><u><strong>Renderizado HTML</strong></u></p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000006FB000004BEA85A557F.png" style="display:inline-block; margin:4px;width:16.551cm;height:11.24cm;" class="odt-zoomable" data-zoom-src="images/10000000000006FB000004BEA85A557F.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000006FB000004BEA85A557F.png" width="626" height="425" style="display:inline-block; margin:4px;width:16.551cm;height:11.24cm;" class="odt-zoomable" data-zoom-src="images/10000000000006FB000004BEA85A557F.png" /></td></tr></table>
 
 <h2 id="1114-nnotas-a-pie-de-pagina">11.14. <span style="color: #0f4761">Nnotas a pie de página</span></h2>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000057200000176782509A9.png" style="display:inline-block; margin:4px;width:12.91cm;height:3.461cm;" class="odt-zoomable" data-zoom-src="images/100000000000057200000176782509A9.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000057200000176782509A9.png" width="488" height="131" style="display:inline-block; margin:4px;width:12.91cm;height:3.461cm;" class="odt-zoomable" data-zoom-src="images/100000000000057200000176782509A9.png" /></td></tr></table>
 
 <h2 id="1115-anomalias-conocidas">11.15. <span style="color: #0f4761">Anomalías conocidas</span></h2>
 <p>Algunos se han detectado anomalías que pueden corregirse modificando el ODT / DOCX :</p>
@@ -1280,7 +1280,7 @@
 <p>Con cada nueva versión del convertidor, algunostaines de estas anomalías están destinadas a desaparecer. Las tres anomalías anteriores pueden evitarse corrigiendo ell documento fuente.</p>
 <h2 id="1116-otros-casos">11.16. <span style="color: #0f4761">Otros casos</span></h2>
 <p>Si su documento utiliza características distintas de las mencionadas, es muy probable que el conversor Gemini no las tenga en cuenta ChatGPT . ¿Qué debo hacer entonces? Puede enviar su nueva solicitud a uno de los IA dándole el convertidor de corriente :</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000005E7000001D28BC1B4B6.png" style="display:inline-block; margin:4px;width:14.079cm;height:4.309cm;" class="odt-zoomable" data-zoom-src="images/10000000000005E7000001D28BC1B4B6.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000005E7000001D28BC1B4B6.png" width="532" height="163" style="display:inline-block; margin:4px;width:14.079cm;height:4.309cm;" class="odt-zoomable" data-zoom-src="images/10000000000005E7000001D28BC1B4B6.png" /></td></tr></table>
 
 <ul>
   <li>En [1], adjunto el convertidor de este documento;

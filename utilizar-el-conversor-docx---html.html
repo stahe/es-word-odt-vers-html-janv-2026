@@ -704,11 +704,11 @@
 <h1 id="9-utilizar-el-conversor-docx-html">9. <span style="color: #0f4761">Utilizar el conversor DOCX → HTML</span></h1>
 <p>El comando para convertir un documento Word DOCX es muy similar al de convertir un documento LibreOffice ODT. Vamos a cambiar el estilo del título del documento en [config_styles.py] :</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-text">
-<span class="odt-code-line">STYLES = {</span>
-<span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#a31515">&quot;style_names&quot;</span><span style="color:#000000">: [</span></span>
-<span class="odt-code-line"><span style="color:#000000">        </span><span style="color:#a31515">&quot;</span><span style="background-color:#fff5ce;color:#a31515">Titre</span><span style="color:#a31515">&quot;</span></span>
-<span class="odt-code-line">    ]</span>
-<span class="odt-code-line">}</span>
+<span class="odt-code-line"><span class="odt-code-line-content">STYLES = {</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#a31515">&quot;style_names&quot;</span><span style="color:#000000">: [</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">        </span><span style="color:#a31515">&quot;</span><span style="background-color:#fff5ce;color:#a31515">Titre</span><span style="color:#a31515">&quot;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    ]</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
 </code></pre></div>
 
 <ul>
@@ -718,39 +718,39 @@
 
 <p>Todavía en el terminal PyCharm, escriba el siguiente comando:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-html">
-<span class="odt-code-line">PS C:\Data\st-2025\GitHub Pages\word-odt-vers-html\v2&gt; <span style="background-color:#fff5ce">python .\convert_docx_v18.py .\word-odt-vers-html-janv-2026.docx .\config.py</span></span>
-<span class="odt-code-line">C:\Data\st-2025\GitHub Pages\word-odt-vers-html\v2\convert_docx_v18.py:976: SyntaxWarning: invalid escape sequence &#x27;\h&#x27;</span>
-<span class="odt-code-line">  - REF Bookmark \h</span>
-<span class="odt-code-line">--- DOCX to MkDocs Converter V16 ---</span>
-<span class="odt-code-line"><span style="background-color:#fff5ce">Copié</span> : google5179c0eaff293e02.html</span>
-<span class="odt-code-line"><span style="background-color:#fff5ce">Copié</span> : robots.txt</span>
-<span class="odt-code-line"><span style="background-color:#fff5ce">Copié</span> : word-odt-vers-html-janv-2026.pdf</span>
-<span class="odt-code-line"><span style="background-color:#fff5ce">Copié</span> : word-odt-vers-html-janv-2026.zip</span>
-<span class="odt-code-line">[DEBUG PRE-H1] style=Standard heading=None rebase=0 numId=None ilvl=None list=None:0/None txt=&#x27;...&#x27;</span>
-<span class="odt-code-line">[DEBUG PRE-H1] style=Standard heading=None rebase=0 numId=None ilvl=None list=None:0/None txt=&#x27;...&#x27;</span>
-<span class="odt-code-line">[DEBUG PRE-H1] style=Standard heading=None rebase=0 numId=None ilvl=None list=None:0/None txt=&#x27;...&#x27;</span>
-<span class="odt-code-line">[DEBUG PRE-H1] style=Standard heading=None rebase=0 numId=None ilvl=None list=None:0/None txt=&#x27;...&#x27;</span>
-<span class="odt-code-line">[DEBUG PRE-H1] style=Standard heading=None rebase=0 numId=None ilvl=None list=None:0/None txt=&#x27;...&#x27;</span>
-<span class="odt-code-line">[DEBUG PRE-H1] style=Standard heading=None rebase=0 numId=None ilvl=None list=None:0/None txt=&#x27;...&#x27;</span>
-<span class="odt-code-line">[DEBUG PRE-H1] style=Standard heading=None rebase=0 numId=None ilvl=None list=None:0/None txt=&#x27;...&#x27;</span>
-<span class="odt-code-line">[DEBUG PRE-H1] style=Standard heading=None rebase=0 numId=None ilvl=None list=None:0/None txt=&#x27;...&#x27;</span>
-<span class="odt-code-line">[DEBUG PRE-H1] style=Standard heading=None rebase=0 numId=None ilvl=None list=None:0/None txt=&#x27;...&#x27;</span>
-<span class="odt-code-line">[DEBUG PRE-H1] style=StandardWW heading=None rebase=0 numId=None ilvl=None list=None:0/None txt=&#x27;...&#x27;</span>
-<span class="odt-code-line">[DEBUG PRE-H1] style=StandardWW heading=None rebase=0 numId=None ilvl=None list=None:0/None txt=&#x27;...&#x27;</span>
-<span class="odt-code-line">[DEBUG PRE-H1] <span style="background-color:#fff5ce">style=Titre</span> heading=None rebase=0 numId=None ilvl=None list=None:0/None txt=&#x27;&lt;span&gt;<span style="background-color:#fff5ce">Convertir un document Word ou ODT vers un site statique HTML compatible Mk</span>...&#x27;</span>
-<span class="odt-code-line">[DEBUG PRE-H1] style=Standard heading=None rebase=0 numId=None ilvl=None list=None:0/None txt=&#x27;...&#x27;</span>
-<span class="odt-code-line">[DEBUG PRE-H1] style=Standard heading=None rebase=0 numId=None ilvl=None list=None:0/None txt=&#x27;...&#x27;</span>
-<span class="odt-code-line">[DEBUG PRE-H1] style=Standard heading=None rebase=0 numId=None ilvl=None list=None:0/None txt=&#x27;...&#x27;</span>
-<span class="odt-code-line">[DEBUG PRE-H1] style=Standard heading=None rebase=0 numId=None ilvl=None list=None:0/None txt=&#x27;&lt;b&gt;Serge Tahé&lt;/b&gt;&lt;span&gt;, janvier 2026&lt;/span&gt;...&#x27;</span>
-<span class="odt-code-line">[DEBUG PRE-H1] style=Standard heading=None rebase=0 numId=None ilvl=None list=None:0/None txt=&#x27;...&#x27;</span>
-<span class="odt-code-line">[DEBUG PRE-H1] style=Standard heading=None rebase=0 numId=None ilvl=None list=None:0/None txt=&#x27;...&#x27;</span>
-<span class="odt-code-line">[DEBUG PRE-H1] style=Standard heading=None rebase=0 numId=None ilvl=None list=None:0/None txt=&#x27;...&#x27;</span>
-<span class="odt-code-line">[DEBUG PRE-H1] style=StandardWW heading=None rebase=0 numId=None ilvl=None list=None:0/None txt=&#x27;...&#x27;</span>
-<span class="odt-code-line">[DEBUG PRE-H1] style=StandardWW heading=None rebase=0 numId=None ilvl=None list=None:0/None txt=&#x27;...&#x27;</span>
-<span class="odt-code-line">[DEBUG PRE-H1] style=StandardWW heading=None rebase=0 numId=None ilvl=None list=None:0/None txt=&#x27;...&#x27;</span>
-<span class="odt-code-line">[DEBUG PRE-H1] style=StandardWW heading=None rebase=0 numId=None ilvl=None list=None:0/None txt=&#x27;&lt;b&gt;Ce site a été créé avec le convertisseur &amp;#91;Word ou ODT - &amp;gt; HTML&amp;#93; cr...&#x27;</span>
-<span class="odt-code-line">[DEBUG PRE-H1] style=Titre1 heading=1 rebase=0 numId=1 ilvl=0 list=numPr:1/ordered txt=&#x27;&lt;span&gt;Introduction&lt;/span&gt;...&#x27;</span>
-<span class="odt-code-line">Terminé. (audit.json, audit.txt, report.txt générés)</span>
+<span class="odt-code-line"><span class="odt-code-line-content">PS C:\Data\st-2025\GitHub Pages\word-odt-vers-html\v2&gt; <span style="background-color:#fff5ce">python .\convert_docx_v18.py .\word-odt-vers-html-janv-2026.docx .\config.py</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">C:\Data\st-2025\GitHub Pages\word-odt-vers-html\v2\convert_docx_v18.py:976: SyntaxWarning: invalid escape sequence &#x27;\h&#x27;</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  - REF Bookmark \h</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">--- DOCX to MkDocs Converter V16 ---</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="background-color:#fff5ce">Copié</span> : google5179c0eaff293e02.html</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="background-color:#fff5ce">Copié</span> : robots.txt</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="background-color:#fff5ce">Copié</span> : word-odt-vers-html-janv-2026.pdf</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="background-color:#fff5ce">Copié</span> : word-odt-vers-html-janv-2026.zip</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">[DEBUG PRE-H1] style=Standard heading=None rebase=0 numId=None ilvl=None list=None:0/None txt=&#x27;...&#x27;</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">[DEBUG PRE-H1] style=Standard heading=None rebase=0 numId=None ilvl=None list=None:0/None txt=&#x27;...&#x27;</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">[DEBUG PRE-H1] style=Standard heading=None rebase=0 numId=None ilvl=None list=None:0/None txt=&#x27;...&#x27;</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">[DEBUG PRE-H1] style=Standard heading=None rebase=0 numId=None ilvl=None list=None:0/None txt=&#x27;...&#x27;</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">[DEBUG PRE-H1] style=Standard heading=None rebase=0 numId=None ilvl=None list=None:0/None txt=&#x27;...&#x27;</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">[DEBUG PRE-H1] style=Standard heading=None rebase=0 numId=None ilvl=None list=None:0/None txt=&#x27;...&#x27;</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">[DEBUG PRE-H1] style=Standard heading=None rebase=0 numId=None ilvl=None list=None:0/None txt=&#x27;...&#x27;</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">[DEBUG PRE-H1] style=Standard heading=None rebase=0 numId=None ilvl=None list=None:0/None txt=&#x27;...&#x27;</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">[DEBUG PRE-H1] style=Standard heading=None rebase=0 numId=None ilvl=None list=None:0/None txt=&#x27;...&#x27;</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">[DEBUG PRE-H1] style=StandardWW heading=None rebase=0 numId=None ilvl=None list=None:0/None txt=&#x27;...&#x27;</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">[DEBUG PRE-H1] style=StandardWW heading=None rebase=0 numId=None ilvl=None list=None:0/None txt=&#x27;...&#x27;</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">[DEBUG PRE-H1] <span style="background-color:#fff5ce">style=Titre</span> heading=None rebase=0 numId=None ilvl=None list=None:0/None txt=&#x27;&lt;span&gt;<span style="background-color:#fff5ce">Convertir un document Word ou ODT vers un site statique HTML compatible Mk</span>...&#x27;</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">[DEBUG PRE-H1] style=Standard heading=None rebase=0 numId=None ilvl=None list=None:0/None txt=&#x27;...&#x27;</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">[DEBUG PRE-H1] style=Standard heading=None rebase=0 numId=None ilvl=None list=None:0/None txt=&#x27;...&#x27;</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">[DEBUG PRE-H1] style=Standard heading=None rebase=0 numId=None ilvl=None list=None:0/None txt=&#x27;...&#x27;</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">[DEBUG PRE-H1] style=Standard heading=None rebase=0 numId=None ilvl=None list=None:0/None txt=&#x27;&lt;b&gt;Serge Tahé&lt;/b&gt;&lt;span&gt;, janvier 2026&lt;/span&gt;...&#x27;</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">[DEBUG PRE-H1] style=Standard heading=None rebase=0 numId=None ilvl=None list=None:0/None txt=&#x27;...&#x27;</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">[DEBUG PRE-H1] style=Standard heading=None rebase=0 numId=None ilvl=None list=None:0/None txt=&#x27;...&#x27;</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">[DEBUG PRE-H1] style=Standard heading=None rebase=0 numId=None ilvl=None list=None:0/None txt=&#x27;...&#x27;</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">[DEBUG PRE-H1] style=StandardWW heading=None rebase=0 numId=None ilvl=None list=None:0/None txt=&#x27;...&#x27;</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">[DEBUG PRE-H1] style=StandardWW heading=None rebase=0 numId=None ilvl=None list=None:0/None txt=&#x27;...&#x27;</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">[DEBUG PRE-H1] style=StandardWW heading=None rebase=0 numId=None ilvl=None list=None:0/None txt=&#x27;...&#x27;</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">[DEBUG PRE-H1] style=StandardWW heading=None rebase=0 numId=None ilvl=None list=None:0/None txt=&#x27;&lt;b&gt;Ce site a été créé avec le convertisseur &amp;#91;Word ou ODT - &amp;gt; HTML&amp;#93; cr...&#x27;</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">[DEBUG PRE-H1] style=Titre1 heading=1 rebase=0 numId=1 ilvl=0 list=numPr:1/ordered txt=&#x27;&lt;span&gt;Introduction&lt;/span&gt;...&#x27;</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">Terminé. (audit.json, audit.txt, report.txt générés)</span></span>
 </code></pre></div>
 
 <ul>
@@ -768,36 +768,36 @@
   </li>
 </ul>
 
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000324000003ECA9D639E7.png" style="display:inline-block; margin:4px;width:10.64cm;height:13.28cm;" class="odt-zoomable" data-zoom-src="images/1000000000000324000003ECA9D639E7.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000324000003ECA9D639E7.png" width="402" height="502" style="display:inline-block; margin:4px;width:10.64cm;height:13.28cm;" class="odt-zoomable" data-zoom-src="images/1000000000000324000003ECA9D639E7.png" /></td></tr></table>
 
 <p>El archivo [audit.txt] es el siguiente:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-text">
-<span class="odt-code-line">Version: V16</span>
-<span class="odt-code-line">Paragraphs: 2029<span style="color:#000000"></span></span>
-<span class="odt-code-line">Tables: 97<span style="color:#000000"></span></span>
-<span class="odt-code-line">Images (blips): 2<span style="color:#000000"></span></span>
-<span class="odt-code-line">Headings detected (raw): 53<span style="color:#000000"></span></span>
-<span class="odt-code-line">Min heading level detected (raw): 1<span style="color:#000000"></span></span>
-<span class="odt-code-line">Rebase offset applied: 0<span style="color:#000000"></span></span>
-<span class="odt-code-line"></span>
-<span class="odt-code-line">Top paragraph styles:<span style="color:#000000"></span></span>
-<span class="odt-code-line">  - SourceCodenumrot: 1054<span style="color:#000000"></span></span>
-<span class="odt-code-line">  - StandardWW: 594<span style="color:#000000"></span></span>
-<span class="odt-code-line">  - Standard: 146<span style="color:#000000"></span></span>
-<span class="odt-code-line">  - Paragraphedeliste: 113<span style="color:#000000"></span></span>
-<span class="odt-code-line">  - SourceCodenumrotrsultats: 33<span style="color:#000000"></span></span>
-<span class="odt-code-line">  - codenouveau: 28<span style="color:#000000"></span></span>
-<span class="odt-code-line">  - Titre2: 25<span style="color:#000000"></span></span>
-<span class="odt-code-line">  - Titre1: 14<span style="color:#000000"></span></span>
-<span class="odt-code-line">  - Titre3: 14<span style="color:#000000"></span></span>
-<span class="odt-code-line">  - StandardWWWW: 6<span style="color:#000000"></span></span>
-<span class="odt-code-line">  - Textebrut: 1<span style="color:#000000"></span></span>
-<span class="odt-code-line">  - Titre: 1<span style="color:#000000"></span></span>
-<span class="odt-code-line"></span>
-<span class="odt-code-line">List paragraphs:<span style="color:#000000"></span></span>
-<span class="odt-code-line">  - with numPr: 1329<span style="color:#000000"></span></span>
-<span class="odt-code-line">  - by style fallback: 49<span style="color:#000000"></span></span>
-<span class="odt-code-line">  - not recognized: 0<span style="color:#000000"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">Version: V16</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">Paragraphs: 2029<span style="color:#000000"></span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">Tables: 97<span style="color:#000000"></span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">Images (blips): 2<span style="color:#000000"></span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">Headings detected (raw): 53<span style="color:#000000"></span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">Min heading level detected (raw): 1<span style="color:#000000"></span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">Rebase offset applied: 0<span style="color:#000000"></span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">Top paragraph styles:<span style="color:#000000"></span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  - SourceCodenumrot: 1054<span style="color:#000000"></span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  - StandardWW: 594<span style="color:#000000"></span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  - Standard: 146<span style="color:#000000"></span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  - Paragraphedeliste: 113<span style="color:#000000"></span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  - SourceCodenumrotrsultats: 33<span style="color:#000000"></span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  - codenouveau: 28<span style="color:#000000"></span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  - Titre2: 25<span style="color:#000000"></span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  - Titre1: 14<span style="color:#000000"></span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  - Titre3: 14<span style="color:#000000"></span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  - StandardWWWW: 6<span style="color:#000000"></span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  - Textebrut: 1<span style="color:#000000"></span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  - Titre: 1<span style="color:#000000"></span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">List paragraphs:<span style="color:#000000"></span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  - with numPr: 1329<span style="color:#000000"></span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  - by style fallback: 49<span style="color:#000000"></span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  - not recognized: 0<span style="color:#000000"></span></span></span>
 </code></pre></div>
 
 <ul>
@@ -820,104 +820,104 @@
 <p>Esta auditoría de documentos Word es una buena forma de juzgar la calidad del documento. Aquí veo que he utilizado demasiados estilos diferentes para la misma cosa en mi documento de Word.</p>
 <p>El fichero [audit.json] es idéntico al fichero [audit.txt] pero con la forma jSON :</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-text">
-<span class="odt-code-line">{</span>
-<span class="odt-code-line"><span style="color:#000000">  </span><span style="color:#2e75b6">&quot;version&quot;</span><span style="color:#000000">: </span><span style="color:#a31515">&quot;V16&quot;</span><span style="color:#000000">,</span></span>
-<span class="odt-code-line"><span style="color:#000000">  </span><span style="color:#2e75b6">&quot;file&quot;</span><span style="color:#000000">: </span><span style="color:#a31515">&quot;word-odt-vers-html-janv-2026.docx&quot;</span><span style="color:#000000">,</span></span>
-<span class="odt-code-line"><span style="color:#000000">  </span><span style="color:#2e75b6">&quot;counts&quot;</span><span style="color:#000000">: {</span></span>
-<span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#2e75b6">&quot;paragraphs&quot;</span><span style="color:#000000">: 2029,</span></span>
-<span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#2e75b6">&quot;tables&quot;</span><span style="color:#000000">: 97,</span></span>
-<span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#2e75b6">&quot;image_blips&quot;</span><span style="color:#000000">: 2,</span></span>
-<span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#2e75b6">&quot;headings_raw&quot;</span><span style="color:#000000">: 53</span></span>
-<span class="odt-code-line">  },<span style="color:#000000"></span></span>
-<span class="odt-code-line"><span style="color:#000000">  </span><span style="color:#2e75b6">&quot;lists&quot;</span><span style="color:#000000">: {</span></span>
-<span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#2e75b6">&quot;with_numpr&quot;</span><span style="color:#000000">: 1329,</span></span>
-<span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#2e75b6">&quot;by_style&quot;</span><span style="color:#000000">: 49,</span></span>
-<span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#2e75b6">&quot;unrecognized&quot;</span><span style="color:#000000">: 0</span></span>
-<span class="odt-code-line">  },<span style="color:#000000"></span></span>
-<span class="odt-code-line"><span style="color:#000000">  </span><span style="color:#2e75b6">&quot;heading&quot;</span><span style="color:#000000">: {</span></span>
-<span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#2e75b6">&quot;min_level_raw&quot;</span><span style="color:#000000">: 1,</span></span>
-<span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#2e75b6">&quot;rebase_offset&quot;</span><span style="color:#000000">: 0</span></span>
-<span class="odt-code-line">  },<span style="color:#000000"></span></span>
-<span class="odt-code-line"><span style="color:#000000">  </span><span style="color:#2e75b6">&quot;top_styles&quot;</span><span style="color:#000000">: [</span></span>
-<span class="odt-code-line">    [<span style="color:#000000"></span></span>
-<span class="odt-code-line"><span style="color:#000000">      </span><span style="color:#a31515">&quot;SourceCodenumrot&quot;</span><span style="color:#000000">,</span></span>
-<span class="odt-code-line">      1054<span style="color:#000000"></span></span>
-<span class="odt-code-line">    ],<span style="color:#000000"></span></span>
-<span class="odt-code-line">    [<span style="color:#000000"></span></span>
-<span class="odt-code-line"><span style="color:#000000">      </span><span style="color:#a31515">&quot;StandardWW&quot;</span><span style="color:#000000">,</span></span>
-<span class="odt-code-line">      594<span style="color:#000000"></span></span>
-<span class="odt-code-line">    ],<span style="color:#000000"></span></span>
-<span class="odt-code-line">    [<span style="color:#000000"></span></span>
-<span class="odt-code-line"><span style="color:#000000">      </span><span style="color:#a31515">&quot;Standard&quot;</span><span style="color:#000000">,</span></span>
-<span class="odt-code-line">      146<span style="color:#000000"></span></span>
-<span class="odt-code-line">    ],<span style="color:#000000"></span></span>
-<span class="odt-code-line">    [<span style="color:#000000"></span></span>
-<span class="odt-code-line"><span style="color:#000000">      </span><span style="color:#a31515">&quot;Paragraphedeliste&quot;</span><span style="color:#000000">,</span></span>
-<span class="odt-code-line">      113<span style="color:#000000"></span></span>
-<span class="odt-code-line">    ],<span style="color:#000000"></span></span>
-<span class="odt-code-line">    [<span style="color:#000000"></span></span>
-<span class="odt-code-line"><span style="color:#000000">      </span><span style="color:#a31515">&quot;SourceCodenumrotrsultats&quot;</span><span style="color:#000000">,</span></span>
-<span class="odt-code-line">      33<span style="color:#000000"></span></span>
-<span class="odt-code-line">    ],<span style="color:#000000"></span></span>
-<span class="odt-code-line">    [<span style="color:#000000"></span></span>
-<span class="odt-code-line"><span style="color:#000000">      </span><span style="color:#a31515">&quot;codenouveau&quot;</span><span style="color:#000000">,</span></span>
-<span class="odt-code-line">      28<span style="color:#000000"></span></span>
-<span class="odt-code-line">    ],<span style="color:#000000"></span></span>
-<span class="odt-code-line">    [<span style="color:#000000"></span></span>
-<span class="odt-code-line"><span style="color:#000000">      </span><span style="color:#a31515">&quot;Titre2&quot;</span><span style="color:#000000">,</span></span>
-<span class="odt-code-line">      25<span style="color:#000000"></span></span>
-<span class="odt-code-line">    ],<span style="color:#000000"></span></span>
-<span class="odt-code-line">    [<span style="color:#000000"></span></span>
-<span class="odt-code-line"><span style="color:#000000">      </span><span style="color:#a31515">&quot;Titre1&quot;</span><span style="color:#000000">,</span></span>
-<span class="odt-code-line">      14<span style="color:#000000"></span></span>
-<span class="odt-code-line">    ],<span style="color:#000000"></span></span>
-<span class="odt-code-line">    [<span style="color:#000000"></span></span>
-<span class="odt-code-line"><span style="color:#000000">      </span><span style="color:#a31515">&quot;Titre3&quot;</span><span style="color:#000000">,</span></span>
-<span class="odt-code-line">      14<span style="color:#000000"></span></span>
-<span class="odt-code-line">    ],<span style="color:#000000"></span></span>
-<span class="odt-code-line">    [<span style="color:#000000"></span></span>
-<span class="odt-code-line"><span style="color:#000000">      </span><span style="color:#a31515">&quot;StandardWWWW&quot;</span><span style="color:#000000">,</span></span>
-<span class="odt-code-line">      6<span style="color:#000000"></span></span>
-<span class="odt-code-line">    ],<span style="color:#000000"></span></span>
-<span class="odt-code-line">    [<span style="color:#000000"></span></span>
-<span class="odt-code-line"><span style="color:#000000">      </span><span style="color:#a31515">&quot;Textebrut&quot;</span><span style="color:#000000">,</span></span>
-<span class="odt-code-line">      1<span style="color:#000000"></span></span>
-<span class="odt-code-line">    ],<span style="color:#000000"></span></span>
-<span class="odt-code-line">    [<span style="color:#000000"></span></span>
-<span class="odt-code-line"><span style="color:#000000">      </span><span style="color:#a31515">&quot;Titre&quot;</span><span style="color:#000000">,</span></span>
-<span class="odt-code-line">      1<span style="color:#000000"></span></span>
-<span class="odt-code-line">    ]<span style="color:#000000"></span></span>
-<span class="odt-code-line">  ]<span style="color:#000000"></span></span>
-<span class="odt-code-line">}</span>
+<span class="odt-code-line"><span class="odt-code-line-content">{</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="color:#2e75b6">&quot;version&quot;</span><span style="color:#000000">: </span><span style="color:#a31515">&quot;V16&quot;</span><span style="color:#000000">,</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="color:#2e75b6">&quot;file&quot;</span><span style="color:#000000">: </span><span style="color:#a31515">&quot;word-odt-vers-html-janv-2026.docx&quot;</span><span style="color:#000000">,</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="color:#2e75b6">&quot;counts&quot;</span><span style="color:#000000">: {</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#2e75b6">&quot;paragraphs&quot;</span><span style="color:#000000">: 2029,</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#2e75b6">&quot;tables&quot;</span><span style="color:#000000">: 97,</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#2e75b6">&quot;image_blips&quot;</span><span style="color:#000000">: 2,</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#2e75b6">&quot;headings_raw&quot;</span><span style="color:#000000">: 53</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  },<span style="color:#000000"></span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="color:#2e75b6">&quot;lists&quot;</span><span style="color:#000000">: {</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#2e75b6">&quot;with_numpr&quot;</span><span style="color:#000000">: 1329,</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#2e75b6">&quot;by_style&quot;</span><span style="color:#000000">: 49,</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#2e75b6">&quot;unrecognized&quot;</span><span style="color:#000000">: 0</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  },<span style="color:#000000"></span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="color:#2e75b6">&quot;heading&quot;</span><span style="color:#000000">: {</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#2e75b6">&quot;min_level_raw&quot;</span><span style="color:#000000">: 1,</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#2e75b6">&quot;rebase_offset&quot;</span><span style="color:#000000">: 0</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  },<span style="color:#000000"></span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="color:#2e75b6">&quot;top_styles&quot;</span><span style="color:#000000">: [</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    [<span style="color:#000000"></span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">      </span><span style="color:#a31515">&quot;SourceCodenumrot&quot;</span><span style="color:#000000">,</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">      1054<span style="color:#000000"></span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    ],<span style="color:#000000"></span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    [<span style="color:#000000"></span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">      </span><span style="color:#a31515">&quot;StandardWW&quot;</span><span style="color:#000000">,</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">      594<span style="color:#000000"></span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    ],<span style="color:#000000"></span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    [<span style="color:#000000"></span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">      </span><span style="color:#a31515">&quot;Standard&quot;</span><span style="color:#000000">,</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">      146<span style="color:#000000"></span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    ],<span style="color:#000000"></span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    [<span style="color:#000000"></span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">      </span><span style="color:#a31515">&quot;Paragraphedeliste&quot;</span><span style="color:#000000">,</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">      113<span style="color:#000000"></span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    ],<span style="color:#000000"></span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    [<span style="color:#000000"></span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">      </span><span style="color:#a31515">&quot;SourceCodenumrotrsultats&quot;</span><span style="color:#000000">,</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">      33<span style="color:#000000"></span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    ],<span style="color:#000000"></span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    [<span style="color:#000000"></span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">      </span><span style="color:#a31515">&quot;codenouveau&quot;</span><span style="color:#000000">,</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">      28<span style="color:#000000"></span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    ],<span style="color:#000000"></span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    [<span style="color:#000000"></span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">      </span><span style="color:#a31515">&quot;Titre2&quot;</span><span style="color:#000000">,</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">      25<span style="color:#000000"></span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    ],<span style="color:#000000"></span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    [<span style="color:#000000"></span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">      </span><span style="color:#a31515">&quot;Titre1&quot;</span><span style="color:#000000">,</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">      14<span style="color:#000000"></span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    ],<span style="color:#000000"></span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    [<span style="color:#000000"></span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">      </span><span style="color:#a31515">&quot;Titre3&quot;</span><span style="color:#000000">,</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">      14<span style="color:#000000"></span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    ],<span style="color:#000000"></span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    [<span style="color:#000000"></span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">      </span><span style="color:#a31515">&quot;StandardWWWW&quot;</span><span style="color:#000000">,</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">      6<span style="color:#000000"></span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    ],<span style="color:#000000"></span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    [<span style="color:#000000"></span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">      </span><span style="color:#a31515">&quot;Textebrut&quot;</span><span style="color:#000000">,</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">      1<span style="color:#000000"></span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    ],<span style="color:#000000"></span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    [<span style="color:#000000"></span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">      </span><span style="color:#a31515">&quot;Titre&quot;</span><span style="color:#000000">,</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">      1<span style="color:#000000"></span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    ]<span style="color:#000000"></span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  ]<span style="color:#000000"></span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
 </code></pre></div>
 
 <p>El archivo [report.txt] es éste:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-text">
-<span class="odt-code-line">[SUMMARY] Listes détectées via fallback &quot;par style&quot; (agrégé)</span>
-<span class="odt-code-line">  - Paragraphedeliste -&gt; level=1 type=unordered: 49<span style="color:#000000"></span></span>
-<span class="odt-code-line"></span>
-<span class="odt-code-line">[SUMMARY] Blocs Word ignorés (agrégé)<span style="color:#000000"></span></span>
-<span class="odt-code-line">  - &lt;w:sectPr&gt;: 1<span style="color:#000000"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">[SUMMARY] Listes détectées via fallback &quot;par style&quot; (agrégé)</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  - Paragraphedeliste -&gt; level=1 type=unordered: 49<span style="color:#000000"></span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">[SUMMARY] Blocs Word ignorés (agrégé)<span style="color:#000000"></span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  - &lt;w:sectPr&gt;: 1<span style="color:#000000"></span></span></span>
 </code></pre></div>
 
 <p>No lo entendí..</p>
 <p>Es posible solicitar sólo una auditoría del documento Word para juzgar su calidad con el parámetro [--audit]:</p>
 <div class="odt-code-rich" data-linenums="false" style="counter-reset: odtline 0;"><pre><code class="language-text">
-<span class="odt-code-line">python .\convert_docx_v18.py .\word-odt-vers-html-janv-2026.docx .\config.py <span style="background-color:#fff5ce">--audit</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">python .\convert_docx_v18.py .\word-odt-vers-html-janv-2026.docx .\config.py <span style="background-color:#fff5ce">--audit</span></span></span>
 </code></pre></div>
 
 <p>En este caso, sólo se realiza la auditoría de documentos. El sitio MkDocs no se genera.</p>
 <p>Como ya hemos visto, puede utilizar las siguientes opciones para visualizar el sitio MkDocs generado por el convertidor :</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-text">
-<span class="odt-code-line">PS C:\Data\st-2025\GitHub Pages\word-odt-vers-html\v2&gt; <span style="background-color:#fff5ce">python -m mkdocs serve</span></span>
-<span class="odt-code-line">INFO    -  Building documentation...</span>
-<span class="odt-code-line">INFO    -  Cleaning site directory</span>
-<span class="odt-code-line">INFO    -  Documentation built in 0.59 seconds</span>
-<span class="odt-code-line">INFO    -  [06:05:48] Serving on <span style="background-color:#fff5ce">http://127.0.0.1:8000/word-odt-vers-html-janv-2026/</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">PS C:\Data\st-2025\GitHub Pages\word-odt-vers-html\v2&gt; <span style="background-color:#fff5ce">python -m mkdocs serve</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">INFO    -  Building documentation...</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">INFO    -  Cleaning site directory</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">INFO    -  Documentation built in 0.59 seconds</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">INFO    -  [06:05:48] Serving on <span style="background-color:#fff5ce">http://127.0.0.1:8000/word-odt-vers-html-janv-2026/</span></span></span>
 </code></pre></div>
 
 <p>Ctrl-Clic en el URL en la línea 5 :</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000AB10000056368EAE7E8.png" style="display:inline-block; margin:4px;width:16.002cm;height:8.061cm;" class="odt-zoomable" data-zoom-src="images/1000000000000AB10000056368EAE7E8.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000AB10000056368EAE7E8.png" width="605" height="305" style="display:inline-block; margin:4px;width:16.002cm;height:8.061cm;" class="odt-zoomable" data-zoom-src="images/1000000000000AB10000056368EAE7E8.png" /></td></tr></table>
 
 
 

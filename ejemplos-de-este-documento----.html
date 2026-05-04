@@ -1074,204 +1074,204 @@
 <p>He aquí algunos bloques de código enriquecidos con diferentes IDE :</p>
 <p><u><strong>Java</strong></u></p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
-<span class="odt-code-line"><span style="font-weight:bold;color:#7f0055">package</span> istia.st.spring.core;</span>
-<span class="odt-code-line"></span>
-<span class="odt-code-line"><span style="font-weight:bold;color:#7f0055">import</span> java.util.ArrayList;</span>
-<span class="odt-code-line"><span style="font-weight:bold;color:#7f0055">import</span> java.util.List;</span>
-<span class="odt-code-line"></span>
-<span class="odt-code-line"><span style="font-weight:bold;color:#7f0055">import</span> org.springframework.context.ApplicationContext;</span>
-<span class="odt-code-line"><span style="font-weight:bold;color:#7f0055">import</span> org.springframework.context.support.ClassPathXmlApplicationContext;</span>
-<span class="odt-code-line"></span>
-<span class="odt-code-line"><span style="font-weight:bold;color:#7f0055">public</span> <span style="font-weight:bold;color:#7f0055">class</span> Demo01 {</span>
-<span class="odt-code-line"></span>
-<span class="odt-code-line">    <span style="color:#646464">@SuppressWarnings</span>({ <span style="color:#2a00ff">&quot;unchecked&quot;</span>, <span style="color:#2a00ff">&quot;resource&quot;</span> })</span>
-<span class="odt-code-line">    <span style="font-weight:bold;color:#7f0055">public</span> <span style="font-weight:bold;color:#7f0055">static</span> <span style="font-weight:bold;color:#7f0055">void</span> main(String[] <span style="color:#6a3e3e">args</span>) {</span>
-<span class="odt-code-line">        <span style="color:#3f7f5f">// recuperación del contexto de Spring</span></span>
-<span class="odt-code-line">        ApplicationContext <span style="color:#6a3e3e">ctx</span> = <span style="font-weight:bold;color:#7f0055">new</span> ClassPathXmlApplicationContext(<span style="color:#2a00ff">&quot;config-01.xml&quot;</span>);</span>
-<span class="odt-code-line">        <span style="color:#3f7f5f">// recuperamos las judías</span></span>
-<span class="odt-code-line">        Personne <span style="color:#6a3e3e">p01</span> = <span style="color:#6a3e3e">ctx</span>.getBean(<span style="color:#2a00ff">&quot;personne_01&quot;</span>, Personne.<span style="font-weight:bold;color:#7f0055">class</span>);</span>
-<span class="odt-code-line">        Personne <span style="color:#6a3e3e">p02</span> = <span style="color:#6a3e3e">ctx</span>.getBean(<span style="color:#2a00ff">&quot;personne_02&quot;</span>, Personne.<span style="font-weight:bold;color:#7f0055">class</span>);</span>
-<span class="odt-code-line">        List&lt;Personne&gt; <span style="color:#6a3e3e">club</span> = <span style="color:#6a3e3e">ctx</span>.getBean(<span style="color:#2a00ff">&quot;club&quot;</span>, <span style="font-weight:bold;color:#7f0055">new</span> ArrayList&lt;Personne&gt;().getClass());</span>
-<span class="odt-code-line">        Appartement <span style="color:#6a3e3e">appart01</span> = <span style="color:#6a3e3e">ctx</span>.getBean(Appartement.<span style="font-weight:bold;color:#7f0055">class</span>);</span>
-<span class="odt-code-line">...</span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">package</span> istia.st.spring.core;</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">import</span> java.util.ArrayList;</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">import</span> java.util.List;</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">import</span> org.springframework.context.ApplicationContext;</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">import</span> org.springframework.context.support.ClassPathXmlApplicationContext;</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">public</span> <span style="font-weight:bold;color:#7f0055">class</span> Demo01 {</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#646464">@SuppressWarnings</span>({ <span style="color:#2a00ff">&quot;unchecked&quot;</span>, <span style="color:#2a00ff">&quot;resource&quot;</span> })</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    <span style="font-weight:bold;color:#7f0055">public</span> <span style="font-weight:bold;color:#7f0055">static</span> <span style="font-weight:bold;color:#7f0055">void</span> main(String[] <span style="color:#6a3e3e">args</span>) {</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">        <span style="color:#3f7f5f">// recuperación del contexto de Spring</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">        ApplicationContext <span style="color:#6a3e3e">ctx</span> = <span style="font-weight:bold;color:#7f0055">new</span> ClassPathXmlApplicationContext(<span style="color:#2a00ff">&quot;config-01.xml&quot;</span>);</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">        <span style="color:#3f7f5f">// recuperamos las judías</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">        Personne <span style="color:#6a3e3e">p01</span> = <span style="color:#6a3e3e">ctx</span>.getBean(<span style="color:#2a00ff">&quot;personne_01&quot;</span>, Personne.<span style="font-weight:bold;color:#7f0055">class</span>);</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">        Personne <span style="color:#6a3e3e">p02</span> = <span style="color:#6a3e3e">ctx</span>.getBean(<span style="color:#2a00ff">&quot;personne_02&quot;</span>, Personne.<span style="font-weight:bold;color:#7f0055">class</span>);</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">        List&lt;Personne&gt; <span style="color:#6a3e3e">club</span> = <span style="color:#6a3e3e">ctx</span>.getBean(<span style="color:#2a00ff">&quot;club&quot;</span>, <span style="font-weight:bold;color:#7f0055">new</span> ArrayList&lt;Personne&gt;().getClass());</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">        Appartement <span style="color:#6a3e3e">appart01</span> = <span style="color:#6a3e3e">ctx</span>.getBean(Appartement.<span style="font-weight:bold;color:#7f0055">class</span>);</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">...</span></span>
 </code></pre></div>
 
 <p><u><strong>C#</strong></u></p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 10;"><pre><code class="language-csharp">
-<span class="odt-code-line"><span style="color:#0000ff">using</span> System;</span>
-<span class="odt-code-line"></span>
-<span class="odt-code-line"><span style="color:#0000ff">namespace</span> Chap1 {</span>
-<span class="odt-code-line">    <span style="color:#0000ff">class</span> <span style="color:#2b91af">Impots</span> {</span>
-<span class="odt-code-line">        <span style="color:#0000ff">static</span> <span style="color:#0000ff">void</span> Main(<span style="color:#0000ff">string</span>[] args) {</span>
-<span class="odt-code-line">            <span style="color:#008000">// tablas de datos necesarios para calcular el impuesto</span></span>
-<span class="odt-code-line">            <span style="color:#0000ff">decimal</span>[] limites = { 4962M, 8382M, 14753M, 23888M, 38868M, 47932M, 0M };</span>
-<span class="odt-code-line">            <span style="color:#0000ff">decimal</span>[] coeffR = { 0M, 0.068M, 0.191M, 0.283M, 0.374M, 0.426M, 0.481M };</span>
-<span class="odt-code-line">            <span style="color:#0000ff">decimal</span>[] coeffN = { 0M, 291.09M, 1322.92M, 2668.39M, 4846.98M, 6883.66M, 9505.54M };</span>
-<span class="odt-code-line"></span>
-<span class="odt-code-line">            <span style="color:#008000">// se restablece el estado civil</span></span>
-<span class="odt-code-line">            <span style="color:#0000ff">bool</span> OK = <span style="color:#0000ff">false</span>;</span>
-<span class="odt-code-line">            <span style="color:#0000ff">string</span> reponse = <span style="color:#0000ff">null</span>;</span>
-<span class="odt-code-line">            <span style="color:#0000ff">while</span> (!OK) {</span>
-<span class="odt-code-line">                <span style="color:#2b91af">Console</span>.Write(<span style="color:#a31515">&quot;Etes-vous marié(e) (O/N) ? &quot;</span>);</span>
-<span class="odt-code-line">                reponse = <span style="color:#2b91af">Console</span>.ReadLine().Trim().ToLower();</span>
-<span class="odt-code-line">                <span style="color:#0000ff">if</span> (reponse != <span style="color:#a31515">&quot;o&quot;</span> &amp;&amp; reponse != <span style="color:#a31515">&quot;n&quot;</span>)</span>
-<span class="odt-code-line">                    <span style="color:#2b91af">Console</span>.Error.WriteLine(<span style="color:#a31515">&quot;Réponse incorrecte. Recommencez&quot;</span>);</span>
-<span class="odt-code-line">                <span style="color:#0000ff">else</span> OK = <span style="color:#0000ff">true</span>;</span>
-<span class="odt-code-line">            }<span style="color:#008000">//mientras que</span></span>
-<span class="odt-code-line">            <span style="color:#0000ff">bool</span> marie = reponse == <span style="color:#a31515">&quot;o&quot;</span>;</span>
-<span class="odt-code-line">...</span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">using</span> System;</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">namespace</span> Chap1 {</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#0000ff">class</span> <span style="color:#2b91af">Impots</span> {</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">        <span style="color:#0000ff">static</span> <span style="color:#0000ff">void</span> Main(<span style="color:#0000ff">string</span>[] args) {</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">            <span style="color:#008000">// tablas de datos necesarios para calcular el impuesto</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">            <span style="color:#0000ff">decimal</span>[] limites = { 4962M, 8382M, 14753M, 23888M, 38868M, 47932M, 0M };</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">            <span style="color:#0000ff">decimal</span>[] coeffR = { 0M, 0.068M, 0.191M, 0.283M, 0.374M, 0.426M, 0.481M };</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">            <span style="color:#0000ff">decimal</span>[] coeffN = { 0M, 291.09M, 1322.92M, 2668.39M, 4846.98M, 6883.66M, 9505.54M };</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">            <span style="color:#008000">// se restablece el estado civil</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">            <span style="color:#0000ff">bool</span> OK = <span style="color:#0000ff">false</span>;</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">            <span style="color:#0000ff">string</span> reponse = <span style="color:#0000ff">null</span>;</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">            <span style="color:#0000ff">while</span> (!OK) {</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">                <span style="color:#2b91af">Console</span>.Write(<span style="color:#a31515">&quot;Etes-vous marié(e) (O/N) ? &quot;</span>);</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">                reponse = <span style="color:#2b91af">Console</span>.ReadLine().Trim().ToLower();</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">                <span style="color:#0000ff">if</span> (reponse != <span style="color:#a31515">&quot;o&quot;</span> &amp;&amp; reponse != <span style="color:#a31515">&quot;n&quot;</span>)</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">                    <span style="color:#2b91af">Console</span>.Error.WriteLine(<span style="color:#a31515">&quot;Réponse incorrecte. Recommencez&quot;</span>);</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">                <span style="color:#0000ff">else</span> OK = <span style="color:#0000ff">true</span>;</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">            }<span style="color:#008000">//mientras que</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">            <span style="color:#0000ff">bool</span> marie = reponse == <span style="color:#a31515">&quot;o&quot;</span>;</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">...</span></span>
 </code></pre></div>
 
 <p><u><strong>Python</strong></u></p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 20;"><pre><code class="language-python">
-<span class="odt-code-line"># ----------------------------------</span>
-<span class="odt-code-line"><span style="color:#0000ff">def</span><span style="color:#000000"> affiche(</span><span style="color:#808080">chaine</span><span style="color:#000000">):</span></span>
-<span class="odt-code-line"><span style="color:#000000">    </span># cartel cadena</span>
-<span class="odt-code-line"><span style="color:#000000">    print(</span><span style="color:#a31515">&quot;chaine=%s&quot;</span><span style="color:#000000"> % </span><span style="color:#808080">chaine</span><span style="color:#000000">)</span></span>
-<span class="odt-code-line"></span>
-<span class="odt-code-line"></span>
-<span class="odt-code-line"># ----------------------------------</span>
-<span class="odt-code-line"><span style="color:#0000ff">def</span><span style="color:#000000"> affiche_type(</span><span style="color:#808080">variable</span><span style="color:#000000">):</span></span>
-<span class="odt-code-line"><span style="color:#000000">    </span># muestra el tipo de variable</span>
-<span class="odt-code-line"><span style="color:#000000">    print(</span><span style="color:#a31515">&quot;type</span><span style="font-weight:bold;color:#a31515">[%s]</span><span style="color:#a31515">=%s&quot;</span><span style="color:#000000"> % (</span><span style="color:#808080">variable</span><span style="color:#000000">, </span><span style="color:#2b91af">type</span><span style="color:#000000">(</span><span style="color:#808080">variable</span><span style="color:#000000">)))</span></span>
-<span class="odt-code-line"></span>
-<span class="odt-code-line"></span>
-<span class="odt-code-line"># ----------------------------------</span>
-<span class="odt-code-line"><span style="color:#0000ff">def</span><span style="color:#000000"> f1(</span><span style="color:#808080">param</span><span style="color:#000000">):</span></span>
-<span class="odt-code-line"><span style="color:#000000">    </span># añade 10 a param</span>
-<span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#0000ff">return</span><span style="color:#000000"> </span><span style="color:#808080">param</span><span style="color:#000000"> + 10</span></span>
-<span class="odt-code-line"></span>
-<span class="odt-code-line"></span>
-<span class="odt-code-line"># ----------------------------------</span>
-<span class="odt-code-line"><span style="color:#0000ff">def</span><span style="color:#000000"> f2():</span></span>
-<span class="odt-code-line"><span style="color:#000000">    </span># devuelve una tupla de 3 valores</span>
-<span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#0000ff">return</span><span style="color:#000000"> </span><span style="color:#a31515">&quot;un&quot;</span><span style="color:#000000">, 0, 100</span></span>
-<span class="odt-code-line"></span>
-<span class="odt-code-line"></span>
-<span class="odt-code-line"># -------------------------------- programa principal ------------------------------------</span>
-<span class="odt-code-line">...</span>
+<span class="odt-code-line"><span class="odt-code-line-content"># ----------------------------------</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">def</span><span style="color:#000000"> affiche(</span><span style="color:#808080">chaine</span><span style="color:#000000">):</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#000000"># cartel cadena</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    print(</span><span style="color:#a31515">&quot;chaine=%s&quot;</span><span style="color:#000000"> % </span><span style="color:#808080">chaine</span><span style="color:#000000">)</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"># ----------------------------------</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">def</span><span style="color:#000000"> affiche_type(</span><span style="color:#808080">variable</span><span style="color:#000000">):</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#000000"># muestra el tipo de variable</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    print(</span><span style="color:#a31515">&quot;type</span><span style="font-weight:bold;color:#a31515">[%s]</span><span style="color:#a31515">=%s&quot;</span><span style="color:#000000"> % (</span><span style="color:#808080">variable</span><span style="color:#000000">, </span><span style="color:#2b91af">type</span><span style="color:#000000">(</span><span style="color:#808080">variable</span><span style="color:#000000">)))</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"># ----------------------------------</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">def</span><span style="color:#000000"> f1(</span><span style="color:#808080">param</span><span style="color:#000000">):</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#000000"># añade 10 a param</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#0000ff">return</span><span style="color:#000000"> </span><span style="color:#808080">param</span><span style="color:#000000"> + 10</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"># ----------------------------------</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">def</span><span style="color:#000000"> f2():</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#000000"># devuelve una tupla de 3 valores</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#0000ff">return</span><span style="color:#000000"> </span><span style="color:#a31515">&quot;un&quot;</span><span style="color:#000000">, 0, 100</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"># -------------------------------- programa principal ------------------------------------</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">...</span></span>
 </code></pre></div>
 
 <p><u><strong>PHP</strong></u></p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 30;"><pre><code class="language-php">
-<span class="odt-code-line">&lt;?php</span>
-<span class="odt-code-line"></span>
-<span class="odt-code-line">// tipos estrictos para los parámetros de las funciones</span>
-<span class="odt-code-line"><span style="font-weight:bold;color:#7f0055">declare</span>(strict_types=1);</span>
-<span class="odt-code-line"></span>
-<span class="odt-code-line">// constantes globales</span>
-<span class="odt-code-line"><span style="color:#000000">define(</span>&quot;PLAFOND_QF_DEMI_PART&quot;<span style="color:#000000">, 1551);</span></span>
-<span class="odt-code-line"><span style="color:#000000">define(</span>&quot;PLAFOND_REVENUS_CELIBATAIRE_POUR_REDUCTION&quot;<span style="color:#000000">, 21037);</span></span>
-<span class="odt-code-line"><span style="color:#000000">define(</span>&quot;PLAFOND_REVENUS_COUPLE_POUR_REDUCTION&quot;<span style="color:#000000">, 42074);</span></span>
-<span class="odt-code-line"><span style="color:#000000">define(</span>&quot;VALEUR_REDUC_DEMI_PART&quot;<span style="color:#000000">, 3797);</span></span>
-<span class="odt-code-line"><span style="color:#000000">define(</span>&quot;PLAFOND_DECOTE_CELIBATAIRE&quot;<span style="color:#000000">, 1196);</span></span>
-<span class="odt-code-line"><span style="color:#000000">define(</span>&quot;PLAFOND_DECOTE_COUPLE&quot;<span style="color:#000000">, 1970);</span></span>
-<span class="odt-code-line"><span style="color:#000000">define(</span>&quot;PLAFOND_IMPOT_COUPLE_POUR_DECOTE&quot;<span style="color:#000000">, 2627);</span></span>
-<span class="odt-code-line"><span style="color:#000000">define(</span>&quot;PLAFOND_IMPOT_CELIBATAIRE_POUR_DECOTE&quot;<span style="color:#000000">, 1595);</span></span>
-<span class="odt-code-line"><span style="color:#000000">define(</span>&quot;ABATTEMENT_DIXPOURCENT_MAX&quot;<span style="color:#000000">, 12502);</span></span>
-<span class="odt-code-line"><span style="color:#000000">define(</span>&quot;ABATTEMENT_DIXPOURCENT_MIN&quot;<span style="color:#000000">, 437);</span></span>
-<span class="odt-code-line"></span>
-<span class="odt-code-line">// definición de constantes locales</span>
-<span class="odt-code-line"><span style="color:#000000">$DATA = </span>&quot;taxpayersdata.txt&quot;<span style="color:#000000">;</span></span>
-<span class="odt-code-line"><span style="color:#000000">$RESULTATS = </span>&quot;resultats.txt&quot;<span style="color:#000000">;</span></span>
-<span class="odt-code-line">$limites = <span style="font-weight:bold;color:#7f0055">array</span>(9964, 27519, 73779, 156244, 0);</span>
-<span class="odt-code-line">$coeffR = <span style="font-weight:bold;color:#7f0055">array</span>(0, 0.14, 0.3, 0.41, 0.45);</span>
-<span class="odt-code-line">$coeffN = <span style="font-weight:bold;color:#7f0055">array</span>(0, 1394.96, 5798, 13913.69, 20163.45);</span>
-<span class="odt-code-line"></span>
-<span class="odt-code-line">// datos de lectura</span>
-<span class="odt-code-line">$data = <span style="font-style:italic">fopen</span>($DATA, <span style="color:#0000c0">&quot;r&quot;</span>);</span>
-<span class="odt-code-line"><span style="font-weight:bold;color:#7f0055">if </span>(!$data) {</span>
-<span class="odt-code-line"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">print </span>&quot;Impossible d&#x27;ouvrir en lecture le fichier des données <span style="font-weight:bold">[$DATA]</span>\n&quot;<span style="color:#000000">;</span></span>
-<span class="odt-code-line"><span style="color:#000000">  </span>exit<span style="color:#000000">;</span></span>
-<span class="odt-code-line">}</span>
-<span class="odt-code-line"></span>
-<span class="odt-code-line">...</span>
+<span class="odt-code-line"><span class="odt-code-line-content">&lt;?php</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// tipos estrictos para los parámetros de las funciones</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">declare</span>(strict_types=1);</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// constantes globales</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">define(</span>&quot;PLAFOND_QF_DEMI_PART&quot;<span style="color:#000000">, 1551);</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">define(</span>&quot;PLAFOND_REVENUS_CELIBATAIRE_POUR_REDUCTION&quot;<span style="color:#000000">, 21037);</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">define(</span>&quot;PLAFOND_REVENUS_COUPLE_POUR_REDUCTION&quot;<span style="color:#000000">, 42074);</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">define(</span>&quot;VALEUR_REDUC_DEMI_PART&quot;<span style="color:#000000">, 3797);</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">define(</span>&quot;PLAFOND_DECOTE_CELIBATAIRE&quot;<span style="color:#000000">, 1196);</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">define(</span>&quot;PLAFOND_DECOTE_COUPLE&quot;<span style="color:#000000">, 1970);</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">define(</span>&quot;PLAFOND_IMPOT_COUPLE_POUR_DECOTE&quot;<span style="color:#000000">, 2627);</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">define(</span>&quot;PLAFOND_IMPOT_CELIBATAIRE_POUR_DECOTE&quot;<span style="color:#000000">, 1595);</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">define(</span>&quot;ABATTEMENT_DIXPOURCENT_MAX&quot;<span style="color:#000000">, 12502);</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">define(</span>&quot;ABATTEMENT_DIXPOURCENT_MIN&quot;<span style="color:#000000">, 437);</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// definición de constantes locales</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">$DATA = </span>&quot;taxpayersdata.txt&quot;<span style="color:#000000">;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">$RESULTATS = </span>&quot;resultats.txt&quot;<span style="color:#000000">;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">$limites = <span style="font-weight:bold;color:#7f0055">array</span>(9964, 27519, 73779, 156244, 0);</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">$coeffR = <span style="font-weight:bold;color:#7f0055">array</span>(0, 0.14, 0.3, 0.41, 0.45);</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">$coeffN = <span style="font-weight:bold;color:#7f0055">array</span>(0, 1394.96, 5798, 13913.69, 20163.45);</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// datos de lectura</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">$data = <span style="font-style:italic">fopen</span>($DATA, <span style="color:#0000c0">&quot;r&quot;</span>);</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">if </span>(!$data) {</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">print </span>&quot;Impossible d&#x27;ouvrir en lecture le fichier des données <span style="font-weight:bold">[$DATA]</span>\n&quot;<span style="color:#000000">;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span>exit<span style="color:#000000">;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">...</span></span>
 </code></pre></div>
 
 <p><u><strong>ECMAScript</strong></u></p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 40;"><pre><code class="language-javascript">
-<span class="odt-code-line"><span style="color:#a31515">&#x27;use strict&#x27;</span><span style="color:#000000">;</span></span>
-<span class="odt-code-line">// este es un comentario</span>
-<span class="odt-code-line">// constante</span>
-<span class="odt-code-line"><span style="color:#0000ff">const</span><span style="color:#000000"> nom = </span><span style="color:#a31515">&quot;dupont&quot;</span><span style="color:#000000">;</span></span>
-<span class="odt-code-line">// una pantalla de visualización</span>
-<span class="odt-code-line"><span style="color:#000000">console.log(</span><span style="color:#a31515">&quot;nom : &quot;</span><span style="color:#000000">, nom);</span></span>
-<span class="odt-code-line">// una matriz con elementos de distintos tipos</span>
-<span class="odt-code-line"><span style="color:#0000ff">const</span><span style="color:#000000"> tableau = </span><span style="font-weight:bold;color:#000000">[&quot;un&quot;, &quot;deux&quot;, 3, 4]</span><span style="color:#000000">;</span></span>
-<span class="odt-code-line">// su número de elementos</span>
-<span class="odt-code-line"><span style="color:#0000ff">let</span><span style="color:#000000"> n = tableau.length;</span></span>
-<span class="odt-code-line">// un bucle</span>
-<span class="odt-code-line"><span style="color:#0000ff">for</span><span style="color:#000000"> (</span><span style="color:#0000ff">let</span><span style="color:#000000"> i = 0; i &lt; n; i++) {</span></span>
-<span class="odt-code-line"><span style="color:#000000">  console.log(</span><span style="color:#a31515">&quot;tableau</span><span style="font-weight:bold;color:#a31515">[&quot;, i, &quot;]</span><span style="color:#a31515"> = &quot;</span><span style="color:#000000">, tableau</span><span style="font-weight:bold;color:#000000">[i]</span><span style="color:#000000">);</span></span>
-<span class="odt-code-line">}</span>
-<span class="odt-code-line">// inicializar 2 variables con el contenido de un array</span>
-<span class="odt-code-line"><span style="color:#0000ff">let</span><span style="color:#000000"> </span><span style="font-weight:bold;color:#000000">[chaine1, chaine2]</span><span style="color:#000000"> = </span><span style="font-weight:bold;color:#000000">[&quot;chaine1&quot;, &quot;chaine2&quot;]</span><span style="color:#000000">;</span></span>
-<span class="odt-code-line">// concatenación de las 2 cadenas</span>
-<span class="odt-code-line"><span style="color:#0000ff">const</span><span style="color:#000000"> chaine3 = chaine1 + chaine2;</span></span>
-<span class="odt-code-line">// visualización de resultados</span>
-<span class="odt-code-line">console.log(<span style="font-weight:bold">[chaine1, chaine2, chaine3]</span>);</span>
-<span class="odt-code-line">...</span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#a31515">&#x27;use strict&#x27;;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// este es un comentario</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// constante</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">const</span><span style="color:#000000"> nom = </span><span style="color:#a31515">&quot;dupont&quot;</span><span style="color:#000000">;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// una pantalla de visualización</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">console.log(</span><span style="color:#a31515">&quot;nom : &quot;</span><span style="color:#000000">, nom);</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// una matriz con elementos de distintos tipos</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">const</span><span style="color:#000000"> tableau = </span><span style="font-weight:bold;color:#000000">[&quot;un&quot;, &quot;deux&quot;, 3, 4]</span><span style="color:#000000">;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// su número de elementos</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">let</span><span style="color:#000000"> n = tableau.length;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// un bucle</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">for</span><span style="color:#000000"> (</span><span style="color:#0000ff">let</span><span style="color:#000000"> i = 0; i &lt; n; i++) {</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  console.log(</span><span style="color:#a31515">&quot;tableau</span><span style="font-weight:bold;color:#a31515">[&quot;, i, &quot;]</span><span style="color:#a31515"> = &quot;</span><span style="color:#000000">, tableau</span><span style="font-weight:bold;color:#000000">[i]</span><span style="color:#000000">);</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// inicializar 2 variables con el contenido de un array</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">let</span><span style="color:#000000"> </span><span style="font-weight:bold;color:#000000">[chaine1, chaine2]</span><span style="color:#000000"> = </span><span style="font-weight:bold;color:#000000">[&quot;chaine1&quot;, &quot;chaine2&quot;]</span><span style="color:#000000">;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// concatenación de las 2 cadenas</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">const</span><span style="color:#000000"> chaine3 = chaine1 + chaine2;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// visualización de resultados</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">console.log(<span style="font-weight:bold">[chaine1, chaine2, chaine3]</span>);</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">...</span></span>
 </code></pre></div>
 
 <p><u><strong>VBScript</strong></u></p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 50;"><pre><code class="language-vbscript">
-<span class="odt-code-line">&#x27; cálculo de la deuda tributaria del contribuyente</span>
-<span class="odt-code-line">&#x27; el programa debe llamarse con tres parámetros: salario de los hijos casados</span>
-<span class="odt-code-line">&#x27; casado: carácter Y si está casado, N si no lo está</span>
-<span class="odt-code-line">&#x27; hijos: número de hijos</span>
-<span class="odt-code-line">&#x27; salario: salario anual sin céntimos</span>
-<span class="odt-code-line"></span>
-<span class="odt-code-line">&#x27; declaración obligatoria de variables</span>
-<span class="odt-code-line"><span style="color:#000000">  </span><span style="color:#00007f">Option</span><span style="color:#000000"> </span><span style="color:#00007f">Explicit</span></span>
-<span class="odt-code-line"><span style="color:#000000">  </span><span style="color:#00007f">Dim</span><span style="color:#000000"> erreur</span></span>
-<span class="odt-code-line">  </span>
-<span class="odt-code-line">&#x27; recuperar los argumentos y comprobar su validez</span>
-<span class="odt-code-line"><span style="color:#000000">  </span><span style="color:#00007f">Dim</span><span style="color:#000000"> marie, enfants, salaire</span></span>
-<span class="odt-code-line">  erreur=getArguments(marie,enfants,salaire)</span>
-<span class="odt-code-line"><span style="color:#000000">  </span><span style="color:#008000">&#x27; ¿Error?</span></span>
-<span class="odt-code-line"><span style="color:#000000">  </span><span style="color:#00007f">If</span><span style="color:#000000"> erreur(0)&lt;&gt;0 </span><span style="color:#00007f">Then</span><span style="color:#000000"> wscript.echo erreur(1) : wscript.quit erreur(0)</span></span>
-<span class="odt-code-line"></span>
-<span class="odt-code-line">&#x27; recuperamos los datos necesarios para calcular los impuestos</span>
-<span class="odt-code-line"><span style="color:#000000">  </span><span style="color:#00007f">Dim</span><span style="color:#000000"> limites, coeffR, coeffN</span></span>
-<span class="odt-code-line">  erreur=getData(limites,coeffR,coeffN)</span>
-<span class="odt-code-line"><span style="color:#000000">  </span><span style="color:#008000">&#x27; ¿Error?</span></span>
-<span class="odt-code-line"><span style="color:#000000">  </span><span style="color:#00007f">If</span><span style="color:#000000"> erreur(0)&lt;&gt;0 </span><span style="color:#00007f">Then</span><span style="color:#000000"> wscript.echo erreur(1) : wscript.quit 5</span></span>
-<span class="odt-code-line"></span>
-<span class="odt-code-line"><span style="color:#000000">  </span><span style="color:#008000">&#x27; se muestra el resultado</span></span>
-<span class="odt-code-line">  wscript.echo &quot;impôt=&quot; &amp; calculerImpot(marie,enfants,salaire,limites,coeffR,coeffN)</span>
-<span class="odt-code-line">  </span>
-<span class="odt-code-line"><span style="color:#000000">  </span><span style="color:#008000">&#x27; salimos sin error</span></span>
-<span class="odt-code-line">  wscript.quit 0</span>
+<span class="odt-code-line"><span class="odt-code-line-content">&#x27; cálculo de la deuda tributaria del contribuyente</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">&#x27; el programa debe llamarse con tres parámetros: salario de los hijos casados</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">&#x27; casado: carácter Y si está casado, N si no lo está</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">&#x27; hijos: número de hijos</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">&#x27; salario: salario anual sin céntimos</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">&#x27; declaración obligatoria de variables</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="color:#00007f">Option</span><span style="color:#000000"> </span><span style="color:#00007f">Explicit</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="color:#00007f">Dim</span><span style="color:#000000"> erreur</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">&#x27; recuperar los argumentos y comprobar su validez</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="color:#00007f">Dim</span><span style="color:#000000"> marie, enfants, salaire</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  erreur=getArguments(marie,enfants,salaire)</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">&#x27; ¿Error?</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="color:#00007f">If</span><span style="color:#000000"> erreur(0)&lt;&gt;0 </span><span style="color:#00007f">Then</span><span style="color:#000000"> wscript.echo erreur(1) : wscript.quit erreur(0)</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">&#x27; recuperamos los datos necesarios para calcular los impuestos</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="color:#00007f">Dim</span><span style="color:#000000"> limites, coeffR, coeffN</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  erreur=getData(limites,coeffR,coeffN)</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">&#x27; ¿Error?</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="color:#00007f">If</span><span style="color:#000000"> erreur(0)&lt;&gt;0 </span><span style="color:#00007f">Then</span><span style="color:#000000"> wscript.echo erreur(1) : wscript.quit 5</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">&#x27; se muestra el resultado</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  wscript.echo &quot;impôt=&quot; &amp; calculerImpot(marie,enfants,salaire,limites,coeffR,coeffN)</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">&#x27; salimos sin error</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  wscript.quit 0</span></span>
 </code></pre></div>
 
 <p><u><strong>XML</strong></u></p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 60;"><pre><code class="language-xml">
-<span class="odt-code-line"><span style="color:#0000ff">&lt;?</span><span style="color:#a31515">xml</span><span style="color:#0000ff"> </span><span style="color:#ff0000">version</span><span style="color:#0000ff">=</span>&quot;<span style="color:#0000ff">1.0</span>&quot;<span style="color:#0000ff"> </span><span style="color:#ff0000">encoding</span><span style="color:#0000ff">=</span>&quot;<span style="color:#0000ff">utf-8</span>&quot;<span style="color:#0000ff"> ?&gt;</span></span>
-<span class="odt-code-line"><span style="color:#0000ff">&lt;</span><span style="color:#a31515">configuration</span><span style="color:#0000ff">&gt;</span></span>
-<span class="odt-code-line"></span>
-<span class="odt-code-line"><span style="color:#0000ff">  &lt;</span><span style="color:#a31515">configSections</span><span style="color:#0000ff">&gt;</span></span>
-<span class="odt-code-line"><span style="color:#0000ff">    &lt;</span><span style="color:#a31515">sectionGroup</span><span style="color:#0000ff"> </span><span style="color:#ff0000">name</span><span style="color:#0000ff">=</span>&quot;<span style="color:#0000ff">spring</span>&quot;<span style="color:#0000ff">&gt;</span></span>
-<span class="odt-code-line"><span style="color:#0000ff">      &lt;</span><span style="color:#a31515">section</span><span style="color:#0000ff"> </span><span style="color:#ff0000">name</span><span style="color:#0000ff">=</span>&quot;<span style="color:#0000ff">context</span>&quot;<span style="color:#0000ff"> </span><span style="color:#ff0000">type</span><span style="color:#0000ff">=</span>&quot;<span style="color:#0000ff">Spring.Context.Support.ContextHandler, Spring.Core</span>&quot;<span style="color:#0000ff"> /&gt;</span></span>
-<span class="odt-code-line"><span style="color:#0000ff">      &lt;</span><span style="color:#a31515">section</span><span style="color:#0000ff"> </span><span style="color:#ff0000">name</span><span style="color:#0000ff">=</span>&quot;<span style="color:#0000ff">objects</span>&quot;<span style="color:#0000ff"> </span><span style="color:#ff0000">type</span><span style="color:#0000ff">=</span>&quot;<span style="color:#0000ff">Spring.Context.Support.DefaultSectionHandler, Spring.Core</span>&quot;<span style="color:#0000ff"> /&gt;</span></span>
-<span class="odt-code-line"><span style="color:#0000ff">    &lt;/</span><span style="color:#a31515">sectionGroup</span><span style="color:#0000ff">&gt;</span></span>
-<span class="odt-code-line"><span style="color:#0000ff">  &lt;/</span><span style="color:#a31515">configSections</span><span style="color:#0000ff">&gt;</span></span>
-<span class="odt-code-line"></span>
-<span class="odt-code-line"><span style="color:#0000ff">  &lt;</span><span style="color:#a31515">spring</span><span style="color:#0000ff">&gt;</span></span>
-<span class="odt-code-line"><span style="color:#0000ff">    &lt;</span><span style="color:#a31515">context</span><span style="color:#0000ff">&gt;</span></span>
-<span class="odt-code-line"><span style="color:#0000ff">      &lt;</span><span style="color:#a31515">resource</span><span style="color:#0000ff"> </span><span style="color:#ff0000">uri</span><span style="color:#0000ff">=</span>&quot;<span style="color:#0000ff">config://spring/objects</span>&quot;<span style="color:#0000ff"> /&gt;</span></span>
-<span class="odt-code-line"><span style="color:#0000ff">    &lt;/</span><span style="color:#a31515">context</span><span style="color:#0000ff">&gt;</span></span>
-<span class="odt-code-line"><span style="color:#0000ff">    &lt;</span><span style="color:#a31515">objects</span><span style="color:#0000ff"> </span><span style="color:#ff0000">xmlns</span><span style="color:#0000ff">=</span>&quot;<span style="color:#0000ff">http://www.springframework.net</span>&quot;<span style="color:#0000ff">&gt;</span></span>
-<span class="odt-code-line"><span style="color:#0000ff">      &lt;</span><span style="color:#a31515">object</span><span style="color:#0000ff"> </span><span style="color:#ff0000">name</span><span style="color:#0000ff">=</span>&quot;<span style="color:#0000ff">dao</span>&quot;<span style="color:#0000ff"> </span><span style="color:#ff0000">type</span><span style="color:#0000ff">=</span>&quot;<span style="color:#0000ff">Dao.DataBaseImpot, ImpotsV7-dao</span>&quot;<span style="color:#0000ff">&gt;</span></span>
-<span class="odt-code-line"><span style="color:#0000ff">        &lt;</span><span style="color:#a31515">constructor-arg</span><span style="color:#0000ff"> </span><span style="color:#ff0000">index</span><span style="color:#0000ff">=</span>&quot;<span style="color:#0000ff">0</span>&quot;<span style="color:#0000ff"> </span><span style="color:#ff0000">value</span><span style="color:#0000ff">=</span>&quot;<span style="color:#0000ff">MySql.Data.MySqlClient</span>&quot;<span style="color:#0000ff">/&gt;</span></span>
-<span class="odt-code-line"><span style="color:#0000ff">        &lt;</span><span style="color:#a31515">constructor-arg</span><span style="color:#0000ff"> </span><span style="color:#ff0000">index</span><span style="color:#0000ff">=</span>&quot;<span style="color:#0000ff">1</span>&quot;<span style="color:#0000ff"> </span><span style="color:#ff0000">value</span><span style="color:#0000ff">=</span>&quot;<span style="color:#0000ff">Server=localhost;Database=bdimpots;Uid=admimpots;Pwd=mdpimpots;</span>&quot;<span style="color:#0000ff">/&gt;</span></span>
-<span class="odt-code-line"><span style="color:#0000ff">        &lt;</span><span style="color:#a31515">constructor-arg</span><span style="color:#0000ff"> </span><span style="color:#ff0000">index</span><span style="color:#0000ff">=</span>&quot;<span style="color:#0000ff">2</span>&quot;<span style="color:#0000ff"> </span><span style="color:#ff0000">value</span><span style="color:#0000ff">=</span>&quot;<span style="color:#0000ff">select limite, coeffr, coeffn from tranches</span>&quot;<span style="color:#0000ff">/&gt;</span></span>
-<span class="odt-code-line"><span style="color:#0000ff">      &lt;/</span><span style="color:#a31515">object</span><span style="color:#0000ff">&gt;</span></span>
-<span class="odt-code-line"><span style="color:#0000ff">      &lt;</span><span style="color:#a31515">object</span><span style="color:#0000ff"> </span><span style="color:#ff0000">name</span><span style="color:#0000ff">=</span>&quot;<span style="color:#0000ff">metier</span>&quot;<span style="color:#0000ff"> </span><span style="color:#ff0000">type</span><span style="color:#0000ff">=</span>&quot;<span style="color:#0000ff">Metier.ImpotMetier, ImpotsV7-metier</span>&quot;<span style="color:#0000ff">&gt;</span></span>
-<span class="odt-code-line"><span style="color:#0000ff">        &lt;</span><span style="color:#a31515">constructor-arg</span><span style="color:#0000ff"> </span><span style="color:#ff0000">index</span><span style="color:#0000ff">=</span>&quot;<span style="color:#0000ff">0</span>&quot;<span style="color:#0000ff"> </span><span style="color:#ff0000">ref</span><span style="color:#0000ff">=</span>&quot;<span style="color:#0000ff">dao</span>&quot;<span style="color:#0000ff">/&gt;</span></span>
-<span class="odt-code-line"><span style="color:#0000ff">      &lt;/</span><span style="color:#a31515">object</span><span style="color:#0000ff">&gt;</span></span>
-<span class="odt-code-line"><span style="color:#0000ff">    &lt;/</span><span style="color:#a31515">objects</span><span style="color:#0000ff">&gt;</span></span>
-<span class="odt-code-line"><span style="color:#0000ff">  &lt;/</span><span style="color:#a31515">spring</span><span style="color:#0000ff">&gt;</span></span>
-<span class="odt-code-line"><span style="color:#0000ff">&lt;/</span><span style="color:#a31515">configuration</span><span style="color:#0000ff">&gt;</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">&lt;?</span><span style="color:#a31515">xml</span><span style="color:#0000ff"> </span><span style="color:#ff0000">version</span><span style="color:#0000ff">=</span>&quot;<span style="color:#0000ff">1.0</span>&quot;<span style="color:#0000ff"> </span><span style="color:#ff0000">encoding</span><span style="color:#0000ff">=</span>&quot;<span style="color:#0000ff">utf-8</span>&quot;<span style="color:#0000ff"> ?&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">&lt;</span><span style="color:#a31515">configuration</span><span style="color:#0000ff">&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">  &lt;</span><span style="color:#a31515">configSections</span><span style="color:#0000ff">&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">    &lt;</span><span style="color:#a31515">sectionGroup</span><span style="color:#0000ff"> </span><span style="color:#ff0000">name</span><span style="color:#0000ff">=</span>&quot;<span style="color:#0000ff">spring</span>&quot;<span style="color:#0000ff">&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">      &lt;</span><span style="color:#a31515">section</span><span style="color:#0000ff"> </span><span style="color:#ff0000">name</span><span style="color:#0000ff">=</span>&quot;<span style="color:#0000ff">context</span>&quot;<span style="color:#0000ff"> </span><span style="color:#ff0000">type</span><span style="color:#0000ff">=</span>&quot;<span style="color:#0000ff">Spring.Context.Support.ContextHandler, Spring.Core</span>&quot;<span style="color:#0000ff"> /&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">      &lt;</span><span style="color:#a31515">section</span><span style="color:#0000ff"> </span><span style="color:#ff0000">name</span><span style="color:#0000ff">=</span>&quot;<span style="color:#0000ff">objects</span>&quot;<span style="color:#0000ff"> </span><span style="color:#ff0000">type</span><span style="color:#0000ff">=</span>&quot;<span style="color:#0000ff">Spring.Context.Support.DefaultSectionHandler, Spring.Core</span>&quot;<span style="color:#0000ff"> /&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">    &lt;/</span><span style="color:#a31515">sectionGroup</span><span style="color:#0000ff">&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">  &lt;/</span><span style="color:#a31515">configSections</span><span style="color:#0000ff">&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">  &lt;</span><span style="color:#a31515">spring</span><span style="color:#0000ff">&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">    &lt;</span><span style="color:#a31515">context</span><span style="color:#0000ff">&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">      &lt;</span><span style="color:#a31515">resource</span><span style="color:#0000ff"> </span><span style="color:#ff0000">uri</span><span style="color:#0000ff">=</span>&quot;<span style="color:#0000ff">config://spring/objects</span>&quot;<span style="color:#0000ff"> /&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">    &lt;/</span><span style="color:#a31515">context</span><span style="color:#0000ff">&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">    &lt;</span><span style="color:#a31515">objects</span><span style="color:#0000ff"> </span><span style="color:#ff0000">xmlns</span><span style="color:#0000ff">=</span>&quot;<span style="color:#0000ff">http://www.springframework.net</span>&quot;<span style="color:#0000ff">&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">      &lt;</span><span style="color:#a31515">object</span><span style="color:#0000ff"> </span><span style="color:#ff0000">name</span><span style="color:#0000ff">=</span>&quot;<span style="color:#0000ff">dao</span>&quot;<span style="color:#0000ff"> </span><span style="color:#ff0000">type</span><span style="color:#0000ff">=</span>&quot;<span style="color:#0000ff">Dao.DataBaseImpot, ImpotsV7-dao</span>&quot;<span style="color:#0000ff">&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">        &lt;</span><span style="color:#a31515">constructor-arg</span><span style="color:#0000ff"> </span><span style="color:#ff0000">index</span><span style="color:#0000ff">=</span>&quot;<span style="color:#0000ff">0</span>&quot;<span style="color:#0000ff"> </span><span style="color:#ff0000">value</span><span style="color:#0000ff">=</span>&quot;<span style="color:#0000ff">MySql.Data.MySqlClient</span>&quot;<span style="color:#0000ff">/&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">        &lt;</span><span style="color:#a31515">constructor-arg</span><span style="color:#0000ff"> </span><span style="color:#ff0000">index</span><span style="color:#0000ff">=</span>&quot;<span style="color:#0000ff">1</span>&quot;<span style="color:#0000ff"> </span><span style="color:#ff0000">value</span><span style="color:#0000ff">=</span>&quot;<span style="color:#0000ff">Server=localhost;Database=bdimpots;Uid=admimpots;Pwd=mdpimpots;</span>&quot;<span style="color:#0000ff">/&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">        &lt;</span><span style="color:#a31515">constructor-arg</span><span style="color:#0000ff"> </span><span style="color:#ff0000">index</span><span style="color:#0000ff">=</span>&quot;<span style="color:#0000ff">2</span>&quot;<span style="color:#0000ff"> </span><span style="color:#ff0000">value</span><span style="color:#0000ff">=</span>&quot;<span style="color:#0000ff">select limite, coeffr, coeffn from tranches</span>&quot;<span style="color:#0000ff">/&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">      &lt;/</span><span style="color:#a31515">object</span><span style="color:#0000ff">&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">      &lt;</span><span style="color:#a31515">object</span><span style="color:#0000ff"> </span><span style="color:#ff0000">name</span><span style="color:#0000ff">=</span>&quot;<span style="color:#0000ff">metier</span>&quot;<span style="color:#0000ff"> </span><span style="color:#ff0000">type</span><span style="color:#0000ff">=</span>&quot;<span style="color:#0000ff">Metier.ImpotMetier, ImpotsV7-metier</span>&quot;<span style="color:#0000ff">&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">        &lt;</span><span style="color:#a31515">constructor-arg</span><span style="color:#0000ff"> </span><span style="color:#ff0000">index</span><span style="color:#0000ff">=</span>&quot;<span style="color:#0000ff">0</span>&quot;<span style="color:#0000ff"> </span><span style="color:#ff0000">ref</span><span style="color:#0000ff">=</span>&quot;<span style="color:#0000ff">dao</span>&quot;<span style="color:#0000ff">/&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">      &lt;/</span><span style="color:#a31515">object</span><span style="color:#0000ff">&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">    &lt;/</span><span style="color:#a31515">objects</span><span style="color:#0000ff">&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">  &lt;/</span><span style="color:#a31515">spring</span><span style="color:#0000ff">&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">&lt;/</span><span style="color:#a31515">configuration</span><span style="color:#0000ff">&gt;</span></span></span>
 </code></pre></div>
 
 <h3 id="222-bloques-de-codigos-bruto-plain-text">2.2.2. <span style="color: #0f4761">Bloques de códigos bruto (plain text)</span></h3>
@@ -1323,7 +1323,7 @@
 <a id="__codelineno-0-28" name="__codelineno-0-28"></a>Process finished with exit code 0
 </code></pre></div></td></tr></table></div>
 <p>Este caso requirió docenas de iteraciones. El conversor nunca encontraba el número de la primera línea de código. Finalmente le pregunté a Gemini cómo formatear el bloque de código para que lo reconociera. Esto es lo que me dijo</p>
-<p><img src="images/10000000000005BE0000037C26698115.png" style="width:13.61cm;height:8.26cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000005BE0000037C26698115.png" /></p>
+<p><img src="images/10000000000005BE0000037C26698115.png" width="514" height="312" style="width:13.61cm;height:8.26cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000005BE0000037C26698115.png" /></p>
 <p>He seguido este procedimiento y ha funcionado. Utilicé el método a través del icono de la lista (Personalizar). Así que puede que tenga que modificar ciertos elementos del Documento ODT / DOCX para obtener lo que desea.</p>
 <p>El conversor puede manejar bloques de código sin numerar.</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>liste[0]=un
@@ -1881,12 +1881,12 @@ También gestiona los bordes superior e inferior de los párrafos.
 <h2 id="25-a-titulo-puede-ser-tambien-enriquecido">2.5. <span style="color: #0f4761">A <strong>título</strong> puede ser <u>también</u> <em>enriquecido</em>.</span></h2>
 <h2 id="26-las-imagenes">2.6. <span style="color: #0f4761">Las imágenes</span></h2>
 <p>El Gemini / ChatGPT sabe gestionar imágenes y tablas de imágenes :</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000041D0000017D721E4B11.png" style="display:inline-block; margin:4px;width:9.29cm;height:3.36cm;" class="odt-zoomable" data-zoom-src="images/100000000000041D0000017D721E4B11.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000021A000000A4CC322650.png" style="display:inline-block; margin:4px;width:4.74cm;height:1.45cm;" class="odt-zoomable" data-zoom-src="images/100000000000021A000000A4CC322650.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000041D0000017D721E4B11.png" width="351" height="127" style="display:inline-block; margin:4px;width:9.29cm;height:3.36cm;" class="odt-zoomable" data-zoom-src="images/100000000000041D0000017D721E4B11.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000021A000000A4CC322650.png" width="179" height="55" style="display:inline-block; margin:4px;width:4.74cm;height:1.45cm;" class="odt-zoomable" data-zoom-src="images/100000000000021A000000A4CC322650.png" /></td></tr></table>
 
-<p><img src="images/10000000000006E80000018162B1E953.png" style="width:16.002cm;height:3.478cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000006E80000018162B1E953.png" /></p>
+<p><img src="images/10000000000006E80000018162B1E953.png" width="605" height="131" style="width:16.002cm;height:3.478cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000006E80000018162B1E953.png" /></p>
 <p>Los planos son habituales en los documentos ODT. A pesar des docenas de intentos, Gemini no consiguió generar un script que generara la imagen (como una captura de pantalla) del dibujo. Así que arriba, la imagen 5 es una captura de pantalla de un dibujo de un documento ODT.</p>
 <p>Puede hacer clic en todas las imágenes para ampliarlas. Si hace clic en la imagen [1-3] anterior, obtendrá la siguiente ampliación:</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000A450000059D2A8F15E8.png" style="display:inline-block; margin:4px;width:13.91cm;height:7.601cm;" class="odt-zoomable" data-zoom-src="images/1000000000000A450000059D2A8F15E8.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000A450000059D2A8F15E8.png" width="526" height="287" style="display:inline-block; margin:4px;width:13.91cm;height:7.601cm;" class="odt-zoomable" data-zoom-src="images/1000000000000A450000059D2A8F15E8.png" /></td></tr></table>
 
 <h2 id="27-los-caracteres-que-hay-que-proteger">2.7. <span style="color: #0f4761">Los caracteres que hay que proteger</span></h2>
 <p>Una página web MkDocs<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup> tiene páginas cuyo contenido no es HTML sino MarkDown. Si le Documento ODT / DOCX contiene caracteres que existen en MarkDown, pueden ser interpretados por MkDocs y por lo tanto no ser renderizados como se espera. He aquí dos ejemplos:</p>
@@ -1997,31 +1997,31 @@ También gestiona los bordes superior e inferior de los párrafos.
 </code></pre></div></td></tr></table></div>
 <h2 id="28-los-cuadros">2.8. <span style="color: #0f4761">Los cuadros</span></h2>
 <p>Una tabla puede tener diferentes contenidos:</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">1</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">2</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000000C8000000E930F662D2.png" style="display:inline-block; margin:4px;width:2.646cm;height:3.083cm;" class="odt-zoomable" data-zoom-src="images/10000000000000C8000000E930F662D2.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
-<span class="odt-code-line"><span style="font-weight:bold;color:#7f0055">package</span> istia.st.spring.core;</span>
-<span class="odt-code-line"></span>
-<span class="odt-code-line"><span style="font-weight:bold;color:#7f0055">import</span> java.util.ArrayList;</span>
-<span class="odt-code-line"><span style="font-weight:bold;color:#7f0055">import</span> java.util.List;</span>
-<span class="odt-code-line"></span>
-<span class="odt-code-line"><span style="font-weight:bold;color:#7f0055">import</span> org.springframework.context.ApplicationContext;</span>
-<span class="odt-code-line"><span style="font-weight:bold;color:#7f0055">import</span> org.springframework.context.support.ClassPathXmlApplicationContext;</span>
-<span class="odt-code-line"></span>
-<span class="odt-code-line"><span style="font-weight:bold;color:#7f0055">public</span> <span style="font-weight:bold;color:#7f0055">class</span> Demo01 {</span>
-<span class="odt-code-line"></span>
-<span class="odt-code-line"></span>
-</code></pre></div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">3</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">4</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000000C8000000E90F858128.png" style="display:inline-block; margin:4px;width:2.646cm;height:3.083cm;" class="odt-zoomable" data-zoom-src="images/10000000000000C8000000E90F858128.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-python">
-<span class="odt-code-line"># ----------------------------------</span>
-<span class="odt-code-line"><span style="color:#0000ff">def</span><span style="color:#000000"> affiche(</span><span style="color:#808080">chaine</span><span style="color:#000000">):</span></span>
-<span class="odt-code-line"><span style="color:#000000">    </span># cartel cadena</span>
-<span class="odt-code-line"><span style="color:#000000">    print(</span><span style="color:#a31515">&quot;chaine=%s&quot;</span><span style="color:#000000"> % </span><span style="color:#808080">chaine</span><span style="color:#000000">)</span></span>
-<span class="odt-code-line"></span>
-<span class="odt-code-line"></span>
-<span class="odt-code-line"># ----------------------------------</span>
-<span class="odt-code-line"><span style="color:#0000ff">def</span><span style="color:#000000"> affiche_type(</span><span style="color:#808080">variable</span><span style="color:#000000">):</span></span>
-<span class="odt-code-line"><span style="color:#000000">    </span># muestra el tipo de variable</span>
-<span class="odt-code-line"><span style="color:#000000">    print(</span><span style="color:#a31515">&quot;type</span><span style="font-weight:bold;color:#a31515">[%s]</span><span style="color:#a31515">=%s&quot;</span><span style="color:#000000"> % (</span><span style="color:#808080">variable</span><span style="color:#000000">, </span><span style="color:#2b91af">type</span><span style="color:#000000">(</span><span style="color:#808080">variable</span><span style="color:#000000">)))</span></span>
-<span class="odt-code-line"></span>
-<span class="odt-code-line"></span>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">1</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">2</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000000C8000000E930F662D2.png" width="100" height="117" style="display:inline-block; margin:4px;width:2.646cm;height:3.083cm;" class="odt-zoomable" data-zoom-src="images/10000000000000C8000000E930F662D2.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">package</span> istia.st.spring.core;</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">import</span> java.util.ArrayList;</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">import</span> java.util.List;</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">import</span> org.springframework.context.ApplicationContext;</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">import</span> org.springframework.context.support.ClassPathXmlApplicationContext;</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">public</span> <span style="font-weight:bold;color:#7f0055">class</span> Demo01 {</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+</code></pre></div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">3</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">4</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000000C8000000E90F858128.png" width="100" height="117" style="display:inline-block; margin:4px;width:2.646cm;height:3.083cm;" class="odt-zoomable" data-zoom-src="images/10000000000000C8000000E90F858128.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-python">
+<span class="odt-code-line"><span class="odt-code-line-content"># ----------------------------------</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">def</span><span style="color:#000000"> affiche(</span><span style="color:#808080">chaine</span><span style="color:#000000">):</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#000000"># cartel cadena</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    print(</span><span style="color:#a31515">&quot;chaine=%s&quot;</span><span style="color:#000000"> % </span><span style="color:#808080">chaine</span><span style="color:#000000">)</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"># ----------------------------------</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">def</span><span style="color:#000000"> affiche_type(</span><span style="color:#808080">variable</span><span style="color:#000000">):</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#000000"># muestra el tipo de variable</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    print(</span><span style="color:#a31515">&quot;type</span><span style="font-weight:bold;color:#a31515">[%s]</span><span style="color:#a31515">=%s&quot;</span><span style="color:#000000"> % (</span><span style="color:#808080">variable</span><span style="color:#000000">, </span><span style="color:#2b91af">type</span><span style="color:#000000">(</span><span style="color:#808080">variable</span><span style="color:#000000">)))</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
 </code></pre></div></td></tr></table>
 
 <p>Una tabla con enlaces :</p>
